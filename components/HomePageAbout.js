@@ -77,7 +77,7 @@ export default function HomePageAbout() {
           initial={{ y: 1000 }}
           animate={{ y: 0 }}
           exit={{ y: 1000 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 0 }}
         >
           <Box sx={style}>
             <Box className="content">

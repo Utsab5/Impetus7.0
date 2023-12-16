@@ -9,7 +9,8 @@ export default function Countdown() {
   const [dead, setDead] = useState(false);
   const theme = useTheme();
 
-  const deadline = "February, 17, 2023";
+  const deadline = "February, 17, 2024";
+  // const deadline = "February, 17, 2023";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -45,14 +46,14 @@ export default function Countdown() {
   if (dead)
     return (
       <Box>
-        <Typography sx={{ margin: "50px" }} variant="h2">
+        <Typography sx={{ margin: "50px" , zIndex:"2",position:"relative"}} variant="h2">
           IS LIVE NOW!
         </Typography>
       </Box>
     );
 
   return (
-    <Box sx={{ margin: "60px 0" }} className="center1">
+    <Box sx={{ margin: "2% 0" }} className="center1">
       <Box sx={styles}>
         <Box>
           <Typography variant="h2">{("0" + days).slice(-2)}</Typography>
@@ -72,7 +73,7 @@ export default function Countdown() {
         </Box>
       </Box>
       <Typography
-        sx={{ margin: "20px 0", fontSize: "24px !important" }}
+        sx={{ margin: "20px 0", fontSize: "24px !important" , zIndex:"2"}}
         variant="h2"
       >
         TO START
