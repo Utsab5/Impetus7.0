@@ -4,10 +4,10 @@ import { useEffect, useRef } from "react";
 import Countdown from "../components/Countdown";
 
 const styles = {
-  height: "100vh",
+  height: "95vh",
   width: "100vw",
-  position: "absolute",
-  zIndex: 2,
+  position: "relative",
+  zIndex: "20",
   h1: {
     fontSize: {
       xs: "50px",
@@ -17,9 +17,10 @@ const styles = {
     overflowY: "hidden",
   },
   h4: {
+    position:"relative",
     m: "20px 0",
     textAlign: "center",
-    overflowY: "hidden",
+    // overflowY: "hidden",
     fontSize: {
       lg: "24px",
       md: "24px",
@@ -43,7 +44,7 @@ export default function VideoText({ hideIt }) {
   const scrollRef = useRef(null);
 
   return (
-    <Box ref={scrollRef} sx={styles} className="center1">
+    <Box ref={scrollRef} sx={styles} className="center1" style={{marginTop:"5vh"}}>
       <Typography variant="h1" className="Heading">
         IMPETUS
       </Typography>

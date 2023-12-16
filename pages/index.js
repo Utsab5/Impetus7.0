@@ -19,9 +19,9 @@ const styles = {
 const containerStyles = {
   background: "url(images/grid.svg) no-repeat center",
   backgroundColor: "black",
-  height: "100vh",
+  height: "10vh",
   height: {
-    xs: "90vh",
+    xs: "0vh",
   },
   width: "100vw",
 };
@@ -57,35 +57,36 @@ export default function HomePage() {
     };
   }, []);
 
-  useEffect(() => {
-    if (isVisible) disableScroll.on(window);
-    else disableScroll.off(window);
-    return () => {
-      disableScroll.off(window);
-    };
-  }, [isVisible]);
+  // useEffect(() => {
+  //   if (isVisible) disableScroll.on(window);
+  //   else disableScroll.off(window);
+  //   return () => {
+  //     disableScroll.off(window);
+  //   };
+  // }, [isVisible]);
 
   return (
     <Box>
       {loading && <LoadingComp />}
       <Box sx={containerStyles}>
         <AnimatePresence>
-          <motion.div
-            initial={false}
-            animate={{ opacity: opacity }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-          >
-            {isVisible && (
-              <Box sx={styles}>
-                <HomePageVideo />
-                <VideoText hideIt={hideIt} />
+          
+            
+              <Box >
+                {/* <HomePageVideo /> */}
+                {/* <VideoText hideIt={hideIt} /> */}
+                <Box>Hello</Box>
+                <Box>abcdefghijklmnopqrstuvwxyz</Box>
+                
               </Box>
-            )}
-          </motion.div>
+              
+            
+          
         </AnimatePresence>
-        <HomePageAbout />
       </Box>
+      <HomePageVideo />
+      <VideoText hideIt={hideIt} />
+      <HomePageAbout />
       <Contact />
     </Box>
   );

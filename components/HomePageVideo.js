@@ -7,7 +7,7 @@ const styles = {
   height: "100vh",
   overflow: "hidden",
   position: "absolute",
-  zIndex: 1,
+  zIndex: 0,
 
   "#bgVideo": {
     width: "100vw",
