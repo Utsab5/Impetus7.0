@@ -21,6 +21,28 @@ export default function SponsorsPage() {
       </Box>
       <Box sx={styles} className="center1">
         <Typography variant="h3">Hardware</Typography>
+        <div>
+          <img src="/images/Thyssenkrupp.png" alt="Image 1" className="image" />
+          <img src="/images/hero_vired.jpeg" alt="Image 2" className="image" />
+          <img src="/images/JSW-steel.png" alt="Image 2" className="image" />
+          <img
+            src="/images/TVS motor company.png"
+            alt="Image 2"
+            className="image"
+          />
+          <img
+            src="/images/Hero motocorp.webp"
+            alt="Image 2"
+            className="image"
+          />
+          <img src="/images/Hyundai.png" alt="Image 2" className="image" />
+          <img
+            src="/images/Royal-Enfield-Logo.jpg"
+            alt="Image 2"
+            className="image"
+          />
+          <img src="/images/Indian_Oil.png" alt="Image 2" className="image" />
+        </div>
       </Box>
       <Box sx={styles} className="center1">
         <Typography variant="h3">Food</Typography>
