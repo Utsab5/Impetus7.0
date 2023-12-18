@@ -1,6 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { useEffect, useState } from "react";
-
 export default function Countdown() {
   const [seconds, setSeconds] = useState(0);
   const [mins, setMins] = useState(0);
@@ -11,13 +10,11 @@ export default function Countdown() {
   const theme = useTheme();
 
   const deadline = "February, 9, 2024";
-  const end_deadline = "February, 11, 2024";  
-  // const deadline = "February, 17, 2023";
-  
+  const end_deadline = "February, 11, 2024";
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
     const endtime = Date.parse(end_deadline) - Date.now();
-    if (time <= 0  && endtime >= 0) setDead(true);
+    if (time <= 0 && endtime >= 0) setDead(true);
     else if (endtime < 0) setEnd(true);
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
@@ -50,7 +47,10 @@ export default function Countdown() {
   if (dead)
     return (
       <Box>
-        <Typography sx={{ margin: "50px" , zIndex:"2",position:"relative"}} variant="h2">
+        <Typography
+          sx={{ margin: "50px", zIndex: "2", position: "relative" }}
+          variant="h2"
+        >
           IS LIVE NOW!
         </Typography>
       </Box>
@@ -58,7 +58,10 @@ export default function Countdown() {
   else if (end)
     return (
       <Box>
-        <Typography sx={{ margin: "50px" , zIndex:"2",position:"relative"}} variant="h2">
+        <Typography
+          sx={{ margin: "50px", zIndex: "2", position: "relative" }}
+          variant="h2"
+        >
           HAS ENDED
         </Typography>
       </Box>
@@ -85,7 +88,7 @@ export default function Countdown() {
         </Box>
       </Box>
       <Typography
-        sx={{ margin: "20px 0", fontSize: "24px !important" , zIndex:"2"}}
+        sx={{ margin: "20px 0", fontSize: "24px !important", zIndex: "2" }}
         variant="h2"
       >
         TO START

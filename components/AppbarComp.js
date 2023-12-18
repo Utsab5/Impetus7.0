@@ -1,20 +1,15 @@
-import { AppBar, Toolbar } from "@mui/material";
+import { AppBar } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { useEffect, useState } from "react";
-import SideBarComp from "./SideBarComp";
-import NavbarComp from "./NavbarComp";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-
 const styles = {
   position: "absolute",
   width: "100vw",
   ".appbar": {
     backdropFilter: "blur(5px)",
     position: "relative",
-    // maxWidth: "1300px",
     padding: {
       lg: " 0 50px",
       md: "0 50px",
@@ -39,10 +34,9 @@ export default function AppbarComp() {
 
   const router = useRouter();
   const [top, setTop] = useState(true);
-  // const [width, setWidth] = useState(() => window.innerWidth); // Initial width
   const [width, setWidth] = useState(() =>
     typeof window !== "undefined" ? window.innerWidth : 0,
-  ); // Initial width
+  );
 
   const goToHome = () => {
     router.push("/home");
@@ -59,13 +53,6 @@ export default function AppbarComp() {
     }
   };
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleTop)
-  //   return () => {
-  //     window.removeEventListener('scroll', handleTop)
-  //   }
-  // }, [])
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleTop);
@@ -79,11 +66,7 @@ export default function AppbarComp() {
   }, []);
 
   const isMobile = width < 960;
-  // let width = window.innerWidth;
   console.log(width);
-
-  // console.log('isMobile:', isMobile);
-  // console.log('width:', width);
 
   return (
     <Box sx={styles} className="center2">
@@ -93,7 +76,6 @@ export default function AppbarComp() {
           mt: "30px",
           background: "transparent",
           backdropFilter: `${top ? "none" : "blur(10px)"}`,
-          // background: `${top ? 'none' : 'black'}`,
           position: "fixed",
           left: "50%",
           transform: "translateX(-50%)",
@@ -108,9 +90,6 @@ export default function AppbarComp() {
           height="70"
           className="logo"
         />
-        {/* ${width="20px"?<SideBarComp />:Menu} */}
-        {/* <SideBarComp /> */}
-        {/* <NavbarComp/> */}
         {isMobile ? <SideBarComp /> : <NavbarComp />}
       </AppBar>
     </Box>
