@@ -2,8 +2,11 @@ import { AppBar, Toolbar } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useEffect, useState } from 'react'
 import SideBarComp from './SideBarComp'
+import NavbarComp from './NavbarComp'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+
+import dynamic from 'next/dynamic';
 
 const styles = {
   position: 'absolute',
@@ -18,7 +21,7 @@ const styles = {
       sm: '0 30px',
       xs: '0 25px',
     },
-    paddingTop: '20px !important',
+    paddingTop: '10px !important',
     boxShadow: 'none',
     display: 'flex',
     flexDirection: 'row',
@@ -31,8 +34,18 @@ const styles = {
 }
 
 export default function AppbarComp() {
+
+
+  
+
+  const SideBarComp = dynamic(() => import('./SideBarComp'), { ssr: false });
+  const NavbarComp = dynamic(() => import('./NavbarComp'), { ssr: false });
+
+
   const router = useRouter()
   const [top, setTop] = useState(true)
+  // const [width, setWidth] = useState(() => window.innerWidth); // Initial width
+  const [width, setWidth] = useState(() => (typeof window !== 'undefined' ? window.innerWidth : 0)); // Initial width
 
   const goToHome = () => {
     router.push('/home')
@@ -43,14 +56,44 @@ export default function AppbarComp() {
     else setTop(false)
   }
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleTop)
-    return () => {
-      window.removeEventListener('scroll', handleTop)
+  const handleResize = () => {
+    if (typeof window !== 'undefined') {
+      setWidth(window.innerWidth);
     }
-  }, [])
+  };
 
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleTop)
+  //   return () => {
+  //     window.removeEventListener('scroll', handleTop)
+  //   }
+  // }, [])
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleTop);
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('scroll', handleTop);
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+  
+
+  
+
+
+  const isMobile = width < 960;
+  // let width = window.innerWidth;
+  console.log(width);
+  
+  // console.log('isMobile:', isMobile);
+  // console.log('width:', width);
+  
   return (
+    
     <Box
       sx={styles}
       className="center2"
@@ -60,10 +103,12 @@ export default function AppbarComp() {
         style={{
           mt: '30px',
           background: 'transparent',
-          backdropFilter: `${top ? 'none' : 'blur(5px)'}`,
+          backdropFilter: `${top ? 'none' : 'blur(10px)'}`,
+          // background: `${top ? 'none' : 'black'}`,
           position: 'fixed',
           left: '50%',
           transform: 'translateX(-50%)',
+          paddingBottom:"10px"
         }}
       >
         <Image
@@ -74,7 +119,10 @@ export default function AppbarComp() {
           height="70"
           className="logo"
         />
-        <SideBarComp />
+        {/* ${width="20px"?<SideBarComp />:Menu} */}
+        {/* <SideBarComp /> */}
+        {/* <NavbarComp/> */}
+        {isMobile ? <SideBarComp /> : <NavbarComp />}
       </AppBar>
     </Box>
   )

@@ -111,10 +111,12 @@ export default function AboutPage() {
       insta: "https://instagram.com/raagu_1237?igshid=ZDdkNTZiNTM=",
       link: "https://www.linkedin.com/in/raghavsingupuram",
     }};
+
+
   return (
     
 
-    <Box sx={styles} className="center1">
+    <Box sx={styles} className="center1" >
       <Box className="videos">
         <video
           onClick={toggleVolume}

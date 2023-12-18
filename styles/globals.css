@@ -39,6 +39,22 @@ p {
   flex-direction: row;
 }
 
+/*---------------------Date and Name above logo--------------------------------*/
+@media (max-width: 1200px) {
+  .date {
+    
+    top:34px !important;
+    width:370px !important;
+  }
+}
+@media (max-width: 900px) {
+  .date {
+    /* color:red; */
+    top:27px !important;
+    width:230px !important;
+  }
+}
+/*---------------------Date and Name above logo--------------------------------*/
 /*-----------------------------------------------------*/
 
 .pcard {
