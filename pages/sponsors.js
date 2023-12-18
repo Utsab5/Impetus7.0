@@ -1,6 +1,5 @@
-import { Typography, useTheme } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-
 
 export default function SponsorsPage() {
   const styles = {
@@ -8,12 +7,12 @@ export default function SponsorsPage() {
       mt: "100px",
       mb: "50px",
       fontSize: "48px",
-    }    
+    },
   };
-  
+
   return (
     <Box sx={styles} className="center1">
-      <Typography variant="h1">Sponsors</Typography>      
+      <Typography variant="h1">Sponsors</Typography>
     </Box>
   );
 }
