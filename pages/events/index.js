@@ -149,7 +149,7 @@ export default function EventPage() {
   }, []);
 
   return (
-    <Box className="center1">
+    <Box className="center1" style={{marginTop:"50px"}}>
       {/* {currIdx} */}
       <Box sx={styles}>
         <EventList setCurrIdx={setCurrIdx} />

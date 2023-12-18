@@ -62,7 +62,7 @@ export default function ExpoPage() {
   };
 
   return (
-    <Box sx={styles}>
+    <Box sx={styles} style={{paddingTop:"50px"}}>
       <BackgroundParticles />
       <Box className="VR">
         <Box className="center1 img">

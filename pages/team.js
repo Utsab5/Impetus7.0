@@ -416,7 +416,7 @@ export default function TeamPage() {
 
   return (
     <>
-      <Box sx={styles} className="center1">
+      <Box sx={styles} className="center1" style={{marginTop:"100px"}}>
         <Typography variant="h1">Contact Us</Typography>
         <br></br>
         <Box className="tabs">

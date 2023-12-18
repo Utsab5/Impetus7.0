@@ -74,10 +74,7 @@ export default function HomePage() {
             
               <Box >
                 {/* <HomePageVideo /> */}
-                {/* <VideoText hideIt={hideIt} /> */}
-                <Box>Hello</Box>
-                <Box>abcdefghijklmnopqrstuvwxyz</Box>
-                
+                {/* <VideoText hideIt={hideIt} /> */}               
               </Box>
               
             

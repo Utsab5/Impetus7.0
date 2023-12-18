@@ -58,20 +58,7 @@ export default function Contact() {
   return (
     <Box className="center1" sx={{ backgroundColor: "transparent" }}>
       <Box sx={styles} className="center1">
-        <Box className="nav">
-          <Link href="/home">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/events">Events</Link>
-          <Link href="/expo">Expo</Link>
-          <Link href="/sponsors">Sponsors</Link>
-          <Link href="/team">Team</Link>
-          <Link
-            style={{ gridColumn: "span 2", textAlign: "center" }}
-            href="/industryacademiameet"
-          >
-            Industry Acadameia Meet
-          </Link>
-        </Box>
+        
         <Box className="icons center2">
           <IconButton
             onClick={(event) =>

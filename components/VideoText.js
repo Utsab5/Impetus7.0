@@ -18,7 +18,7 @@ const styles = {
   },
   h4: {
     position:"relative",
-    m: "20px 0",
+    m: "10px 0",
     textAlign: "center",
     // overflowY: "hidden",
     fontSize: {
@@ -26,6 +26,19 @@ const styles = {
       md: "24px",
       sm: "18px",
       xs: "18px",
+    },
+    maxWidth: "80vw",
+  },
+  h5: {
+    position:"relative",
+    m: "20px 0",
+    textAlign: "center",
+    // overflowY: "hidden",
+    fontSize: {
+      lg: "22px",
+      md: "18px",
+      sm: "11px",
+      xs: "11px",
     },
     maxWidth: "80vw",
   },
@@ -38,6 +51,8 @@ const styles = {
   ".Heading": {
     zIndex: "10",
   },
+
+  
 };
 
 export default function VideoText({ hideIt }) {
@@ -45,15 +60,19 @@ export default function VideoText({ hideIt }) {
 
   return (
     <Box ref={scrollRef} sx={styles} className="center1" style={{marginTop:"5vh"}}>
+      <Box className="date" style={{display:"flex",top:"40px",position:"relative",justifyContent:"space-between",width:"550px"}}>
+        <Typography variant="h5">IIEST Shibpur's</Typography>
+        <Typography variant="h5">9th - 11th February</Typography>
+      </Box>
       <Typography variant="h1" className="Heading">
         IMPETUS
       </Typography>
       <Typography variant="h4" className="noMarginB">
-        Annual Techfest of Department of Mechanical Engineering,
+        Annual Techfest of Department of Mechanical Engineering
       </Typography>
-      <Typography variant="h4" className="noMarginT">
+      {/* <Typography variant="h4" className="noMarginT">
         IIEST Shibpur
-      </Typography>
+      </Typography> */}
       <Countdown />
       <Button onClick={hideIt} size="large" variant="outlined" primary>
         Enter

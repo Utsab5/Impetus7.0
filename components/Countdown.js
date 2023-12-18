@@ -7,14 +7,18 @@ export default function Countdown() {
   const [hours, setHours] = useState(0);
   const [days, setDays] = useState(0);
   const [dead, setDead] = useState(false);
+  const [end, setEnd] = useState(false);
   const theme = useTheme();
 
-  const deadline = "February, 17, 2024";
+  const deadline = "February, 9, 2024";
+  const end_deadline = "February, 11, 2024";  
   // const deadline = "February, 17, 2023";
-
+  
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
-    if (time <= 0) setDead(true);
+    const endtime = Date.parse(end_deadline) - Date.now();
+    if (time <= 0  && endtime >= 0) setDead(true);
+    else if (endtime < 0) setEnd(true);
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
     setMins(Math.floor((time / 1000 / 60) % 60));
@@ -48,6 +52,14 @@ export default function Countdown() {
       <Box>
         <Typography sx={{ margin: "50px" , zIndex:"2",position:"relative"}} variant="h2">
           IS LIVE NOW!
+        </Typography>
+      </Box>
+    );
+  else if (end)
+    return (
+      <Box>
+        <Typography sx={{ margin: "50px" , zIndex:"2",position:"relative"}} variant="h2">
+          HAS ENDED
         </Typography>
       </Box>
     );
