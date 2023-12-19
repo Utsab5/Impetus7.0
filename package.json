@@ -49,5 +49,10 @@
     "swipe-event-listener": "^1.2.1",
     "tsparticles": "^2.8.0",
     "tsparticles-preset-fire": "^2.8.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.7"
   }
 }

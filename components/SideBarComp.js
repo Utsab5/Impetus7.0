@@ -79,10 +79,17 @@ export default function SideBarComp() {
           <MenuIcon fontSize="large" />
         </IconButton>
         <Drawer
-          PaperProps={{ sx: { width: "500px", maxWidth: "80vw" } }}
+          PaperProps={{
+            sx: {
+              width: "500px",
+              maxWidth: "80vw",
+              backgroundColor: "#111827",
+            },
+          }}
           anchor="right"
           open={isDrawerOpen}
           onClose={toggleDrawer(false)}
+          className="bg-gray-800"
         >
           {list}
         </Drawer>

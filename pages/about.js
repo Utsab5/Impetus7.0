@@ -31,11 +31,9 @@ export default function AboutPage() {
       textAlign: "center",
     },
     "div .content": {
-      mt: "30px",
       maxWidth: "1000px",
       p: {
-        textIndent: "50px",
-        textAlign: "justify",
+        // textAlign: "justify",
         margin: "30px",
       },
       ".date": {
@@ -44,6 +42,12 @@ export default function AboutPage() {
         textIndent: "0",
         margin: "30px 0",
         fontSize: "32px",
+        fontSize: {
+          xs: "24px",
+        },
+        margin: {
+          xs: "5px auto",
+        },
       },
     },
     ".contact": {
@@ -92,7 +96,7 @@ export default function AboutPage() {
       videoRef.current?.pause();
     };
   }, []);
-  
+
   const person = {
     person1: {
       name: "Ayush Jaiswal",
@@ -102,21 +106,18 @@ export default function AboutPage() {
       insta: "https://instagram.com/ayushashokjaiswal?igshid=ZDdkNTZiNTM=",
       link: "https://www.linkedin.com/in/ayush-jaiswal-ab8a491a6",
     },
-    person2:
-    {
+    person2: {
       name: "S.V.S Sai Raghav",
       phone: "+91 9550994950",
       post: "Main Coordinator",
       imgname: "S.V.S_Sai_Raghav.jpg",
       insta: "https://instagram.com/raagu_1237?igshid=ZDdkNTZiNTM=",
       link: "https://www.linkedin.com/in/raghavsingupuram",
-    }};
-
+    },
+  };
 
   return (
-    
-
-    <Box sx={styles} className="center1" >
+    <Box sx={styles} className="center1">
       <Box className="videos">
         <video
           onClick={toggleVolume}
@@ -137,8 +138,8 @@ export default function AboutPage() {
           width="300"
           alt="SME"
         />
-        <Box className="content">
-          <Typography variant="p">
+        <div className="px-4 mx-auto max-w-screen-xl   lg:py-16 ">
+          <p className="lg:tracking-normal  relative sm:tracking-tight text-lg font-normal lg:text-xl sm:px-18 sm:text-xm text-justify rtl:text-right text-gray-300">
             Theoretical knowledge will serve no purpose until combined with
             skills and real-world knowledge. IMPETUS is an attempt to bring the
             industry closer to the students at IIEST, Shibpur. It is organized
@@ -150,28 +151,18 @@ export default function AboutPage() {
             practical knowledge, while they also give you a chance to interact
             with leading industry professionals in the field of mechanical
             engineering.<br></br>
-            <br></br>
             So, no matter where you come from, we will make sure you add a
-            feather to your cap on the way back.
-          </Typography>
-          <Typography variant="p">
-            {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            non aut qui id nam libero repellat molestias, fugit voluptates alias
-            perspiciatis? Numquam ad voluptas dolores ducimus ratione doloremque
-            a fugit. pturi, recusandae fugit. */}
-          </Typography>
-          <Typography className="date" variant="p">
-            17th Feb - 19th Feb
-          </Typography>
-        </Box>
+            feather to your cap on the way back.{" "}
+          </p>
+        </div>
       </Box>
       <Box>
         <ImageListComp />
       </Box>
       <Box className="aboutDept center1">
         <Image src="/images/SMEwhite.png" height="300" width="300" alt="SME" />
-        <Box className="content">
-          <Typography variant="p">
+        <div className="px-4 mx-auto max-w-screen-xl   lg:py-16  relative">
+          <p className="lg:tracking-normal tracking-tight text-lg font-normal lg:text-xl sm:px-18 sm:text-xm text-justify rtl:text-right text-gray-300">
             It was on 4th March, 1921, a diploma course on mechanical
             engineering was started and this was the beginning of the golden
             journey for the department. The first degree level course started on
@@ -194,19 +185,12 @@ export default function AboutPage() {
             industrial domain are often invited for delivering lectures and
             Industrial visits are also organised by the department for making
             the students aware about the modern developments in the industries.
-          </Typography>
-          <Typography variant="p">
-            {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            non aut qui id nam libero repellat molestias, fugit voluptates alias
-            perspiciatis? Numquam ad voluptas dolores ducimus ratione doloremque
-            a fugit. pturi, recusandae fugit. */}
-          </Typography>
-        </Box>
+          </p>
+        </div>
       </Box>
       <Box className="contact">
-        <ContactCard person={person.person1}/>
-        <ContactCard person={person.person2}/>
-        
+        <ContactCard person={person.person1} />
+        <ContactCard person={person.person2} />
       </Box>
       <Contact />
     </Box>
