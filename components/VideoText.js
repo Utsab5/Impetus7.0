@@ -1,8 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Countdown from "../components/Countdown";
-
 const styles = {
   height: "95vh",
   width: "100vw",
@@ -17,10 +16,9 @@ const styles = {
     overflowY: "hidden",
   },
   h4: {
-    position:"relative",
+    position: "relative",
     m: "10px 0",
     textAlign: "center",
-    // overflowY: "hidden",
     fontSize: {
       lg: "24px",
       md: "24px",
@@ -30,10 +28,9 @@ const styles = {
     maxWidth: "80vw",
   },
   h5: {
-    position:"relative",
+    position: "relative",
     m: "20px 0",
     textAlign: "center",
-    // overflowY: "hidden",
     fontSize: {
       lg: "22px",
       md: "18px",
@@ -51,17 +48,29 @@ const styles = {
   ".Heading": {
     zIndex: "10",
   },
-
-  
 };
 
 export default function VideoText({ hideIt }) {
   const scrollRef = useRef(null);
 
   return (
-    <Box ref={scrollRef} sx={styles} className="center1" style={{marginTop:"5vh"}}>
-      <Box className="date" style={{display:"flex",top:"40px",position:"relative",justifyContent:"space-between",width:"550px"}}>
-        <Typography variant="h5">IIEST Shibpur's</Typography>
+    <Box
+      ref={scrollRef}
+      sx={styles}
+      className="center1"
+      style={{ marginTop: "5vh" }}
+    >
+      <Box
+        className="date"
+        style={{
+          display: "flex",
+          top: "40px",
+          position: "relative",
+          justifyContent: "space-between",
+          width: "550px",
+        }}
+      >
+        <Typography variant="h5">IIEST Shibpur&apos;s</Typography>
         <Typography variant="h5">9th - 11th February</Typography>
       </Box>
       <Typography variant="h1" className="Heading">
@@ -70,9 +79,6 @@ export default function VideoText({ hideIt }) {
       <Typography variant="h4" className="noMarginB">
         Annual Techfest of Department of Mechanical Engineering
       </Typography>
-      {/* <Typography variant="h4" className="noMarginT">
-        IIEST Shibpur
-      </Typography> */}
       <Countdown />
       <Button onClick={hideIt} size="large" variant="outlined" primary>
         Enter

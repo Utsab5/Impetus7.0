@@ -1,17 +1,14 @@
 import { useState, useEffect } from "react";
-import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const styles = {
-  height: "400px",
+  height: "300px",
   width: "400px",
   img: {
-    margin: "10px",
+    margin: "8px",
   },
   "div h4": {
     margin: "10px",
@@ -36,10 +33,9 @@ const ContactCard = ({ person }) => {
   const toggleHover = () => setHover(!hover);
 
   return (
-    <Box sx={styles} className="pcard">
+    <Box sx={styles} className="pcard bg-gray-900  ">
       <Image
         className={`profile ${hover ? "profileHover" : ""}`}
-        // ({person.imgname}="#")?
         onMouseEnter={onHover}
         onClick={toggleHover}
         onMouseLeave={offHover}
@@ -49,18 +45,12 @@ const ContactCard = ({ person }) => {
         height="200"
         width="200"
       />
-
       <Box className="title">
-        <Typography variant="h3" fontSize="25px">
-          {person.name}
-        </Typography>
-        <Typography variant="h4" fontSize="18px">
-          {person.post}
-        </Typography>
-
-        <Typography varint="h5" fontSize="16px">
-          {person.phone}
-        </Typography>
+        <h5 className=" text-xl font-medium text-gray-50 ">{person.name} </h5>
+        <span className="text-[14px]  text-gray-300">{person.post}</span>
+        <h5 className=" text-[16px] font-medium text-gray-100 ">
+          {person.phone}{" "}
+        </h5>
       </Box>
 
       <Box
@@ -69,9 +59,6 @@ const ContactCard = ({ person }) => {
         onMouseLeave={offHover}
         className={`text ${hover ? "textHover" : ""}`}
       >
-        {/* <a href="#">
-          <FacebookIcon />
-        </a> */}
         <a href={person.insta}>
           <InstagramIcon />
         </a>

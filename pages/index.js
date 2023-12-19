@@ -1,17 +1,15 @@
-import { Box, duration, Typography } from "@mui/material";
-import React, { useEffect, useRef, useState } from "react";
+import { Box } from "@mui/material";
+import { AnimatePresence } from "framer-motion";
+import { Router } from "next/router";
+import React, { useEffect, useState } from "react";
+import Contact from "../components/Contact";
 import HomePageAbout from "../components/HomePageAbout";
 import HomePageVideo from "../components/HomePageVideo";
-import VideoText from "../components/VideoText";
-import { motion, AnimatePresence } from "framer-motion";
-import Contact from "../components/Contact";
-import { Router } from "next/router";
-import disableScroll from "disable-scroll";
-import { useLoading } from "../components/LoadingContext";
 import LoadingComp from "../components/LoadingComp";
+import { useLoading } from "../components/LoadingContext";
+import VideoText from "../components/VideoText";
 
 const styles = {
-  
   minHeight: "100vh",
   minWidth: "100vw",
 };
@@ -70,15 +68,10 @@ export default function HomePage() {
       {loading && <LoadingComp />}
       <Box sx={containerStyles}>
         <AnimatePresence>
-          
-            
-              <Box >
-                {/* <HomePageVideo /> */}
-                {/* <VideoText hideIt={hideIt} /> */}               
-              </Box>
-              
-            
-          
+          <Box>
+            {/* <HomePageVideo /> */}
+            {/* <VideoText hideIt={hideIt} /> */}
+          </Box>
         </AnimatePresence>
       </Box>
       <HomePageVideo />
