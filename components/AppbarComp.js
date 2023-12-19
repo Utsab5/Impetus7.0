@@ -87,7 +87,7 @@ export default function AppbarComp() {
 
   const isMobile = width < 960;
   // let width = window.innerWidth;
-  console.log(width);
+  // console.log(width);
   
   // console.log('isMobile:', isMobile);
   // console.log('width:', width);

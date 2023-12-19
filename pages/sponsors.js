@@ -12,8 +12,10 @@ export default function SponsorsPage() {
   };
   
   return (
-    <Box sx={styles} className="center1">
-      <Typography variant="h1">Sponsors</Typography>      
+    <Box sx={styles} className="center1" style={{marginTop:"100px"}}
+    >
+      {/* <Typography variant="h1">Sponsors</Typography>       */}
+      <Typography variant="h1" style={{height:"60px"}}>Coming Soon...</Typography>      
     </Box>
   );
 }
