@@ -58,7 +58,7 @@ export default function SideBarComp() {
           <ListItem key={text} disablePadding>
             <ListItemButton onClick={() => goToPage(text)}>
               <ListItemIcon></ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={text.toString()} />
             </ListItemButton>
           </ListItem>
         ))}
