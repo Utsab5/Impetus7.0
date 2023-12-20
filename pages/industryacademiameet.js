@@ -221,7 +221,7 @@ export default function IAMPage() {
 
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 ">
           <div className="flex justify-center flex-col items-center gap-y-2">
-            <h1 className="md:text-3xl text-gray-900 dark:text-white font-bold">
+            <h1 className="md:text-3xl text-white font-bold">
               Benifits for the Institute
             </h1>
 
@@ -235,7 +235,7 @@ export default function IAMPage() {
                 </button>
               </h2>
               <h2 id="accordion-arrow-icon-heading-3">
-                <button class="flex items-center justify-between w-full p-5 font-medium rtl:text-right  border focus:ring-gray-200 focus:ring-gray-800 border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3">
+                <button class="flex items-center justify-between w-full p-5 font-medium rtl:text-right  border focus:ring-gray-200 focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-800 gap-3">
                   <span className=" text-left">
                     Learn the basic fundamentals and the newest trends in campus
                     hiring
@@ -243,7 +243,7 @@ export default function IAMPage() {
                 </button>
               </h2>
               <h2 id="accordion-arrow-icon-heading-3">
-                <button class="flex items-center justify-between w-full p-5 font-medium rtl:text-right  border focus:ring-gray-800 border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3">
+                <button class="flex items-center justify-between w-full p-5 font-medium rtl:text-right  border focus:ring-gray-800 border-gray-700 text-gray-400  hover:bg-gray-800 gap-3">
                   <span className=" text-left">
                     To showcase the technical prowess of the institute and their
                     success stories to the recruiters
@@ -251,7 +251,7 @@ export default function IAMPage() {
                 </button>
               </h2>
               <h2 id="accordion-arrow-icon-heading-3">
-                <button class="flex  justify-between w-full p-5 font-medium border focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3">
+                <button class="flex  justify-between w-full p-5 font-medium border focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-800 gap-3">
                   <span className=" text-left">
                     An effort to change the landscape of campus recruitment in
                     the pool of campus talent and remodel training and
@@ -261,14 +261,14 @@ export default function IAMPage() {
                 </button>
               </h2>
               <h2 id="accordion-arrow-icon-heading-3">
-                <button class="flex items-center justify-between w-full p-5 font-medium rtl:text-right  border focus:ring-gray-800 border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3">
+                <button class="flex items-center justify-between w-full p-5 font-medium rtl:text-right  border focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-800 gap-3">
                   <span className=" text-left">
                     Way to enable students to choose the most relevant job
                   </span>
                 </button>
               </h2>
               <h2 id="accordion-arrow-icon-heading-3">
-                <button class="flex items-center rounded-b-lg justify-between w-full p-5 font-medium rtl:text-right  border  focus:ring-gray-800 border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3">
+                <button class="flex items-center rounded-b-lg justify-between w-full p-5 font-medium rtl:text-right  border  focus:ring-gray-800 border-gray-700 text-gray-400 hover:bg-gray-800 gap-3">
                   <span className=" text-left">
                     Develop a better employment ecosystem which is a win-win for
                     the students, institute and corporate.
