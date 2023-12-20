@@ -66,7 +66,6 @@ export default function AppbarComp() {
   }, []);
 
   const isMobile = width < 960;
-  console.log(width);
 
   return (
     <Box sx={styles} className="center2">
