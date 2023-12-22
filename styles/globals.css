@@ -229,29 +229,33 @@ p {
 }
 /* ----------Sponsorship------------ */
 .image-container {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: -10px;
 }
 
 .image {
-  width: calc(33.33% - 20px);
-  border-radius: 50%;
+  width: 150px;
+  border-radius: 30%;
   object-fit: contain;
   height: 150px;
-  margin: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 25px;
 }
 
 /* Media queries for responsive design */
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .image {
-    width: calc(33.33% - 20px); /* Three columns for tablet 
+    width: 150px;
+    height: 150px; /* Three columns for tablet */
   }
-} */
+}
 
 @media (max-width: 768px) {
   .image {
-    width: calc(50% - 20px);
+    width: 150px;
+    height: 150px;
   }
 }

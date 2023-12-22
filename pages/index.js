@@ -9,9 +9,19 @@ import { Router } from "next/router";
 import disableScroll from "disable-scroll";
 import { useLoading } from "../components/LoadingContext";
 import LoadingComp from "../components/LoadingComp";
+import eventC from "./eventCarousel";
+
+const eventsData = [
+  {
+    id: 1,
+    name: "Event 1",
+    imageUrl: "/images/anacafe.png",
+    // Other event details
+  },
+  // Add more events as needed
+];
 
 const styles = {
-  
   minHeight: "100vh",
   minWidth: "100vw",
 };
@@ -67,21 +77,16 @@ export default function HomePage() {
 
   return (
     <Box>
+      <eventC events={eventsData} />
       {loading && <LoadingComp />}
       <Box sx={containerStyles}>
         <AnimatePresence>
-          
-            
-              <Box >
-                {/* <HomePageVideo /> */}
-                {/* <VideoText hideIt={hideIt} /> */}
-                <Box>Hello</Box>
-                <Box>abcdefghijklmnopqrstuvwxyz</Box>
-                
-              </Box>
-              
-            
-          
+          <Box>
+            {/* <HomePageVideo /> */}
+            {/* <VideoText hideIt={hideIt} /> */}
+            <Box>Hello</Box>
+            <Box>abcdefghijklmnopqrstuvwxyz</Box>
+          </Box>
         </AnimatePresence>
       </Box>
       <HomePageVideo />
