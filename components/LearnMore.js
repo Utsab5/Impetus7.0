@@ -14,7 +14,7 @@ export default function LearnMore({ link }) {
   };
 
   return (
-    <Typography onClick={changePage} sx={styles}>
+    <Typography className="mt-1" onClick={changePage} sx={styles}>
       Learn More ↗
     </Typography>
   );

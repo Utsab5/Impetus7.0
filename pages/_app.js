@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import { CacheProvider } from "@emotion/react";
-import { ThemeProvider, CssBaseline, Box } from "@mui/material";
-
-import createEmotionCache from "../utility/createEmotionCache";
-import "../styles/globals.css";
-import darkTheme from "../styles/theme/darkTheme";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import Head from "next/head";
+import { Router } from "next/router";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 import AppbarComp from "../components/AppbarComp";
 import LoadingComp from "../components/LoadingComp";
-import { Router } from "next/router";
 import { LoadingStateProvider } from "../components/LoadingContext";
-import Head from "next/head";
-
+import "../styles/globals.css";
+import darkTheme from "../styles/theme/darkTheme";
+import createEmotionCache from "../utility/createEmotionCache";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const clientSideEmotionCache = createEmotionCache();
-
 const MyApp = (props) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   const [loading, setLoading] = useState(false);
-
   const startLoading = () => setLoading(true);
   const stopLoading = () => setLoading(false);
-
   useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
     window.addEventListener("loadstart", startLoading);
     window.addEventListener("load", stopLoading);
     Router.events.on("routeChangeStart", startLoading);

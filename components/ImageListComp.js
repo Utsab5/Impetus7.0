@@ -3,14 +3,13 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
-import StarBorderIcon from "@mui/icons-material/StarBorder";
-import { repeat } from "lodash";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${width * cols}&h=${height * rows}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${width * cols}&h=${height * rows
-      }&fit=crop&auto=format&dpr=2 2x`,
+    srcSet: `${image}?w=${width * cols}&h=${
+      height * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
   };
 }
 
@@ -20,7 +19,7 @@ const styles = {
   maxHeight: "90vh",
   maxWidth: "90vw",
   transform: "translateZ(0)",
-  margin: "30px 0",
+  margin: "10px 0",
   gridTemplateColumns: {
     lg: "repeat(12,1fr) !important",
     md: "repeat(12,1fr) !important",
@@ -53,8 +52,8 @@ export default function ImageListComp() {
               position="top"
               actionIcon={
                 <IconButton
-                  // sx={{ color: "white" }}
-                  // aria-label={`star ${item.title}`}
+                // sx={{ color: "white" }}
+                // aria-label={`star ${item.title}`}
                 >
                   {/* <StarBorderIcon /> */}
                 </IconButton>

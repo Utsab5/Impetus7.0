@@ -1,27 +1,31 @@
-import * as React from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import { IconButton } from "@mui/material";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function SideBarComp() {
-  const [state, setState] = React.useState(false);
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
   const router = useRouter();
 
   const goToPage = (key) => {
     const pg = key.split(" ").join("").toLowerCase();
-    router.push({
-      pathname: "/[a]",
-      query: { a: pg },
-    });
-    // router.push(key.toLowerCase());
+    const currentPath = router.asPath;
+    if (currentPath !== `/${pg}`) {
+      router.push({
+        pathname: "/[a]",
+        query: { a: pg },
+      });
+      setDrawerOpen(false);
+    } else {
+      setDrawerOpen(false);
+    }
   };
 
   const toggleDrawer = (open) => (event) => {
@@ -32,14 +36,14 @@ export default function SideBarComp() {
       return;
     }
 
-    setState(open);
+    setDrawerOpen(open);
   };
 
-  const list = () => (
+  const list = (
     <Box
-      role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
+      role="presentation"
     >
       <List>
         {[
@@ -51,10 +55,10 @@ export default function SideBarComp() {
           "Sponsors",
           "Team",
         ].map((text, index) => (
-          <ListItem onClick={() => goToPage(text)} key={text} disablePadding>
-            <ListItemButton>
+          <ListItem key={text} disablePadding>
+            <ListItemButton onClick={() => goToPage(text)}>
               <ListItemIcon></ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={text.toString()} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -75,12 +79,19 @@ export default function SideBarComp() {
           <MenuIcon fontSize="large" />
         </IconButton>
         <Drawer
-          PaperProps={{ sx: { width: "500px", maxWidth: "80vw" } }}
+          PaperProps={{
+            sx: {
+              width: "500px",
+              maxWidth: "80vw",
+              backgroundColor: "#111827",
+            },
+          }}
           anchor="right"
-          open={state}
+          open={isDrawerOpen}
           onClose={toggleDrawer(false)}
+          className="bg-gray-800"
         >
-          {list()}
+          {list}
         </Drawer>
       </React.Fragment>
     </div>

@@ -49,7 +49,7 @@ const styles = {
     },
   },
   ".terms p": {
-    mt: "7px",
+    mt: "5px",
     mb: "40px",
   },
 };
@@ -58,20 +58,6 @@ export default function Contact() {
   return (
     <Box className="center1" sx={{ backgroundColor: "transparent" }}>
       <Box sx={styles} className="center1">
-        <Box className="nav">
-          <Link href="/home">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/events">Events</Link>
-          <Link href="/expo">Expo</Link>
-          <Link href="/sponsors">Sponsors</Link>
-          <Link href="/team">Team</Link>
-          <Link
-            style={{ gridColumn: "span 2", textAlign: "center" }}
-            href="/industryacademiameet"
-          >
-            Industry Acadameia Meet
-          </Link>
-        </Box>
         <Box className="icons center2">
           <IconButton
             onClick={(event) =>
@@ -115,10 +101,9 @@ export default function Contact() {
             Meet the team
           </Link>
 
-          <em style={{ margin: "10px 0 30px 0" , textAlign:"center"}}>
+          <em style={{ margin: "10px 0 30px 0", textAlign: "center" }}>
             Copyright © 2023 - All rights reserved by Impetus
           </em>
-          {/* <p>Meet The Team</p> */}
         </Box>
       </Box>
     </Box>
