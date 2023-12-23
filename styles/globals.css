@@ -233,3 +233,35 @@ p {
 .MuiTabs-indicator {
   display: none;
 }
+/* ----------Sponsorship------------ */
+.image-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -10px;
+}
+
+.image {
+  width: 150px;
+  border-radius: 30%;
+  object-fit: contain;
+  height: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .image {
+    width: 150px;
+    height: 150px; /* Three columns for tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+}
