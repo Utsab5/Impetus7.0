@@ -110,7 +110,7 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             Valorant has found an exponentially rising popularity amid the
             youngsters today. So for the grand gaming event of Impetus 6, we
             bring to you a Valorant tournament, where teams of 5 each, lock

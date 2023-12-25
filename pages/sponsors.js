@@ -1,5 +1,6 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
+
 const Food = [
   { image: "/images/anacafe.png", name: "image1" },
   { image: "/images/Bancharam.png", name: "image2" },
@@ -59,7 +60,7 @@ export default function SponsorsPage() {
         <Typography variant="h3">Food</Typography>
         <div className="image-container">
           {Food.map((s) => (
-            <img src={s.image} alt={s.name} className="image" />
+            <img key={s.name} src={s.image} alt={s.name} className="image" />
           ))}
         </div>
       </Box>
@@ -102,3 +103,4 @@ export default function SponsorsPage() {
     </>
   );
 }
+

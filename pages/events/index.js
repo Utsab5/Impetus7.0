@@ -1,12 +1,12 @@
 import { useTheme } from "@emotion/react";
 import { Box } from "@mui/system";
-import EventDescription from "../../components/EventDescription";
-import EventList from "../../components/EventList";
 import disableScroll from "disable-scroll";
-import { useEffect, useRef, useState } from "react";
 import lodash from "lodash";
+import { useEffect, useRef, useState } from "react";
 import { SwipeEventListener } from "swipe-event-listener";
+import EventDescription from "../../components/EventDescription";
 import EventDots from "../../components/EventDots";
+import EventList from "../../components/EventList";
 
 export default function EventPage() {
   const theme = useTheme();

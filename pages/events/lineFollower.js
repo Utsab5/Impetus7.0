@@ -1,11 +1,11 @@
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Button, IconButton, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Contact from "../../components/Contact";
 import ContactCard from "../../components/ContactCard";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { useRouter } from "next/router";
 import EventMag from "../../components/EventManagement";
 
 const imageStyles = {
@@ -113,7 +113,7 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             This competition aims to build a robot that can automatically
             maneuver over the lines made on a flat surface
           </Typography>
@@ -135,7 +135,7 @@ export default function CadathonPage() {
         </Box>
         <Box className="data">
           <Typography variant="h2">Objective</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             Reach the final destination with minimum loss of aggregates and time
             while tracking the path.
           </Typography>
@@ -178,7 +178,7 @@ export default function CadathonPage() {
             </li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             Line follower bot is going to be held in 2 rounds. Candidates
             qualified from the first round can only participate in second round
             (No lateral entry allowed).
