@@ -93,7 +93,7 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             Impetus 6.0 brings to you a proper carnival game of skill. Dodge
             between one bunker to another to make a lead over others . Test the
             cognitive and hand coordination in breaking down the complete
@@ -102,7 +102,6 @@ export default function CadathonPage() {
             event. If you can manage all these , some prizes are surely waiting
             for you.
           </Typography>
-          {/* <Typography variant="p">Date: 01/02/03 05:06pm</Typography> */}
           <Typography variant="h2">Lazer Maze Game</Typography>
           <Typography variant="p">
             Imagine being in utter darkness, smoke all around and you are

@@ -110,7 +110,7 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             This event organized by ASME IIEST, aims to give you all the
             excitement of treasure hunt. You can look forward to having fun
             while solving mysteries together and hunting down simple machines in
@@ -134,7 +134,7 @@ export default function CadathonPage() {
         </Box>
         <Box className="data">
           <Typography variant="h2">Objective</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             Teams will be provided with 10 riddles, which needs to be solved one
             after another. The answer to the riddles will be simple
             machines/mechanisms found in campus, which they need to click
@@ -149,9 +149,7 @@ export default function CadathonPage() {
             </li>
             <li>Pre-requirements – WhatsApp, moderate internet connection</li>
             <li>Participation – team of 2-3 members</li>
-            {/* <li>Platform – Gallery 5, Department of Mechanical Engineering</li> */}
             <li>No. of Rounds – 1</li>
-            {/* <li>Duration of event – 2 hours approximately</li> */}
             <li>
               Prizes worth <b>Rs.10000/-</b>
             </li>

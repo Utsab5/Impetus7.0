@@ -110,7 +110,7 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             To instil the essence of quizzing, IMechE IIEST, Shibpur brings to
             you a Grand General Technical Quiz: &quot;Quizzical Suspects&quot;
             under the banner of Impetus 6.0.
@@ -192,7 +192,7 @@ export default function CadathonPage() {
             </li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             The quiz will be a short format quiz held in two rounds. The
             questions will be a general quiz with plenty of hints for working
             out the answers with intelligent guesses. The quizmaster has

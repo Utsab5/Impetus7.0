@@ -112,7 +112,7 @@ export default function ExpoPage() {
       </div>
       <div className="grid md:grid-cols-2 md:gap-8 gap-1 md:py-20 py-10">
         <div className=" flex flex-col justify-center  lg:items-end items-center text-lg font-normal text-gray-300 mb-4 md:order-1 order-2">
-          <h2 className="text-blue-400 md:text-3xl font-bold text-2xl md:text-left self-center md:mr-10  text-center md-font-extrabold mb-2">
+          <h2 className="text-blue-400 md:text-3xl font-bold text-2xl md:text-left self-center md:ml-16  text-center md-font-extrabold mb-2">
             Electric Vehicle Expo
           </h2>
           <p className="text-left px-3 md:w-2/3 leading-7  md:px-0 ">

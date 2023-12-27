@@ -109,7 +109,7 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             HEATOVATION is an event organized by the Impetus 6.0 which invites
             participation from students with entrepreneurial/ problem-solving
             mindsets in the field of HVAC pan India. It would require its
@@ -123,7 +123,7 @@ export default function CadathonPage() {
         </Box>
         <Box className="data">
           <Typography variant="h2">Problem Statement</Typography>
-          <Typography sx={{ textIndent: "60px" }} style={{}} variant="p">
+          <Typography sx={{}} style={{}} variant="p">
             <ul className="bulletArrow">
               <li>
                 <ul className="BulletNone">
@@ -164,7 +164,7 @@ export default function CadathonPage() {
             </Box>
           </Typography>
           <Typography variant="h2">Objective</Typography>
-          <Typography sx={{ textIndent: "60px" }} style={{}} variant="p">
+          <Typography sx={{}} style={{}} variant="p">
             <ul className="bulletArrow">
               <li>
                 <ul className="BulletNone">
@@ -240,7 +240,7 @@ export default function CadathonPage() {
             </li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             The following event occur in two rounds. The first round will be an
             online pitch deck submission. You have to upload the presentation
             along with an abstract of the presentation on the given form link
@@ -405,11 +405,6 @@ export default function CadathonPage() {
                 </ul>
               </li>
             </ul>
-            {/* <Box sx={{ width: "100%" }} className="center1">
-              <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
-                Register Now
-              </Button>
-            </Box> */}
           </Box>
           <Typography
             variant="h2"
