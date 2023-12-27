@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./global.css";
 const Fintech = [
   { image: "https://placekitten.com/150/150", name: "image1" },
   { image: "https://placekitten.com/150/151", name: "image2" },

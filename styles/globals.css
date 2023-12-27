@@ -316,7 +316,7 @@ img:hover {
   background-color: blue;
   /* Set your desired background color for the button */
   border-radius: 15px;
-  color: #fff; /* Set your desired text color for the button */
+  color: #fff; /* Set your desired text colo for the button */
   opacity: 0;
   transition: opacity 0.3s ease;
   cursor: pointer;
