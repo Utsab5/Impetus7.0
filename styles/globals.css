@@ -228,6 +228,13 @@ p {
   display: none;
 }
 /* ----------Sponsorship------------ */
+.Sponsors_heading {
+  font-family: "Your Desired Font", sans-serif; /* Replace 'Your Desired Font' with the actual font name you want to use */
+  font-weight: bold;
+  font-size: 36px; /* Adjust the font size as needed */
+  text-align: center;
+  color: #333;
+}
 .image-container {
   display: inline-flex;
   flex-wrap: wrap;
@@ -237,11 +244,12 @@ p {
 
 .image {
   width: 150px;
-  border-radius: 30%;
+  height: 70px;
+  border-radius: auto;
   object-fit: contain;
-  height: 150px;
   margin-right: 100px;
   margin-left: 100px;
+  /*Upto 96 it should be downloaded*/
   margin-bottom: 25px;
 }
 
@@ -249,13 +257,89 @@ p {
 @media (max-width: 1024px) {
   .image {
     width: 150px;
-    height: 150px; /* Three columns for tablet */
+    /* Three columns for tablet */
   }
 }
 
 @media (max-width: 768px) {
   .image {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
   }
+}
+/* --------------eventsCarousel.css---------- */
+.gallery-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.image-item {
+  width: 200px;
+  height: 175px;
+  object-fit: cover;
+  margin-top: 15px;
+  margin-right: 0px;
+  animation: moveImages 20s linear infinite;
+  transition: transform 0.3s, width 0.3s, height 0.3s;
+}
+
+.image-item:hover,
+.gallery-container:hover .image-item {
+  animation-play-state: paused;
+}
+img {
+  height: 150px;
+  width: 150px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+img:hover {
+  transform: scale(1.15);
+  transition: transform 0.5s;
+}
+
+.register-button {
+  position: absolute;
+  /* bottom: 0px; */
+  left: 35%;
+  transform: translateX(-50%);
+  padding: 10px;
+  margin-top: 112px;
+  background-color: blue;
+  /* Set your desired background color for the button */
+  border-radius: 15px;
+  color: #fff; /* Set your desired text color for the button */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.image-item:hover .register-button {
+  opacity: 1;
+}
+
+@keyframes moveImages {
+  0% {
+    transform: translateX(calc(-100px * 13));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideshow-container {
+  text-align: center;
+}
+
+.events-title {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
