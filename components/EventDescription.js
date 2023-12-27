@@ -14,7 +14,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "div h2": {
       fontSize: "40px",
       fontWeight: "700",
-      marginBottom: "30px",
+      marginBottom: "13px",
       letterSpacing: "2px",
     },
     "div span": {
@@ -39,11 +39,9 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
       },
     },
     scrollSnapAlign: "center",
-    // margin: "200px 0",
   };
 
   const handleScroll = () => {
-    // ref.current.scrollIntoView(true);
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -100,7 +98,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     quiz,
     deathrace,
     lineFollower,
-    
+
     valorant,
     fun,
   ];
@@ -108,13 +106,17 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   return (
     <Box ref={ref} sx={styles}>
       <Box>
-        <Typography ref={headingRef} variant="h2">
+        <h1
+          ref={headingRef}
+          class="mb-4 text-2xl font-extrabold tracking-tight xs:text-center leading-none text-white  lg:text-4xl"
+        >
           {heading[currIdx % 9]}
-        </Typography>
-        <Typography variant="p">{content[currIdx % 9]}</Typography>
-        <LearnMore link={`/events/${link[currIdx % 9]}`} />
+        </h1>
 
-        {/* `url(/images/${images[currIdx%8]}) */}
+        <p className="lg:tracking-normal  relative sm:tracking-tight text-lg font-normal lg:text-xl sm:px-18 sm:text-xm text-justify rtl:text-right text-gray-300">
+          {content[currIdx % 9]}
+        </p>
+        <LearnMore link={`/events/${link[currIdx % 9]}`} />
       </Box>
     </Box>
   );

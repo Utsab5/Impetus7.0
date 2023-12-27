@@ -36,7 +36,7 @@ export default function CarouselComp() {
 
   const styles2 = {
     width: "100vw",
-    mt: "100px",
+    mt: "120px",
   };
 
   return (

@@ -141,7 +141,7 @@ export default function EventPage() {
     });
     swipeArea.addEventListener("swipeUp", () => handleDebounceScroll(-1, true));
     swipeArea.addEventListener("swipeDown", () =>
-      handleDebounceScroll(1, true)
+      handleDebounceScroll(1, true),
     );
     return () => {
       disableScroll.off();
@@ -149,10 +149,10 @@ export default function EventPage() {
   }, []);
 
   return (
-    <Box className="center1">
+    <Box className="center1" style={{ marginTop: "50px" }}>
       {/* {currIdx} */}
       <Box sx={styles}>
-        <EventList setCurrIdx={setCurrIdx} />
+        <EventList setCurrIdx={setCurrIdx} currIdx={currIdx} />
         <EventDots currIdx={currIdx} setCurrIdx={setCurrIdx} />
         <Box ref={descRef} className="descWrapper">
           <EventDescription
@@ -200,7 +200,6 @@ export default function EventPage() {
             setCurrIdx={setCurrIdx}
             currIdx={currIdx}
           />
-          
         </Box>
       </Box>
     </Box>

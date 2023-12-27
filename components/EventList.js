@@ -1,7 +1,7 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 
-export default function EventList({ setCurrIdx }) {
+export default function EventList({ setCurrIdx, currIdx }) {
   const theme = useTheme();
 
   const styles = {
@@ -18,12 +18,7 @@ export default function EventList({ setCurrIdx }) {
       fontWeight: "400",
       margin: "20px 0",
     },
-    "div h4": {
-      pl: "42px",
-      fontSize: "16px",
-      margin: "10px 0",
-      cursor: "pointer",
-    },
+    "div h4": {},
   };
 
   const events = [
@@ -44,9 +39,15 @@ export default function EventList({ setCurrIdx }) {
         <Typography variant="h1">Events</Typography>
         {events.map((eve, idx) => {
           return (
-            <Typography onClick={() => setCurrIdx(idx)} key={eve} variant="h4">
+            <p
+              className={`tracking-normal cursor-pointer text-xl font-normal py-1 ${
+                currIdx === idx ? "text-slate-50 text-2xl" : "text-gray-400"
+              }`}
+              onClick={() => setCurrIdx(idx)}
+              key={eve}
+            >
               {eve}
-            </Typography>
+            </p>
           );
         })}
       </Box>
