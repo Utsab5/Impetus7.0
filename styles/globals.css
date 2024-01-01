@@ -301,16 +301,16 @@ p {
 .gallery-container:hover .image-item {
   animation-play-state: paused;
 }
-img {
+/* img {
   height: 150px;
   width: 150px;
-  border: 2px solid white;
+  /* border: 2px solid white; 
   border-radius: 10px;
 }
 img:hover {
   transform: scale(1.15);
   transition: transform 0.5s;
-}
+} */
 
 .register-button {
   position: absolute;
