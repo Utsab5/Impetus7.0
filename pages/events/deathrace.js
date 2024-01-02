@@ -117,10 +117,10 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <p className="text-lg font-normal text-gray-200  ">
             This competition aims to build a robot that can be manually
             controlled to maneuver across a track with different obstacle.
-          </Typography>
+          </p>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates:
@@ -149,7 +149,7 @@ export default function CadathonPage() {
         </Box>
         <Box className="data">
           <Typography variant="h2">Objective</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             Reach the limit line with minimum penalties in the least possible
             time.
           </Typography>
@@ -169,8 +169,7 @@ export default function CadathonPage() {
             </li>
             <li>
               <ul className="BulletNone">
-                <li>Participation:- Team of 2-5 members
-                </li>
+                <li>Participation:- Team of 2-5 members</li>
               </ul>
             </li>
             <li>
@@ -192,12 +191,11 @@ export default function CadathonPage() {
               </ul>
             </li>
           </ul>
-          <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <p className="text-lg font-normal text-gray-200  ">
             Death Race is going to be held in 2 rounds. Candidates qualified
             from the first round can only participate in second round (No
             lateral entry allowed).
-          </Typography>
+          </p>
           <Typography variant="h2">Rules and Regulations</Typography>
           <ul className="bulletArrow">
             <li>

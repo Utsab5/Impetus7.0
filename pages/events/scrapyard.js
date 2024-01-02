@@ -114,7 +114,7 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             SCRAPYARD, an event that enables your untouched creativity and
             reasoning abilities to explode. Show case your innovative ideas as a
             team to create the assembly that fits the given problem statement.
@@ -149,7 +149,7 @@ export default function CadathonPage() {
         </Box>
         <Box className="data">
           <Typography variant="h2">Objective</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             This is an event of 2 rounds. In the 1st round, Teams will be given
             a test of 30 questions. In the succeeding round the selected few
             teams will be given a problem statement on which they have to use
@@ -176,7 +176,7 @@ export default function CadathonPage() {
                 <li>No. of Rounds: 2</li>
               </ul>
             </li>
-            
+
             <li>
               <ul className="BulletNone">
                 <li>Duration of each round: Round 1-1hr, Round 2-2hr</li>
@@ -191,7 +191,7 @@ export default function CadathonPage() {
             </li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          <Typography sx={{}} variant="p">
             <ul className="bulletArrow">
               <li>
                 <ul className="BulletNone">

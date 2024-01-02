@@ -1,13 +1,10 @@
 import { Button, IconButton, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
-import Image from "next/image";
 import Contact from "../../components/Contact";
-import ContactCard from "../../components/ContactCard";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useRouter } from "next/router";
 import EventMag from "../../components/EventManagement";
-
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 const imageStyles = {
   width: "80vw",
   height: "40vh",
@@ -22,25 +19,7 @@ const imageStyles = {
   mt: "50px",
 };
 
-const headerStyles = {
-  width: "800px",
-  maxWidth: "90vw",
-  position: "relative",
-  button: {
-    position: "absolute",
-    border: "1px solid white",
-    backdropFilter: "blur(10px)",
-  },
-  ".left": {
-    left: "0",
-  },
-  ".right": {
-    right: "0",
-  },
-};
-
 const dataStyles = {
-  margin: "50px",
   textAlign: "justify",
   maxWidth: "800px",
   ".data": {
@@ -48,10 +27,10 @@ const dataStyles = {
   },
   "div span,ul": {
     display: "block",
-    margin: "20px 0",
+    margin: "10px 0",
   },
   "div ul li": {
-    textIndent: "30px",
+    textIndent: "10px",
   },
   ".fee": {
     width: "100%",
@@ -123,211 +102,251 @@ export default function CadathonPage() {
           <ArrowForwardIcon fontSize="large" color="white" />
         </IconButton>
       </Box>
-      <Box sx={dataStyles} className="data">
-        <Box>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+      <section className="py-10 max-w-screen-lg md:px-10 px-4">
+        <div className="py-2  ">
+          <p className="text-lg font-normal text-gray-200  ">
             This competition aims to develop the idea of assembly of 3D
             structures on a CAD software. This event will be organized by the
             Society of Automotive Engineers (SAE), IIEST Shibpur under the
-            banner of &quot;Impetus 6.0&quot;.
-          </Typography>
-
-          <ul className="nestedList" style={{ fontSize: "21px" }}>
-            Dates:
-            <li>
-              <ul className="BulletNone">
-                <li>Round 1: 17th February, 2023 12:40pm</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Round 2: 17th February, 2023 5:45pm</li>
-              </ul>
-            </li>
-          </ul>
-          <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
-            <Button
-              variant="contained"
-              size="large"
+            banner of &quot;Impetus 7.0&quot;.
+          </p>
+          <div className="py-2 flex items-center flex-col justify-center ">
+            <div className="py-3 flex flex-col items-center justify-center gap-y-2">
+              <p className="text-lg">
+                <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
+                  <CalendarMonthIcon className="h-5" />
+                  Round 1
+                </span>
+                17th February,2023 12:40pm
+              </p>
+              <p className="text-lg">
+                <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
+                  <CalendarMonthIcon className="h-5" />
+                  Round 2
+                </span>
+                17th February,2023 12:40pm
+              </p>
+            </div>
+            <button
+              type="button"
+              className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
               onClick={(event) =>
                 (window.location.href = "https://forms.gle/NRdSf7w4pvX5E96y7")
               }
             >
               Register Now
-            </Button>
-          </Box>
-        </Box>
-        <Box className="data">
-          <Typography variant="h2">Objective</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+            </button>
+          </div>
+        </div>
+        <div className="py-2  ">
+          <h1 className="text-3xl py-1 font-bold ">Objective</h1>
+          <p className="text-lg font-normal text-gray-200  ">
             Initially, the organizing team will set up an objective and the
             participants will have to designed it within the speculated time
             while satisfying some given condition.
-          </Typography>
-          <Typography variant="h2">Basic Information</Typography>
-          <ul className="bulletArrow">
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  Registration – Till 1 hour before commencement of Round 1
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Participation – Individual</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Venue – Department building (IIEST Shibpur)</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>No. of Rounds – 2</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="nestedList">
-                Duration of each round-
-                <li>
-                  <ul className="BulletNone">
-                    <li>Round 1- 60 min</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>Round 2- 150min</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Prizes worth <b>Rs.8000/-</b>
-            </li>
-          </ul>
-          <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
+          </p>
+        </div>
+        <div className="py-6 bg-gray-900 mb-2 shadow-md sm:rounded-lg px-0 rounded-md">
+          <table className="min-w-full divide-y">
+            <tbody className="bg-gray-900 md:text-lg text-gray-300 divide-y divide-gray-800">
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Registration
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Till 1 hour before the commencement of round1
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    Participation
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Individual
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2  md:px-4  ">
+                  <div className="text-sm font-medium  md:text-lg ">Venue</div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Department Building(IIEST Shibpur)
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    No. of rounds
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">2</div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 md:px-4  py-2 whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Duration of round1
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    60 minutes
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2  md:px-4 py-2 whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Duration of round2
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm font-medium md:text-lg  ">
+                    150 minutes
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Prizes worth
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    {" "}
+                    <span className="font-bold ">Rs.8000</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="py-3 mt-2 ">
+          <h1 className="text-3xl font-bold ">Flow of the events</h1>
+          <p className="text-lg font-normal text-gray-200  ">
             <b>CADathon</b> is going to be held in 2 rounds. In the first round
             of competition participants are expected to replicate the given
             parts and submit them in an hour. Candidates qualified from the
             first round can only participate in second round (No lateral entry
             allowed).
-          </Typography>
-          <Typography variant="h2">Rules and Regulations</Typography>
+          </p>
+        </div>
+        <div className="py-3  ">
+          <h1 className="md:text-3xl text-2xl font-bold ">
+            Rules and Regulations
+          </h1>
+          <p className="text-lg font-normal text-gray-200  "></p>
+        </div>
+        <Box className="data" sx={dataStyles}>
           <ul className="bulletArrow">
+            <ul className="BulletNone">
+              <li>
+                Registered candidates are to be present in the department
+                building before the commencement of the event.
+              </li>
+            </ul>{" "}
             <li>
-              <ul className="BulletNone">
-                <li>
-                  Registered candidates are to be present in the department
-                  building before the commencement of the event.
-                </li>
+              <ul className="nestedList">
+                <span className="font-bold text-xl text-blue-500  ">
+                  Round 1 :
+                </span>
+                <ul className="BulletNone">
+                  <li>Each participant will be provided with an objective</li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                    Participants are required to bring their own laptop with any
+                    CAD software installed in it.
+                  </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                    Participants need to replicate a 2D drawing of some
+                    components into their 3D design.
+                  </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                    The top participants of 1st round will continue to Round 2.
+                    Evaluation will be done based on accuracy and time consumed.
+                  </li>
+                </ul>
               </ul>
             </li>
             <li>
               <ul className="nestedList">
-                ROUND 1-
-                <li>
-                  <ul className="BulletNone">
-                    <li>Each participant will be provided with an objective</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      Participants are required to bring their own laptop with
-                      any CAD software installed in it.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      Participants need to replicate a 2D drawing of some
-                      components into their 3D design.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      The top participants of 1st round will continue to Round
-                      2. Evaluation will be done based on accuracy and time
-                      consumed.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="nestedList">
-                ROUND 2-
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      The selected participants from 1st round will be provided
-                      with an objective to replicate a dynamic mechanical
-                      mechanism based on the problem statement.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      Participants will be evaluated based on time and accuracy.
-                    </li>
-                  </ul>
-                </li>
+                <span className="font-bold text-xl text-blue-500  ">
+                  Round 2 :
+                </span>
+                <ul className="BulletNone">
+                  <li>
+                    The selected participants from 1st round will be provided
+                    with an objective to replicate a dynamic mechanical
+                    mechanism based on the problem statement.
+                  </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                    Participants will be evaluated based on time and accuracy.
+                  </li>
+                </ul>
               </ul>
             </li>
           </ul>
         </Box>
-        <Box>
-          <Typography variant="h6">
+        <div className="">
+          <p className="text-lg font-semibold  text-gray-200  ">
             If any team faces any problem, they are supposed to report to the
             Event Co-Ordinator or Pool Volunteer without much delay.<br></br>
-            <br></br>
-          </Typography>
-
+          </p>
+          <h1 className="text-xl  font-bold mt-2 md:text-3xl py-2">
+            Registration fee
+          </h1>
+          <li className="py-1">Free (For IIEST students)</li>
+          <li>
+            <span className="font-bold text-xl">Rs.50</span> (For non-IIEST
+            students)
+          </li>
+        </div>
+        <Box>
           <Box className="fee">
-            <Typography variant="h3">Registration fee: </Typography>
-            <ul className="nestedList" style={{ fontSize: "21px" }}>
-              <li>
-                <ul className="BulletNone">
-                  <li>Free (for IIEST Students)</li>
-                </ul>
-              </li>
-              <li>
-                <ul className="BulletNone">
-                  <li>Rs.50 (for non-IIEST Students)</li>
-                </ul>
-              </li>
-            </ul>
-            <Box sx={{ width: "100%" }} className="center1">
-              <Button
-                variant="contained"
-                size="large"
+            <Box sx={{ width: "100%" }} className="py-4 center1">
+              <button
+                type="button"
+                className=" font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
                 onClick={(event) =>
                   (window.location.href = "https://forms.gle/NRdSf7w4pvX5E96y7")
                 }
               >
                 Register Now
-              </Button>
+              </button>
             </Box>
           </Box>
           <Typography
-            variant="h2"
+            variant="h3"
             sx={{ textAlign: "center", marginTop: "20px" }}
+            className="text-xl  font-bold mt-2 md:text-3xl py-2"
           >
             Event Coordinators
           </Typography>
-          <Box className="contact">
+          <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
             <EventMag person={person.person1} />
             <EventMag person={person.person2} />
           </Box>
         </Box>
-      </Box>
+      </section>
       <Contact />
     </Box>
   );
