@@ -7,8 +7,7 @@ export default function ExpoPage() {
   const theme = useTheme();
 
   const styles = {
-    backgroundImage:
-      "linear-gradient(to right bottom, #370535, #2e0625, #240618, #18030d, #000000)",
+    // backgroundImage:"linear-gradient(to right bottom, #370535, #2e0625, #240618, #18030d, #000000)",
     ".Robo .img img": {
       width: "400px !important",
     },
@@ -62,7 +61,7 @@ export default function ExpoPage() {
 
   return (
     <Box sx={styles} style={{ paddingTop: "50px" }}>
-      <BackgroundParticles />
+      {/* <BackgroundParticles /> */}
       <div className="grid md:grid-cols-2 gap-8   md:py-20 py-10">
         <div className="flex items-center justify-center">
           <img

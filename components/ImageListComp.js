@@ -14,6 +14,7 @@ function srcset(image, width, height, rows = 1, cols = 1) {
 }
 
 const styles = {
+  // overflow:"hidden",
   width: "1000px",
   height: "450px",
   maxHeight: "90vh",

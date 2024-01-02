@@ -44,6 +44,17 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap"
             rel="stylesheet"
           />
+          <link 
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
+            rel="stylesheet"
+          />
+          <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"
+          />
+          <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Nunito:wght@300;400&display=swap" rel="stylesheet"
+          />
+
+          <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+          <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
         </Head>
         <body>
           <Main />

@@ -3,7 +3,50 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  
 }
+
+html,body{
+  background :linear-gradient(to right, black ,rgb(17 24 39 ),black);
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(17, 24, 39, 1), rgba(0, 0, 0, 1)), linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 0, 0, 1)); */
+}
+
+@keyframes moveInCircle {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+      transform: translateY(-50%);
+  }
+  50% {
+      transform: translateY(50%);
+  }
+  100% {
+      transform: translateY(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+      transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+      transform: translateX(50%) translateY(10%);
+  }
+  100% {
+      transform: translateX(-50%) translateY(-10%);
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

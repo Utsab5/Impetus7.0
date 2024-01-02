@@ -8,7 +8,7 @@ const styles = {
   position: "absolute",
   width: "100vw",
   ".appbar": {
-    backdropFilter: "blur(5px)",
+    // backdropFilter: "blur(5px)",
     position: "relative",
     padding: {
       lg: " 0 50px",
@@ -73,8 +73,9 @@ export default function AppbarComp() {
         className="appbar"
         style={{
           mt: "30px",
-          background: "transparent",
-          backdropFilter: `${top ? "none" : "blur(10px)"}`,
+          background: "none",
+          // backdropFilter: `${top ? "none" : "blur(10px)"}`,
+          background: `${top ? "none" : "linear-gradient(to right, black ,rgb(17 24 39 ),black)"}`,
           position: "fixed",
           left: "50%",
           transform: "translateX(-50%)",
