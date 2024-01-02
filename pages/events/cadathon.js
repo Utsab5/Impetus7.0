@@ -116,7 +116,7 @@ export default function CadathonPage() {
   };
 
   return (
-    <Box sx={{ width: "100vw" }} className="center1">
+    <Box sx={{ width: "100vw" ,background:"red"}} className="center1">
       <Box sx={headerStyles} className="center2">
         <Box sx={imageStyles}></Box>
         <IconButton onClick={goNext} className="right">

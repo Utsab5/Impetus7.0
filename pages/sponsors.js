@@ -16,23 +16,30 @@ const Food = [
 ];
 export default function SponsorsPage() {
   const styles = {
+    overflowY:"hidden",
     h1: {
       mt: "100px",
       mb: "50px",
-      fontSize: "54px",
+      fontSize: {
+        lg:"54px",
+        sm:"50px",
+        xs:"40px",
+      },
+      height:"10vh",
     },
     h3: { mt: "100px", mb: "50px", fontSize: "54px" },
   };
 
   return (
     <>
-      <Box sx={styles} className="center1">
-        <Typography variant="h1">Sponsors</Typography>
+      <Box sx={styles} className="center1" style={{marginTop:"100px"}}>
+        {/* <Typography variant="h1">Sponsors</Typography> */}
+        <Typography variant="h1">COMING SOON...</Typography>
       </Box>
 
-      <Box sx={styles} className="center1">
+      {/* <Box sx={styles} className="center1">
         <Typography variant="h3">Hardware</Typography>
-        <div className="image-container">
+        <div className="image-container" >
           <img src="/images/Thyssenkrupp.png" alt="Image 1" className="image" />
           <img src="/images/hero_vired.jpeg" alt="Image 2" className="image" />
           <img src="/images/JSW-steel.png" alt="Image 2" className="image" />
@@ -65,40 +72,9 @@ export default function SponsorsPage() {
       </Box>
       <Box sx={styles} className="center1">
         <Typography variant="h3">Fintech</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Banking</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Tech</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Automotive</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Edtech</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Medical</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Entertainment</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Gaming</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Electric Vehicles</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3"></Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3"></Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3"></Typography>
-      </Box>
+      </Box> */}
+     
+      
     </>
   );
 }

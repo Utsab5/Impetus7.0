@@ -58,7 +58,7 @@ export default function VideoText({ hideIt }) {
       ref={scrollRef}
       sx={styles}
       className="center1"
-      style={{ marginTop: "5vh" }}
+      style={{ marginTop: "5vh" , marginBottom:"45vh"}}
     >
       <Box
         className="date"
@@ -80,9 +80,9 @@ export default function VideoText({ hideIt }) {
         Annual Techfest of Department of Mechanical Engineering
       </Typography>
       <Countdown />
-      <Button onClick={hideIt} size="large" variant="outlined" primary>
+      {/* <Button onClick={hideIt} size="large" variant="outlined" primary>
         Enter
-      </Button>
+      </Button> */}
     </Box>
   );
 }

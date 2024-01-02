@@ -34,11 +34,16 @@ darkTheme = createTheme({
       fontSize: "22px",
     },
     p: {
-      fontFamily: "Jost",
+      // fontFamily: "Jost",
+      // fontFamily: 'Roboto',
+      // fontFamily: 'Helvetica',
+      fontFamily: '"Roboto" , sans-serif',
+      // fontFamily: 'sans-serif',
       fontSize: "18px",
     },
     a: {
       fontFamily: "Jost",
+      fontFamily: '"Roboto" , sans-serif',
       fontSize: "16px",
     },
   },
