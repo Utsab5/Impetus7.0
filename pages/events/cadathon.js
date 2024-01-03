@@ -1,18 +1,16 @@
-import { Button, IconButton, Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
-import Contact from "../../components/Contact";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { useRouter } from "next/router";
-import EventMag from "../../components/EventManagement";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { IconButton, Typography, useTheme } from "@mui/material";
+import { Box } from "@mui/system";
+import { useRouter } from "next/router";
+import Contact from "../../components/Contact";
+import EventMag from "../../components/EventManagement";
 const imageStyles = {
   width: "80vw",
   height: "40vh",
   minWidth: "600px",
   minHeight: "400px",
-
   background: `url(/images/cadathon_pg.jpg)  no-repeat  `,
-
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
@@ -95,7 +93,7 @@ export default function CadathonPage() {
   };
 
   return (
-    <Box sx={{ width: "100vw" ,background:"red"}} className="center1">
+    <Box sx={{ width: "100vw", background: "" }} className="center1 mt-10">
       <Box sx={headerStyles} className="center2">
         <Box sx={imageStyles}></Box>
         <IconButton onClick={goNext} className="right">

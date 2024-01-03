@@ -1,11 +1,8 @@
-import { Button, IconButton, Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
-import Image from "next/image";
-import Contact from "../../components/Contact";
-import ContactCard from "../../components/ContactCard";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { IconButton, Typography, useTheme } from "@mui/material";
+import { Box } from "@mui/system";
 import { useRouter } from "next/router";
+import Contact from "../../components/Contact";
 
 const imageStyles = {
   width: "80vw",
@@ -84,7 +81,7 @@ export default function CadathonPage() {
     },
   };
   return (
-    <Box sx={{ width: "100vw" }} className="center1">
+    <Box sx={{ width: "100vw" }} className="center1 mt-10">
       <Box sx={headerStyles} className="center2">
         <IconButton onClick={goBack} className="left">
           <ArrowBackIcon fontSize="large" color="white" />
@@ -102,7 +99,9 @@ export default function CadathonPage() {
             event. If you can manage all these , some prizes are surely waiting
             for you.
           </Typography>
-          <Typography variant="h2">Lazer Maze Game</Typography>
+          <h1 className="md:text-3xl text-2xl font-bold ">
+            Rules and Regulations
+          </h1>
           <Typography variant="p">
             Imagine being in utter darkness, smoke all around and you are
             trapped in a maze made of Lazer Lights. Go through the maze with
@@ -117,7 +116,10 @@ export default function CadathonPage() {
             And for the fans of TBBT, you know what this is, you know what this
             is gonna be, so get ready to have a BUZZZZINGA!<br></br>
             <br></br>
-            Venue - Parade Ground, IIEST Shibpur.
+            <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg text-center  bg-gray-800 text-gray-300  ">
+              {" "}
+              Venue - Parade Ground, IIEST Shibpur.
+            </span>
           </Typography>
         </Box>
       </Box>

@@ -49,7 +49,6 @@ export default function EventPage() {
   const descRef = useRef(null);
 
   const styles = {
-    // overflowY: "hidden",
     width: "100vw",
     paddingLeft: "100px",
     minHeight: "100vh",
@@ -150,7 +149,14 @@ export default function EventPage() {
   }, []);
 
   return (
-    <Box className="center1" style={{ paddingTop: "50px", overflowY: "hidden",backgroundColor:"black" }}>
+    <Box
+      className="center1"
+      style={{
+        paddingTop: "50px",
+        overflowY: "hidden",
+        backgroundColor: "black",
+      }}
+    >
       {/* {currIdx} */}
       <Box sx={styles}>
         <EventList setCurrIdx={setCurrIdx} currIdx={currIdx} />
