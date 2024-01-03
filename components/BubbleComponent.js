@@ -43,7 +43,7 @@ const BubbleComponent = () => {
     top: 0, left: 0, 
     width: '100vw', 
     height: '120vh',
-    opacity:"0.9",
+    opacity:"0.5",
     overflow:"hidden",
   }; 
 

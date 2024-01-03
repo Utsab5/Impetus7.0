@@ -154,7 +154,7 @@ export default function EventPage() {
       style={{
         paddingTop: "50px",
         overflowY: "hidden",
-        backgroundColor: "black",
+        // backgroundColor: "black",
       }}
     >
       {/* {currIdx} */}
