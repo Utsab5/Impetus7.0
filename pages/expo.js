@@ -7,7 +7,6 @@ export default function ExpoPage() {
   const theme = useTheme();
 
   const styles = {
-    // backgroundImage:"linear-gradient(to right bottom, #370535, #2e0625, #240618, #18030d, #000000)",
     ".Robo .img img": {
       width: "400px !important",
     },
@@ -65,7 +64,7 @@ export default function ExpoPage() {
       <div className="grid md:grid-cols-2 gap-8   md:py-20 py-10">
         <div className="flex items-center justify-center">
           <img
-            className=" md:w-2/3  w-[480px] "
+            className="w-full   w-[480px] "
             src="/images/VR1.png/"
             alt="Tech Show"
           />
@@ -74,7 +73,7 @@ export default function ExpoPage() {
           <h2 className="text-blue-400 md:text-3xl leading-6 md:leading-7text-2xl font-bold md:text-left text-center md-font-extrabold mb-2">
             Tech Show
           </h2>
-          <p className="text-left px-3 md:w-2/3  md:px-0 ">
+          <p className=" px-3 md:w-5/6 md:px-0 ">
             Get ready for a Tech Show involving some of most future gen techs
             that will fascinate your mind. At this Tech Show, we Impetus 7.0
             bring you<br></br>
@@ -114,7 +113,7 @@ export default function ExpoPage() {
           <h2 className="text-blue-400 md:text-3xl font-bold text-2xl md:text-left self-center md:ml-16  text-center md-font-extrabold mb-2">
             Electric Vehicle Expo
           </h2>
-          <p className="text-left px-3 md:w-2/3 leading-7  md:px-0 ">
+          <p className="text-left px-3 md:w-5/6 leading-7  md:px-0 ">
             With the world moving towards being an eco-friendly place to be, we
             engineers have to the pioneers while moving ahead in our vehicles.
             And these vehicles just can&apos;t be a usual bike or car, they need
@@ -152,7 +151,7 @@ export default function ExpoPage() {
             Humanoid Robo Expo
           </h2>
 
-          <p className="text-left px-3 md:w-2/3  md:px-0 ">
+          <p className="text-left px-3 md:w-5/6 md:px-0 ">
             From imagination to daydreams. From dreams to sci-fi movies. From
             movies to possible future. And now, we bring the FUTURE here.
             <br></br>

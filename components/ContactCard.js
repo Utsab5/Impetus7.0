@@ -33,7 +33,10 @@ const ContactCard = ({ person }) => {
   const toggleHover = () => setHover(!hover);
 
   return (
-    <Box sx={styles} className="pcard bg-gray-900  ">
+    <Box
+      sx={styles}
+      className="pcard shadow border bg-gray-800 border-gray-700 text-white "
+    >
       <Image
         className={`profile ${hover ? "profileHover" : ""}`}
         onMouseEnter={onHover}
@@ -48,7 +51,7 @@ const ContactCard = ({ person }) => {
       <Box className="title">
         <h5 className=" text-xl font-medium text-gray-50 ">{person.name} </h5>
         <span className="text-[14px]  text-gray-300">{person.post}</span>
-        <h5 className=" text-[16px] font-medium text-gray-100 ">
+        <h5 className=" text-[16px] font-medium text-gray-400 ">
           {person.phone}{" "}
         </h5>
       </Box>

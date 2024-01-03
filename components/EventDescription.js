@@ -76,7 +76,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const yantrasearch =
     "This event organized by ASME IIEST, aims to give you all the excitement of treasure hunt.You can look forward to having fun while solving mysteries together and hunting down simple machines in our college campus.";
   const heatovation =
-    '"Heatovation", organized by IMPETUS 6.0 in association with ISHRAE-IIEST Kolkata chapter empowers social entrepreneurs to create a culture for entrepreneurship and to promote entrepreneurial education in the field of HVAC.';
+    '"Heatovation", organized by IMPETUS 7.0 in association with ISHRAE-IIEST Kolkata chapter empowers social entrepreneurs to create a culture for entrepreneurship and to promote entrepreneurial education in the field of HVAC.';
   const scrapyard =
     'Innovation need not come from what everyone considers to be a resource; it can also come from making use of what others consider to be waste and producing something useful. With this thought in mind IMPETUS 6.0 presents to you "Scrapyard"';
   const quiz =
@@ -88,7 +88,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const valorant =
     "The Valorant gaming event is a competition that brings together talented players to showcase their skills and compete for recognition. It is an exciting opportunity for Valorant fans to experience high-level gameplay and celebrate the top talent in the game.";
   const fun =
-    "Impetus 6.0 presents a carnival game of skill. Dodge between bunkers to lead, test hand coordination with pyramid breaking, aim for prizes with darts and wire wand loop. Work with a partner to navigate the proper pathway for a chance to win rewards.";
+    "Impetus 7.0 presents a carnival game of skill. Dodge between bunkers to lead, test hand coordination with pyramid breaking, aim for prizes with darts and wire wand loop. Work with a partner to navigate the proper pathway for a chance to win rewards.";
 
   const content = [
     cadathon,

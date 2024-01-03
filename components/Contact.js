@@ -1,13 +1,11 @@
-import { Box } from "@mui/system";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import Link from "next/link";
-import ContactCard from "./ContactCard";
 import { Typography } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import { Box } from "@mui/system";
+import Link from "next/link";
 
 const styles = {
   width: "90vw",
@@ -48,7 +46,6 @@ const styles = {
       },
       fontSize: "30px",
     },
-    
   },
   ".terms p": {
     mt: "5px",
@@ -56,41 +53,84 @@ const styles = {
   },
 };
 
-  const CStyle={
-    display:"block",
-    // width:{lg:"60%",sm:"70%",xs:"80%"},
-    width:"100%",
-    margin:"0 auto", 
-    fontSize:"16px", 
-    color:"#ccc",
-    textAlign:"center"
-  }
+const CStyle = {
+  display: "block",
+  width: "100%",
+  margin: "0 auto",
+  fontSize: "16px",
+  color: "#ccc",
+  textAlign: "center",
+};
 
 export default function Contact() {
   return (
-    // <Box className="center1" sx={{ background: "linear-gradient(black, #1d1d1d)" }}>
-    <Box className="center1" sx={{ background: "linear-gradient(transparent,#ffffff1a)", width:"100%" }}>
-      <hr style={{width:"70%",height:"1px",borderTop:"solid 1px #555",margin:"40px 0"}}></hr>
+    <Box
+      className="center1"
+      sx={{
+        background: "linear-gradient(transparent,#ffffff1a)",
+        width: "100%",
+      }}
+    >
+      <hr
+        style={{
+          width: "70%",
+          height: "1px",
+          borderTop: "solid 1px #555",
+          margin: "40px 0",
+        }}
+      ></hr>
       <Box sx={styles} className="center1">
-        <Box sx={{textAlign:"center"}}>
-          <Typography variant="h3" sx={{marginBottom:"25px"}}>Indian Institute of Engineering Science and Technology, Shibpur</Typography>
-          <Typography variant="p" sx={{display:"block",width:{lg:"60%",sm:"70%",xs:"80%"},margin:"0 auto", fontSize:"16px", color:"#ccc"}}>Impetus, the annual departmental fest of Mechanical Engineering of IIEST Shibpur, is a boisterous festival brimming with sensational events and perpetual fun.</Typography>
+        <Box sx={{ textAlign: "center" }}>
+          <Typography variant="h3" sx={{ marginBottom: "25px" }}>
+            Indian Institute of Engineering Science and Technology, Shibpur
+          </Typography>
+          <Typography
+            variant="p"
+            sx={{
+              display: "block",
+              width: { lg: "60%", sm: "70%", xs: "80%" },
+              margin: "0 auto",
+              fontSize: "16px",
+              color: "#ccc",
+            }}
+          >
+            Impetus, the annual departmental fest of Mechanical Engineering of
+            IIEST Shibpur, is a boisterous festival brimming with sensational
+            events and perpetual fun.
+          </Typography>
         </Box>
 
-        <Box sx={{display:"flex",width:"90%",justifyContent:"space-between",marginTop:"30px",flexDirection:{sm:"row", xs:"column"},marginBottom:{lg:"0",sm:"20px",xs:"0"}}}>
+        <Box
+          sx={{
+            display: "flex",
+            width: "90%",
+            justifyContent: "space-between",
+            marginTop: "30px",
+            flexDirection: { sm: "row", xs: "column" },
+            marginBottom: { lg: "0", sm: "20px", xs: "0" },
+          }}
+        >
           <Box>
-            <Typography variant="p" sx={CStyle}>Vasu Krishna Khemka (Main Coordiantor)</Typography>
-            <Typography variant="p" sx={CStyle}>+91 7808814413</Typography>
-            <Typography variant="p" sx={CStyle}>Divyansh Bajpai (Main Coordiantor)</Typography>
-            <Typography variant="p" sx={CStyle}>+91 9369462864</Typography>
+            <Typography variant="p" sx={CStyle}>
+              Vasu Krishna Khemka (Main Coordiantor)
+            </Typography>
+            <Typography variant="p" sx={CStyle}>
+              +91 7808814413
+            </Typography>
+            <Typography variant="p" sx={CStyle}>
+              Divyansh Bajpai (Main Coordiantor)
+            </Typography>
+            <Typography variant="p" sx={CStyle}>
+              +91 9369462864
+            </Typography>
           </Box>
-          <Box className="icons center2">
+          <Box className=" center2">
             <IconButton
               onClick={(event) =>
                 (window.location.href = "https://www.facebook.com/smeiiests/")
               }
             >
-              <FacebookIcon />
+              <FacebookIcon className="transform transition duration-100 hover:scale-110 ease-in-out" />
             </IconButton>
             <IconButton
               onClick={(event) =>
@@ -98,7 +138,7 @@ export default function Contact() {
                   "https://www.linkedin.com/in/society-of-mechanical-engineers-iiest-shibpur-89244a193")
               }
             >
-              <LinkedInIcon />
+              <LinkedInIcon className="transform transition duration-100 hover:scale-110 ease-in-out" />
             </IconButton>
             <IconButton
               onClick={(event) =>
@@ -106,22 +146,23 @@ export default function Contact() {
                   "https://www.instagram.com/sme.iiests/?hl=en")
               }
             >
-              <InstagramIcon />
+              <InstagramIcon className="transform transition duration-100 hover:scale-110 ease-in-out" />
             </IconButton>
             <IconButton
               onClick={(event) =>
-                (window.location.href = "https://www.youtube.com/@smeiiests7235")
+                (window.location.href =
+                  "https://www.youtube.com/@smeiiests7235")
               }
             >
-              <YouTubeIcon />
+              <YouTubeIcon className="transform transition duration-100 hover:scale-110 ease-in-out" />
             </IconButton>
           </Box>
-
         </Box>
 
         <Box className="terms center1 ">
           <Link
             href="/team"
+            className="border-b border-gray-500 cursor-pointer "
             style={{
               color: "white",
               textDecoration: "none",
