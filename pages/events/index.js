@@ -154,10 +154,9 @@ export default function EventPage() {
       style={{
         paddingTop: "50px",
         overflowY: "hidden",
-        // backgroundColor: "black",
+        backgroundColor: "black",
       }}
     >
-      {/* {currIdx} */}
       <Box sx={styles}>
         <EventList setCurrIdx={setCurrIdx} currIdx={currIdx} />
         <EventDots currIdx={currIdx} setCurrIdx={setCurrIdx} />
