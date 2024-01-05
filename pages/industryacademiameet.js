@@ -98,17 +98,17 @@ export default function IAMPage() {
     person2: {},
   };
   return (
-    <section className="bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-.svg')]">
+    <section className="bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-.svg')]">
       <CarouselComp />
       <div className="pt-8 mt-4 px-4 mx-auto max-w-screen-xl text-center  z-10 relative">
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight leading-none text-gray-50 md:text-5xl lg:text-6xl  ">
-          Industry Academia Meet
+        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight leading-none text-gray-50 md:text-4xl lg:text-5xl" style={{fontFamily:"Rowdies",}}>
+          INDUSTRY ACADEMIA MEET
         </h1>
         <p className=" text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 ">
-          19th February, 2023 - 9AM to 6PM
+          11th February, 2024 - 9AM to 6PM
         </p>
       </div>
-      <section className="  bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-.svg')]">
+      <section className="bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-.svg')]">
         <div className="py-6 px-4 mx-auto max-w-screen-xl">
           <div
             data-aos="zoom-in-up"

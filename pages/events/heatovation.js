@@ -111,7 +111,7 @@ export default function CadathonPage() {
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
-            HEATOVATION is an event organized by the Impetus 6.0 which invites
+            HEATOVATION is an event organized by the Impetus 7.0 which invites
             participation from students with entrepreneurial/ problem-solving
             mindsets in the field of HVAC pan India. It would require its
             participants to present their solutions to the panel of judges and

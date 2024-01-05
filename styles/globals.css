@@ -158,7 +158,7 @@ p {
 
 .textHover {
   position: absolute;
-  top: 120px;
+  top: 140px;
   opacity: 1;
   display: flex !important;
   flex-direction: row;

@@ -108,6 +108,7 @@ export default function Contact() {
             marginTop: "30px",
             flexDirection: { sm: "row", xs: "column" },
             marginBottom: { lg: "0", sm: "20px", xs: "0" },
+            gap:"10px",
           }}
         >
           <Box>
