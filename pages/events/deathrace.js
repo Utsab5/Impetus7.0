@@ -60,7 +60,7 @@ export default function CadathonPage() {
     router.push("/events/lineFollower");
   };
   const goBack = () => {
-    router.push("/events/quizzical");
+    router.push("/events/iQIgnition");
   };
 
   const headerStyles = {

@@ -1,13 +1,9 @@
 import { Box } from "@mui/material";
-import { AnimatePresence } from "framer-motion";
 import { Router } from "next/router";
 import React, { useEffect, useState } from "react";
 import BubbleComponent from "../components/BubbleComponent";
 import Contact from "../components/Contact";
-import EventCarouselComp, { Owldemo1 } from "../components/EventCarouselComp";
-import HomePageAbout from "../components/HomePageAbout";
 import HomePageAbout1 from "../components/HomePageAbout1";
-import HomePageVideo from "../components/HomePageVideo";
 import IframeComp from "../components/IframeComp";
 import LoadingComp from "../components/LoadingComp";
 import { useLoading } from "../components/LoadingContext";
@@ -75,25 +71,17 @@ export default function HomePage() {
     };
   }, []);
 
-
   return (
     <Box>
       {loading && <LoadingComp />}
-      {/* <Box sx={containerStyles}>
-        
-      </Box> */}
-      {/* <HomePageVideo /> */}
       <VideoText hideIt={hideIt} />
-      <IframeComp/>
-      <MerchandiseComp/>
-      {/* <EventCarouselComp /> */}
+      <IframeComp />
+      {/* <MerchandiseComp /> */}
       {aboutContent.map((el) => (
         <HomePageAbout1 key={el.name} {...el} />
       ))}
       <BubbleComponent />
-      {/* <HomePageAbout /> */}
       <Contact />
     </Box>
   );
 }
-

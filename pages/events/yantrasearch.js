@@ -119,7 +119,7 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Dates
                 </span>
-                18th February, 2024 2:30pm
+                9th February, 2024 <span className="pl-3"> 4:30pm - 7pm</span>
               </p>
             </div>
             <button

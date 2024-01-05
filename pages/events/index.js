@@ -157,6 +157,7 @@ export default function EventPage() {
         backgroundColor: "black",
       }}
     >
+      {/* {currIdx} */}
       <Box sx={styles}>
         <EventList setCurrIdx={setCurrIdx} currIdx={currIdx} />
         <EventDots currIdx={currIdx} setCurrIdx={setCurrIdx} />

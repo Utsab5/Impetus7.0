@@ -53,7 +53,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "Yantra Search",
     "Heatovation",
     "Scrapyard",
-    "Quizzical Suspects",
+    "IQ Ignition",
     "Death Race",
     "Line Follower",
     "Valorant",
@@ -64,7 +64,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "yantrasearch",
     "heatovation",
     "scrapyard",
-    "quizzical",
+    "iQIgnition",
     "deathrace",
     "lineFollower",
     "valorant",
@@ -80,7 +80,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const scrapyard =
     'Innovation need not come from what everyone considers to be a resource; it can also come from making use of what others consider to be waste and producing something useful. With this thought in mind IMPETUS 7.0 presents to you "Scrapyard"';
   const quiz =
-    "To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: 'Quizzical Suspects' under the banner of Impetus 7.0 .The quiz tests and showcases students' technical knowledge and skills.";
+    "To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: ' Suspects' under the banner of Impetus 7.0 .The quiz tests and showcases students' technical knowledge and skills.";
   const deathrace =
     "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
   const lineFollower =
@@ -98,7 +98,6 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     quiz,
     deathrace,
     lineFollower,
-
     valorant,
     fun,
   ];

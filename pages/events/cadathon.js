@@ -115,14 +115,16 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                17th February,2023 12:40pm
+                9th February,2024
+                <span className="pl-3"> 12:30pm - 2:00pm</span>
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                17th February,2023 12:40pm
+                10th February,2024{" "}
+                <span className="pl-3"> 3:00pm - 4:30pm</span>
               </p>
             </div>
             <button
@@ -198,9 +200,7 @@ export default function CadathonPage() {
                   </div>
                 </td>
                 <td className="pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    60 minutes
-                  </div>
+                  <div className="text-sm font-medium  md:text-lg ">2hrs</div>
                 </td>
               </tr>
               <tr>
@@ -211,7 +211,7 @@ export default function CadathonPage() {
                 </td>
                 <td className="pl-2 py-1">
                   <div className="text-sm font-medium md:text-lg  ">
-                    150 minutes
+                    1hr 30 mins{" "}
                   </div>
                 </td>
               </tr>

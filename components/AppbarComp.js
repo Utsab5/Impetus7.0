@@ -75,7 +75,11 @@ export default function AppbarComp() {
           mt: "30px",
           background: "none",
           // backdropFilter: `${top ? "none" : "blur(10px)"}`,
-          background: `${top ? "none" : "linear-gradient(to right, black ,rgb(17 24 39 ),black)"}`,
+          background: `${
+            top
+              ? "none"
+              : "linear-gradient(to right, black ,rgb(17 24 39 ),black)"
+          }`,
           position: "fixed",
           left: "50%",
           transform: "translateX(-50%)",
@@ -84,7 +88,7 @@ export default function AppbarComp() {
       >
         <Image
           onClick={goToHome}
-          src="/images/impetusLogo.png"
+          src="/images/final_logo.png"
           alt="logo"
           width="70"
           height="70"

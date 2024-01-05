@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import Link from "next/link";
-import {useRouter} from "next/router"
+import { useRouter } from "next/router";
 import ContactCard from "./ContactCard";
 
 const styles = {
@@ -9,13 +9,10 @@ const styles = {
   ".nav": {
     display: "grid",
     width: "100%",
-    // gap: {
-    //   sm: "1px",
-    // },
     gridTemplateColumns: {
-      lg: "repeat(5,0.8fr) 1.5fr",
-      sm: "repeat(5,0.8fr) 1.65fr",
-      xs: "repeat(5,0.8fr) 1.6fr",
+      lg: "repeat(4,0.8fr) 1.5fr",
+      sm: "repeat(4,0.8fr) 1.65fr",
+      xs: "repeat(4,0.8fr) 1.6fr",
     },
     flexDirection: "row",
     a: {
@@ -29,10 +26,10 @@ const styles = {
       cursor: "default",
       transition: "all 300ms cubic-bezier(0.075, 0.82, 0.165, 1)",
       textShadow: "0 0 15px #8e54e9",
-      
-      ".bor":{
-        width:"70%",
-        textAlign:"center",
+
+      ".bor": {
+        width: "70%",
+        textAlign: "center",
       },
       span: {
         position: "relative",
@@ -50,40 +47,79 @@ const styles = {
           left: 0,
           bottom: 0,
           width: "100%",
-          // borderBottom: "2px solid #fff",
           transition: "width 0.4s",
         },
       },
     },
   },
   "a.active": {
-    ".bor":{
-    borderBottom: "2px solid white",}
-    // padding:"10%",
-    // width: "70%",
+    ".bor": {
+      borderBottom: "2px solid white",
+    },
   },
 };
 
 export default function NavbarComp() {
-
   const router = useRouter();
   return (
-    <Box className="center1" sx={{ backgroundColor: "none" , width:"83%" , maxWidth:"900px"}}>
+    <Box
+      className="center1"
+      sx={{ backgroundColor: "none", width: "83%", maxWidth: "900px" }}
+    >
       <Box sx={styles} className="center1">
         <Box className="nav">
           {/* <Link href="/home"><span>Home</span></Link> */}
-          <Link href="/about" className={router.pathname === "/about" ? "active" : ""}><div className="bor"><span>About</span></div></Link>
-          <Link href="/events" className={router.pathname === "/events" ? "active" : ""}><div className="bor"><span>Events</span></div></Link>
-          <Link href="/expo"  className={router.pathname === "/expo" ? "active" : ""}><div className="bor"><span>Expo</span></div></Link>
-          <Link href="/sponsors" className={router.pathname === "/sponsors" ? "active" : ""}><div className="bor"><span>Sponsors</span></div></Link>
-          <Link href="/team" className={router.pathname === "/team" ? "active" : ""}><div className="bor"><span>Team</span></div></Link>
-          <Link href="/industryacademiameet" style={{textAlign:"center"}} className={router.pathname === "/industryacademiameet" ? "active" : ""}><div className="bor" style={{width:"100%"}}><span>Industry Academia Meet</span></div></Link>
-          {/* <Link
-            style={{ gridColumn: "span 2", textAlign: "center" }}
-            href="/industryacademiameet"
+          <Link
+            href="/about"
+            className={router.pathname === "/about" ? "active" : ""}
           >
-            Industry Acadameia Meet
-          </Link> */}
+            <div className="bor">
+              <span>About</span>
+            </div>
+          </Link>
+          <Link
+            href="/events"
+            className={router.pathname === "/events" ? "active" : ""}
+          >
+            <div className="bor">
+              <span>Events</span>
+            </div>
+          </Link>
+          {/* <Link */}
+          {/*   href="/expo" */}
+          {/*   className={router.pathname === "/expo" ? "active" : ""} */}
+          {/* > */}
+          {/*   <div className="bor"> */}
+          {/*     <span>Expo</span> */}
+          {/*   </div> */}
+          {/* </Link> */}
+          <Link
+            href="/sponsors"
+            className={router.pathname === "/sponsors" ? "active" : ""}
+          >
+            <div className="bor">
+              <span>Sponsors</span>
+            </div>
+          </Link>
+          <Link
+            href="/team"
+            className={router.pathname === "/team" ? "active" : ""}
+          >
+            <div className="bor">
+              <span>Team</span>
+            </div>
+          </Link>
+          <Link
+            href="/industryacademiameet"
+            style={{ textAlign: "center" }}
+            className={
+              router.pathname === "/industryacademiameet" ? "active" : ""
+            }
+          >
+            <div className="bor" style={{ width: "100%" }}>
+              <span>Industry Academia Meet</span>
+            </div>
+          </Link>
         </Box>
       </Box>
     </Box>

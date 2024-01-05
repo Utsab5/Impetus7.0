@@ -56,7 +56,7 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/quizzical");
+    router.push("/events/iQIgnition");
   };
   const goBack = () => {
     router.push("/events/heatovation");

@@ -51,10 +51,9 @@ export default function SideBarComp() {
           "About",
           "Events",
           "Industry Academia Meet",
-          "Expo",
           "Sponsors",
           "Team",
-        ].map((text, index) => (
+        ].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton onClick={() => goToPage(text)}>
               <ListItemIcon></ListItemIcon>

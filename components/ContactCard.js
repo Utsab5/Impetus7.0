@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import Image from "next/image";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 const styles = {
   height: "300px",
   width: "400px",
@@ -49,10 +49,12 @@ const ContactCard = ({ person }) => {
         width="200"
       />
       <Box className="title">
-        <h5 className=" text-xl font-medium text-gray-50 ">{person.name} </h5>
-        <span className="text-[14px]  text-gray-300">{person.post}</span>
-        <h5 className=" text-[16px] font-medium text-gray-400 ">
-          {person.phone}{" "}
+        <h5 className=" text-xl py-1 font-medium text-gray-50 ">
+          {person.name}{" "}
+        </h5>
+        <span className="text-[14px] pb-1 text-gray-300">{person.post}</span>
+        <h5 className=" text-[16px]  font-medium text-gray-400 ">
+          <LocalPhoneIcon className="h-4" /> {person.phone}{" "}
         </h5>
       </Box>
 

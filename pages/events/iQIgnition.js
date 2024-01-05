@@ -11,9 +11,7 @@ const imageStyles = {
   height: "40vh",
   minWidth: "400px",
   minHeight: "400px",
-
   background: `url(/images/quizzical_pg.jpg)  no-repeat  `,
-
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
@@ -109,7 +107,7 @@ export default function CadathonPage() {
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
             To instil the essence of quizzing, IMechE IIEST, Shibpur brings to
-            you a Grand General Technical Quiz: &quot;Quizzical Suspects&quot;
+            you a Grand General Technical Quiz: &quot;IQIgnition Suspects&quot;
             under the banner of Impetus 7.0
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
@@ -119,7 +117,7 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Dates
                 </span>
-                18th February, 2024 10:30am
+                10th February, 2024 10:30am
               </p>
             </div>
             <button

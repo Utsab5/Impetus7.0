@@ -26,7 +26,7 @@ export default function EventList({ setCurrIdx, currIdx }) {
     "Yantra Search",
     "Heatovation",
     "Scrapyard",
-    "Quizzical",
+    "IQ Ignition",
     "Death Race",
     "Line Follower",
     "Valorant",
