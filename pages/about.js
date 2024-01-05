@@ -10,6 +10,10 @@ import Divider2 from "../components/Divider2";
 export default function AboutPage() {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
+  const [propertyValue, setPropertyValue] = useState('absolute');
+  // const [TopValue, setTopValue] = useState('400px');
+  const [TopValue, setTopValue] = useState('45vh');
+  const [HeightValue, setHeightValue] = useState('50%');
   const theme = useTheme();
   const videoId= "Y9VOzNnr8aY";
 
@@ -76,12 +80,12 @@ export default function AboutPage() {
   };
 
   const YTvideoStyle={
-    position:"absolute",
+    position:propertyValue,    
     zIndex:"1",
-    top:"400px",
+    top:TopValue,
     width:"100%",
-    height:"50%",
-
+    height:HeightValue,
+    marginTop:"100px"
 
   }
 
@@ -105,9 +109,12 @@ export default function AboutPage() {
   };
 
   useEffect(() => {
-    if (window.innerWidth > 900)
+    if (window.innerWidth > 900){
       videoRef.current?.play().catch((e) => console.log(e));
-    else videoRef.current?.pause();
+    }
+    else{
+       videoRef.current?.pause();
+    }
     // window.addEventListener("scroll", muteVideo);
     window.addEventListener("resize", handleSize);
 
@@ -116,6 +123,27 @@ export default function AboutPage() {
       // window.removeEventListener("scroll", muteVideo);
       videoRef.current?.pause();
     };
+  }, []);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 900) {
+        setPropertyValue('relative');
+        setTopValue('0');
+        setHeightValue('40vw');
+
+      } else {
+        setPropertyValue('absolute');
+        setTopValue('45vh');
+        setHeightValue('50%');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call initially to set the initial value
+
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const person = {
@@ -153,7 +181,7 @@ export default function AboutPage() {
         </video>
       <Divider2 />
       </Box>
-      <Box style={YTvideoStyle}>
+      <Box style={YTvideoStyle} >
         <iframe
           src={`https://www.youtube.com/embed/${videoId}`}
           style={{
@@ -231,7 +259,7 @@ export default function AboutPage() {
         </Box>
       </Box>
       <Box>
-        <Typography variant="h2" style={{fontFamily:"Rowdies"}}>SOME MOMENTS OF PREVIOUS EDITIONS</Typography><br></br>
+        <Typography variant="h2" style={{fontFamily:"Rowdies",margin:"0 30px",textAlign:"center"}}>SOME MOMENTS OF PREVIOUS EDITIONS</Typography><br></br>
         <ImageListComp />
       </Box>
       <Contact />

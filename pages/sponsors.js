@@ -1,5 +1,7 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
+import Contact from "../components/Contact";
+import SponsorCard from "../components/SponsorCard";
 
 const Food = [
   { image: "/images/anacafe.png", name: "image1" },
@@ -30,12 +32,32 @@ export default function SponsorsPage() {
     },
     h3: { mt: "100px", mb: "50px", fontSize: "54px" },
   };
+  const sponsorData = {
+    sponsor1: { imgname: "Logiczap.png" },
+    sponsor2: { imgname: "elearnmarkets.jpg" },
+    sponsor3: { imgname: "idp.jpg" },
+    sponsor4: { imgname: "iic.jpg" },
+    sponsor5: { imgname: "IMechE.jpg" },
+    sponsor6: { imgname: "Mahr.jpg" },
+    sponsor7: { imgname: "moople.jpg" },
+    sponsor8: { imgname: "ThinkAgainLab.jpg" },
+    sponsor9: { imgname: "Alo bus.png" },
+    sponsor10: { imgname: "Asawa insulation.png" },
+    sponsor11: { imgname: "Dyna Temp.png" },
+    sponsor12: { imgname: "Roasted.png" },
+    sponsor13: { imgname: "7Spices.png" },
+  };
 
   return (
     <>
       <Box sx={styles} className="center1" style={{marginTop:"100px"}}>
-        {/* <Typography variant="h1">Sponsors</Typography> */}
-        <Typography variant="h1">COMING SOON...</Typography>
+        <Typography variant="h1">Past Sponsors</Typography>
+        <Box className="cards">
+          {Object.values(sponsorData).map((sponsor, index) => (
+            <SponsorCard key={index} sponsor={sponsor} />
+          ))}
+      </Box>
+        {/* <Typography variant="h1">COMING SOON...</Typography> */}
       </Box>
 
       {/* <Box sx={styles} className="center1">
@@ -75,7 +97,7 @@ export default function SponsorsPage() {
         <Typography variant="h3">Fintech</Typography>
       </Box> */}
      
-      
+      <Contact />
     </>
   );
 }

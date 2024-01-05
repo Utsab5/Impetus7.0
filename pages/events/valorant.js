@@ -307,7 +307,7 @@ export default function CadathonPage() {
             </ul>{" "}
             <ul className="BulletNone">
               <li>
-                By Patch notes 6.0, since Breeze and Bind are temporarily
+                By Patch notes 7.0, since Breeze and Bind are temporarily
                 removed from the game officially, hence; Ascent, Split, Haven,
                 Icebox, Fracture, Pearl, Lotus map will be played.
               </li>

@@ -72,15 +72,15 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   ];
 
   const cadathon =
-    'This competition aims to develop the idea of assembly of 3D structures on a CAD software.This event will be organized by the Society of Automotive Engineers (SAE), IIEST Shibpur  under the banner of "Impetus 6.0".';
+    'This competition aims to develop the idea of assembly of 3D structures on a CAD software.This event will be organized by the Society of Automotive Engineers (SAE), IIEST Shibpur  under the banner of "Impetus 7.0".';
   const yantrasearch =
     "This event organized by ASME IIEST, aims to give you all the excitement of treasure hunt.You can look forward to having fun while solving mysteries together and hunting down simple machines in our college campus.";
   const heatovation =
     '"Heatovation", organized by IMPETUS 7.0 in association with ISHRAE-IIEST Kolkata chapter empowers social entrepreneurs to create a culture for entrepreneurship and to promote entrepreneurial education in the field of HVAC.';
   const scrapyard =
-    'Innovation need not come from what everyone considers to be a resource; it can also come from making use of what others consider to be waste and producing something useful. With this thought in mind IMPETUS 6.0 presents to you "Scrapyard"';
+    'Innovation need not come from what everyone considers to be a resource; it can also come from making use of what others consider to be waste and producing something useful. With this thought in mind IMPETUS 7.0 presents to you "Scrapyard"';
   const quiz =
-    "To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: 'Quizzical Suspects' under the banner of Impetus 6.0 .The quiz tests and showcases students' technical knowledge and skills.";
+    "To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: 'Quizzical Suspects' under the banner of Impetus 7.0 .The quiz tests and showcases students' technical knowledge and skills.";
   const deathrace =
     "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
   const lineFollower =

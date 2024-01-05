@@ -20,7 +20,7 @@ const styles = {
   maxHeight: "90vh",
   maxWidth: "90vw",
   transform: "translateZ(0)",
-  margin: "10px 0",
+  margin: "10px auto",
   gridTemplateColumns: {
     lg: "repeat(12,1fr) !important",
     md: "repeat(12,1fr) !important",

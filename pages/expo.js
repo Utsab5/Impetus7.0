@@ -119,7 +119,7 @@ export default function ExpoPage() {
             And these vehicles just can&apos;t be a usual bike or car, they need
             to be ELECTRIC.<br></br>
             So we at IMPETUS 7.0 bring to you, a designated expo for the EVs
-            that are gonna rule the roads soon. During the Impetus 6.0 events do
+            that are gonna rule the roads soon. During the Impetus 7.0 events do
             come to our expo to gaze upon one of the most efficient electronic
             vehicle and get a chance to meet the manufacturers of this NextGen
             Technology. Not only these EVs will be a cool way to roam around but
