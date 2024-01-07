@@ -64,7 +64,7 @@ export default function NavbarComp() {
   return (
     <Box
       className="center1"
-      sx={{ backgroundColor: "none", width: "83%", maxWidth: "900px" }}
+      sx={{ backgroundColor: "none", width: "78%", maxWidth: "900px" }}
     >
       <Box sx={styles} className="center1">
         <Box className="nav">
