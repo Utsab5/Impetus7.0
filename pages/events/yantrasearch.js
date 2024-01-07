@@ -346,11 +346,11 @@ export default function CadathonPage() {
           >
             Event Coordinators
           </Typography>
-          <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
-            <EventMag person={person.person1} />
-            <EventMag person={person.person2} />
+          <Box className="sm:grid  sm:grid-cols-2  sm:gap-2 flex flex-col items-center justify-center gap-y-3 ">
+            <EventMag className="mt-1" person={person.person1} />
             <EventMag person={person.person3} />
             <EventMag person={person.person4} />
+            <EventMag className="mt-2" person={person.person2} />
           </Box>
         </Box>
       </section>
