@@ -1,10 +1,10 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import { IconButton, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import { useRouter } from "next/router";
 import Contact from "../../components/Contact";
 import EventMag from "../../components/EventManagement";
+import { IconButton, Typography, useTheme } from "@mui/material";
 const imageStyles = {
   width: "80vw",
   height: "40vh",

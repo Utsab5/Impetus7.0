@@ -1,7 +1,6 @@
 import { IconButton, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import Contact from "../../components/Contact";
-// import ContactCard from "../../components/ContactCard";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
