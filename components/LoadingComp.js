@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function LoadingComp() {
   const styles = {
+    background:"black",
     height: "100vh",
     width: "100vw",
     ".loadingText": {

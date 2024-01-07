@@ -14,12 +14,13 @@ function srcset(image, width, height, rows = 1, cols = 1) {
 }
 
 const styles = {
+  // overflow:"hidden",
   width: "1000px",
   height: "450px",
   maxHeight: "90vh",
   maxWidth: "90vw",
   transform: "translateZ(0)",
-  margin: "10px 0",
+  margin: "10px auto",
   gridTemplateColumns: {
     lg: "repeat(12,1fr) !important",
     md: "repeat(12,1fr) !important",

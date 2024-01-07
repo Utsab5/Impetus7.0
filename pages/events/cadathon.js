@@ -1,18 +1,16 @@
-import { Button, IconButton, Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
-import Contact from "../../components/Contact";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { useRouter } from "next/router";
-import EventMag from "../../components/EventManagement";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { IconButton, Typography, useTheme } from "@mui/material";
+import { Box } from "@mui/system";
+import { useRouter } from "next/router";
+import Contact from "../../components/Contact";
+import EventMag from "../../components/EventManagement";
 const imageStyles = {
   width: "80vw",
   height: "40vh",
   minWidth: "600px",
   minHeight: "400px",
-
   background: `url(/images/cadathon_pg.jpg)  no-repeat  `,
-
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
@@ -95,7 +93,7 @@ export default function CadathonPage() {
   };
 
   return (
-    <Box sx={{ width: "100vw" }} className="center1">
+    <Box sx={{ width: "100vw", background: "" }} className="center1 mt-10">
       <Box sx={headerStyles} className="center2">
         <Box sx={imageStyles}></Box>
         <IconButton onClick={goNext} className="right">
@@ -117,7 +115,7 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                9th February,2024 12:40pm-2:00pm
+                9th February,2024 12:30 PM- 2:00 PM
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
@@ -164,7 +162,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
-                    Participation
+                    Participation:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -175,7 +173,9 @@ export default function CadathonPage() {
               </tr>
               <tr>
                 <td className="pl-2 py-2  md:px-4  ">
-                  <div className="text-sm font-medium  md:text-lg ">Venue</div>
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Venue:-
+                  </div>
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
@@ -186,7 +186,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    No. of rounds
+                    No. of rounds:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -196,7 +196,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 md:px-4  py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Duration of round1
+                    Duration of round1:-
                   </div>
                 </td>
                 <td className="pl-2 py-1">
@@ -208,7 +208,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2  md:px-4 py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Duration of round2
+                    Duration of round2:-
                   </div>
                 </td>
                 <td className="pl-2 py-1">

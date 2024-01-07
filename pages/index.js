@@ -1,12 +1,13 @@
 import { Box } from "@mui/material";
-import { AnimatePresence } from "framer-motion";
 import { Router } from "next/router";
 import React, { useEffect, useState } from "react";
+import BubbleComponent from "../components/BubbleComponent";
 import Contact from "../components/Contact";
-import HomePageAbout from "../components/HomePageAbout";
-import HomePageVideo from "../components/HomePageVideo";
+import HomePageAbout1 from "../components/HomePageAbout1";
+import IframeComp from "../components/IframeComp";
 import LoadingComp from "../components/LoadingComp";
 import { useLoading } from "../components/LoadingContext";
+import MerchandiseComp from "../components/MerchandiseComp";
 import VideoText from "../components/VideoText";
 
 const styles = {
@@ -23,6 +24,21 @@ const containerStyles = {
   },
   width: "100vw",
 };
+
+const aboutContent = [
+  {
+    name: "IMPETUS",
+    text: "IMPETUS is an annual event organized by the Society of Mechanical Engineers at IIEST Shibpur to bring industry and education closer together. The events aim to provide students with practical knowledge and opportunities to interact with industry professionals in mechanical engineering.",
+    link: "/about",
+    img: "impetus_pic.png",
+  },
+  {
+    name: "INDUSTRY ACADEMIA MEET",
+    text: "The industrial meet in IMPETUS is to foster a productive dialogue between industry and academia, provide exposure to students and academics about current and future industrial trends, and equip them with the skills to be future-proof and industry-ready. It seeks to establish interactive communication between industry leaders, academicians, and students, bridging the gap between the company and institute and offering a comprehensive understanding of their needs.",
+    link: "/industryacademiameet",
+    img: "pic_1.png",
+  },
+];
 
 export default function HomePage() {
   const [opacity, setOpacity] = useState(1);
@@ -55,30 +71,17 @@ export default function HomePage() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   if (isVisible) disableScroll.on(window);
-  //   else disableScroll.off(window);
-  //   return () => {
-  //     disableScroll.off(window);
-  //   };
-  // }, [isVisible]);
-
   return (
     <Box>
       {loading && <LoadingComp />}
-      <Box sx={containerStyles}>
-        <AnimatePresence>
-          <Box>
-            {/* <HomePageVideo /> */}
-            {/* <VideoText hideIt={hideIt} /> */}
-          </Box>
-        </AnimatePresence>
-      </Box>
-      <HomePageVideo />
       <VideoText hideIt={hideIt} />
-      <HomePageAbout />
+      <IframeComp />
+      {/* <MerchandiseComp /> */}
+      {aboutContent.map((el) => (
+        <HomePageAbout1 key={el.name} {...el} />
+      ))}
+      <BubbleComponent />
       <Contact />
     </Box>
   );
 }
-

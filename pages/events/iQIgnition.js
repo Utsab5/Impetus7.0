@@ -6,15 +6,12 @@ import { Box } from "@mui/system";
 import { useRouter } from "next/router";
 import Contact from "../../components/Contact";
 import EventMag from "../../components/EventManagement";
-
 const imageStyles = {
   width: "80vw",
   height: "40vh",
   minWidth: "400px",
   minHeight: "400px",
-
-  background: `url(/images/Valorant_pg.jpg)  no-repeat  `,
-
+  background: `url(/images/quizzical_pg.jpg)  no-repeat  `,
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
@@ -57,10 +54,10 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/fun");
+    router.push("/events/deathrace");
   };
   const goBack = () => {
-    router.push("/events/deathrace");
+    router.push("/events/scrapyard");
   };
 
   const headerStyles = {
@@ -87,8 +84,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Alex Horo",
-      phone: "+91 8249199487",
+      name: "Ajay Khandelwal ",
+      phone: "+91 7792062842",
+    },
+    person2: {
+      name: "Shreya Jaiswal ",
+      phone: "+91 6394615691",
     },
   };
   return (
@@ -104,22 +105,20 @@ export default function CadathonPage() {
       </Box>
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
         <div className="py-2  ">
-          Valorant has found an exponentially rising popularity amid the
-          youngsters today. So for the grand gaming event of Impetus 7.0, we
-          bring to you a Valorant tournament, where teams of 5 each, lock horns
-          to be the best of the best. It will be conducted in 3 rounds, a
-          knockout round, the eliminations, and the semi final and the final
-          clash will be a best of 3 matches. The winners take home total prize
-          money worth Rs. 10000{" "}
-          <p className="text-lg font-normal text-gray-200  "></p>
+          <p className="text-lg font-normal text-gray-200  ">
+            To instil the essence of quizzing, IMechE IIEST, Shibpur brings to
+            you a Grand General Technical Quiz: &quot;IQIgnition Suspects&quot;
+            under the banner of Impetus 7.0
+          </p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
-                  Dates{" "}
+                  Dates
                 </span>
-                10th February, 2024 11:00 AM onwards
+                Round-1:-10th February, 2024,11:00 AM-12:00 AM Round-2:-10th
+                February, 2024,12:00 AM-1:30 PM
               </p>
             </div>
             <button
@@ -139,59 +138,58 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
-                    Registration fees:₹250 per team for IIEST Students and ₹300
-                    for others.
+                    Registration (online)
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Till 2 hour before the commencement of event
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Registration (offline)
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm md:text-lg font-medium ">
+                    On spot registrations subject to availability.
                   </div>
                 </td>
               </tr>
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
-                    Pre-requirements
-                  </div>
-                </td>
-                <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    Laptop with Valorant and discord installed. Stable internet
-                    connection will be provided.
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td className="pl-2 py-2  md:px-4  ">
-                  <div className="text-sm font-medium  md:text-lg ">
                     Participation
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Team of 5 players, coach (not compulsory) and one extra
-                    player to be informed before.
+                    Team of 1-3 members
                   </div>
                 </td>
               </tr>
               <tr>
-                <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    Platform
-                  </div>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">Venue</div>
                 </td>
-                <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    Discord and Valorant
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    Gallery 6, Department of Mechanical Engineering (IIEST
+                    Shibpur)
                   </div>
                 </td>
               </tr>
               <tr>
-                <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
-                  <div className="text-sm font-medium  md:text-lg ">
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
                     No. of rounds
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    3 (elimination, semi-finals, finals).
-                  </div>
+                  <div className="text-sm font-medium  md:text-lg ">2</div>
                 </td>
               </tr>
               <tr>
@@ -202,7 +200,7 @@ export default function CadathonPage() {
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    100 mins
+                    Round1- 30mins, Round2- 30mins
                   </div>
                 </td>
               </tr>
@@ -215,7 +213,18 @@ export default function CadathonPage() {
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
                     {" "}
-                    <span className="font-bold ">Rs.10000</span>
+                    <span className="font-bold ">Rs.8000</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">Venue</div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Gallery 6, Department of Mechanical Engineering (IIEST
+                    Shibpur)
                   </div>
                 </td>
               </tr>
@@ -225,57 +234,14 @@ export default function CadathonPage() {
         <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <Box className="data mt-2" sx={dataStyles}>
-            <ul className="bulletArrow">
-              <ul className="BulletNone">
-                <li>
-                  Registration will be done through google form. Participants
-                  will be required to join the discord server of Impetus 7.0.
-                </li>
-              </ul>{" "}
-              <ul className="BulletNone">
-                <li>The total teams will be divided into two pools.</li>
-              </ul>{" "}
-              <ul className="nestedList">
-                <span className="font-bold text-xl text-blue-500  ">
-                  Round 1 :
-                </span>
-                <ul className="BulletNone">
-                  <li>
-                    {" "}
-                    Each pool will have one match (best of 1) based on knockout
-                    and teams moving forward will have more knockouts based on
-                    the flow of the events, until 4 teams are left. Overtime
-                    will be like ‘Endgame’ (after 12-12 score first team to get
-                    13-12 score wins).
-                  </li>
-                </ul>
-              </ul>
-              <ul className="nestedList">
-                <span className="font-bold text-xl text-blue-500  ">
-                  Round 2 :
-                </span>
-                <ul className="BulletNone">
-                  <li>
-                    {" "}
-                    The teams will have match based on best of 1 and two teams
-                    will be selected for finals. Overtime will be normal
-                    competitive wise (after 12-12 score first team to win two
-                    consecutive rounds wins).
-                  </li>
-                </ul>
-              </ul>
-              <ul className="nestedList">
-                <span className="font-bold text-xl text-blue-500  ">
-                  Round 3 :
-                </span>
-                <ul className="BulletNone">
-                  <li>
-                    {" "}
-                    Finals will be best of 3. Overtime rules same as ROUND 2.
-                  </li>
-                </ul>
-              </ul>
-            </ul>
+            <p className="text-lg font-normal text-gray-200  ">
+              The quiz will be a short format quiz held in two rounds. The
+              questions will be a general quiz with plenty of hints for working
+              out the answers with intelligent guesses. The quizmaster has
+              promised that there will not be a single answer that you
+              haven&apos;t heard before, so anybody with a knack for quizzing
+              can easily participate and win laurels
+            </p>
           </Box>
         </div>
         <div className="py-3  ">
@@ -287,53 +253,32 @@ export default function CadathonPage() {
         <Box className="data" sx={dataStyles}>
           <ul className="bulletArrow">
             <ul className="BulletNone">
-              <li>The tournament will be only on Mumbai Server.</li>
-            </ul>{" "}
-            <ul className="BulletNone">
-              <li>All weapons are allowed.</li>
-            </ul>{" "}
-            <ul className="BulletNone">
               <li>
-                All the players must sit in the respective voice channel through
-                mobile/PC.
+                {" "}
+                Teams will have to register 2 hours before the deadline of the
+                registration form
               </li>
             </ul>{" "}
             <ul className="BulletNone">
               <li>
-                By Patch notes 7.0, since Breeze and Bind are temporarily
-                removed from the game officially, hence; Ascent, Split, Haven,
-                Icebox, Fracture, Pearl, Lotus map will be played.
-              </li>
-            </ul>{" "}
-            <ul className="BulletNone">
-              <li>Technical pause will be of 5 minutes.</li>
-            </ul>{" "}
-            <ul className="BulletNone">
-              <li>
-                Tactical pause will be of 1 minute each (2 times, as per the
-                RIOT tactical timeout section).
+                On-spot registrations on subject to availability of slots.
               </li>
             </ul>{" "}
             <ul className="BulletNone">
               <li>
-                Coaches must be on mute during the game after the agent select
-                is done, and can unmute only in tactical timeout.
+                The quiz will be of two rounds. First round will have 10
+                questions. +10/0- for each question.
               </li>
             </ul>{" "}
             <ul className="BulletNone">
               <li>
-                Only coaches are allowed to sit in the coach slot, no players or
-                managers are allowed to sit in the coach slot.
+                The second round will be of bounce and pounce format. Teams
+                pouncing will get +10/-5, for each question. Teams who will
+                answer the questions on bounce will get +5/-0 for each question.
               </li>
             </ul>{" "}
             <ul className="BulletNone">
-              <li>
-                The max time to wait will be 10 minutes, if the team does not
-                show in that 10 minute, the opponent will get a forfeit win.
-              </li>
-            </ul>{" "}
-            <ul className="BulletNone">
-              <li>In case of dispute, verdict of admins will be final.</li>
+              <li> Quizmaster&apos;s say is final.</li>
             </ul>{" "}
           </ul>
         </Box>
@@ -345,11 +290,10 @@ export default function CadathonPage() {
           <h1 className="text-xl  font-bold mt-2 md:text-3xl py-2">
             Registration fee
           </h1>
-          <li className="py-1">
-            <span className="font-bold text-xl">Rs.250</span>
-          </li>
+          <li className="py-1">Free (For IIEST students)</li>
           <li>
-            <span className="font-bold text-xl">Rs.100</span> (for re-entry)
+            <span className="font-bold text-xl">Rs.70</span> (For non-IIEST
+            students)
           </li>
         </div>
         <Box>
@@ -375,6 +319,7 @@ export default function CadathonPage() {
           </Typography>
           <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
             <EventMag person={person.person1} />
+            <EventMag person={person.person2} />
           </Box>
         </Box>
       </section>

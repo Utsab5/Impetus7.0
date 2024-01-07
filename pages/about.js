@@ -5,16 +5,30 @@ import Contact from "../components/Contact";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import ImageListComp from "../components/ImageListComp";
+import Divider2 from "../components/Divider2";
 
 export default function AboutPage() {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
+  const [propertyValue, setPropertyValue] = useState('absolute');
+  // const [TopValue, setTopValue] = useState('400px');
+  const [TopValue, setTopValue] = useState('45vh');
+  const [HeightValue, setHeightValue] = useState('50%');
   const theme = useTheme();
+  const videoId= "Y9VOzNnr8aY";
 
   const styles = {
     width: "100vw",
     ".videos": {
       width: "100vw",
+      ".overlay":{
+        position:"absolute",
+        backgroundColor:"red",
+        opacity:"0.5",
+        zIndex:"1",
+        width: "100vw",
+        height: "100vh",
+      },
       "#trailer": {
         [theme.breakpoints.down("md")]: {
           display: "none",
@@ -60,19 +74,30 @@ export default function AboutPage() {
       mb: "50px",
     },
     ".aboutImpetus, .aboutDept": {
-      margin: "70px 0",
+      margin: "50px 0",
+      marginTop:"170px",
     },
   };
 
-  const muteVideo = () => {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition === 0) setMuted(false);
-    else setMuted(true);
-  };
+  const YTvideoStyle={
+    position:propertyValue,    
+    zIndex:"1",
+    top:TopValue,
+    width:"100%",
+    height:HeightValue,
+    marginTop:"100px"
 
-  const toggleVolume = () => {
-    setMuted(!muted);
-  };
+  }
+
+  // const muteVideo = () => {
+  //   const scrollPosition = window.scrollY;
+  //   if (scrollPosition === 0) setMuted(false);
+  //   else setMuted(true);
+  // };
+
+  // const toggleVolume = () => {
+  //   setMuted(!muted);
+  // };
 
   const handleSize = (e) => {
     const width = e.target.innerWidth;
@@ -84,17 +109,41 @@ export default function AboutPage() {
   };
 
   useEffect(() => {
-    if (window.innerWidth > 900)
+    if (window.innerWidth > 900){
       videoRef.current?.play().catch((e) => console.log(e));
-    else videoRef.current?.pause();
-    window.addEventListener("scroll", muteVideo);
+    }
+    else{
+       videoRef.current?.pause();
+    }
+    // window.addEventListener("scroll", muteVideo);
     window.addEventListener("resize", handleSize);
 
     return () => {
       window.removeEventListener("resize", handleSize);
-      window.removeEventListener("scroll", muteVideo);
+      // window.removeEventListener("scroll", muteVideo);
       videoRef.current?.pause();
     };
+  }, []);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 900) {
+        setPropertyValue('relative');
+        setTopValue('0');
+        setHeightValue('40vw');
+
+      } else {
+        setPropertyValue('absolute');
+        setTopValue('45vh');
+        setHeightValue('50%');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call initially to set the initial value
+
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const person = {
@@ -119,8 +168,9 @@ export default function AboutPage() {
   return (
     <Box sx={styles} className="center1">
       <Box className="videos">
+        <div className="overlay"></div>
         <video
-          onClick={toggleVolume}
+          // onClick={toggleVolume}
           ref={videoRef}
           muted={muted}
           id="trailer"
@@ -129,7 +179,25 @@ export default function AboutPage() {
         >
           <source src="images/trailer.mp4" type="video/mp4" />
         </video>
+      <Divider2 />
       </Box>
+      <Box style={YTvideoStyle} >
+        <iframe
+          src={`https://www.youtube.com/embed/${videoId}`}
+          style={{
+            aspectRatio:"16/9",
+            height:"100%",
+            width:"auto",
+            margin:"0 auto",
+            // border:"solid 2px #00A7E7",
+            borderRadius:"10px",
+          }}
+          frameBorder="0"
+          allowFullScreen
+          title="My YouTube Video"
+        />
+      </Box>
+
       <Box className="aboutImpetus center1">
         <Image
           sx={{ mt: "50px" }}
@@ -138,8 +206,8 @@ export default function AboutPage() {
           width="300"
           alt="SME"
         />
-        <div className="px-4 mx-auto max-w-screen-xl   lg:py-16 ">
-          <p className="lg:tracking-normal  relative sm:tracking-tight text-lg font-normal lg:text-xl sm:px-18 sm:text-xm text-justify rtl:text-right text-gray-300">
+        <Box className="content" style={{textAlign:"justify"}}>
+          <Typography variant="p">
             Theoretical knowledge will serve no purpose until combined with
             skills and real-world knowledge. IMPETUS is an attempt to bring the
             industry closer to the students at IIEST, Shibpur. It is organized
@@ -150,19 +218,20 @@ export default function AboutPage() {
             The various events in impetus are designed to enrich one&apos;s
             practical knowledge, while they also give you a chance to interact
             with leading industry professionals in the field of mechanical
-            engineering.<br></br>
+            engineering.
+            <br></br>
             So, no matter where you come from, we will make sure you add a
-            feather to your cap on the way back.{" "}
-          </p>
-        </div>
+            feather to your cap on the way back.
+          </Typography>
+          
+          
+        </Box>
       </Box>
-      <Box>
-        <ImageListComp />
-      </Box>
+      
       <Box className="aboutDept center1">
         <Image src="/images/SMEwhite.png" height="300" width="300" alt="SME" />
-        <div className="px-4 mx-auto max-w-screen-xl   lg:py-16  relative">
-          <p className="lg:tracking-normal tracking-tight text-lg font-normal lg:text-xl sm:px-18 sm:text-xm text-justify rtl:text-right text-gray-300">
+        <Box className="content" style={{textAlign:"justify"}}>
+          <Typography variant="p">
             It was on 4th March, 1921, a diploma course on mechanical
             engineering was started and this was the beginning of the golden
             journey for the department. The first degree level course started on
@@ -185,12 +254,13 @@ export default function AboutPage() {
             industrial domain are often invited for delivering lectures and
             Industrial visits are also organised by the department for making
             the students aware about the modern developments in the industries.
-          </p>
-        </div>
+          </Typography>
+          
+        </Box>
       </Box>
-      <Box className="contact">
-        <ContactCard person={person.person1} />
-        <ContactCard person={person.person2} />
+      <Box>
+        <Typography variant="h2" style={{fontFamily:"Rowdies",margin:"0 30px",textAlign:"center"}}>SOME MOMENTS OF PREVIOUS EDITIONS</Typography><br></br>
+        <ImageListComp />
       </Box>
       <Contact />
     </Box>

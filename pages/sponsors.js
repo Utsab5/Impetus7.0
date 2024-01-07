@@ -1,5 +1,7 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
+import Contact from "../components/Contact";
+import SponsorCard from "../components/SponsorCard";
 
 const Food = [
   { image: "/images/anacafe.png", name: "image1" },
@@ -39,23 +41,50 @@ const medical = [
 ];
 export default function SponsorsPage() {
   const styles = {
+    overflowY: "hidden",
     h1: {
       mt: "100px",
       mb: "50px",
-      fontSize: "54px",
+      fontSize: {
+        lg: "54px",
+        sm: "50px",
+        xs: "40px",
+      },
+      height: "10vh",
     },
     h3: { mt: "100px", mb: "50px", fontSize: "54px" },
+  };
+  const sponsorData = {
+    sponsor1: { imgname: "Logiczap.png" },
+    sponsor2: { imgname: "elearnmarkets.jpg" },
+    sponsor3: { imgname: "idp.jpg" },
+    sponsor4: { imgname: "iic.jpg" },
+    sponsor5: { imgname: "IMechE.jpg" },
+    sponsor6: { imgname: "Mahr.jpg" },
+    sponsor7: { imgname: "moople.jpg" },
+    sponsor8: { imgname: "ThinkAgainLab.jpg" },
+    sponsor9: { imgname: "Alo bus.png" },
+    sponsor10: { imgname: "Asawa insulation.png" },
+    sponsor11: { imgname: "Dyna Temp.png" },
+    sponsor12: { imgname: "Roasted.png" },
+    sponsor13: { imgname: "7Spices.png" },
   };
 
   return (
     <>
-      <Box sx={styles} className="center1">
-        <Typography variant="h1">Sponsors</Typography>
+      <Box sx={styles} className="center1" style={{ marginTop: "100px" }}>
+        <Typography variant="h1">Past Sponsors</Typography>
+        <Box className="cards">
+          {Object.values(sponsorData).map((sponsor, index) => (
+            <SponsorCard key={index} sponsor={sponsor} />
+          ))}
+        </Box>
+        {/* <Typography variant="h1">COMING SOON...</Typography> */}
       </Box>
 
-      <Box className="center1">
+      {/* <Box sx={styles} className="center1">
         <Typography variant="h3">Hardware</Typography>
-        <div className="image-container">
+        <div className="image-container" >
           <img src="/images/Thyssenkrupp.png" alt="Image 1" className="image" />
           <img src="/images/hero_vired.jpeg" alt="Image 2" className="image" />
           <img src="/images/JSW-steel.png" alt="Image 2" className="image" />
@@ -87,41 +116,10 @@ export default function SponsorsPage() {
         </div>
       </Box>
       <Box sx={styles} className="center1">
-        <Typography variant="h3">Tech</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Automotive</Typography>
-      </Box>
-      <h3 className="Sponsors_heading">Edtech</h3>
-      <div className="image-container">
-        {Edtech.map((s) => (
-          <img key={s.name} src={s.image} alt={s.name} className="image" />
-        ))}
-      </div>
-      <h3 className="Sponsors_heading">Medical</h3>
-      <div className="image-container">
-        {medical.map((s) => (
-          <img key={s.name} src={s.image} alt={s.name} className="image" />
-        ))}
-      </div>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Entertainment</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Gaming</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Electric Vehicles</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3"></Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3"></Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3"></Typography>
-      </Box>
+        <Typography variant="h3">Fintech</Typography>
+      </Box> */}
+
+      <Contact />
     </>
   );
 }

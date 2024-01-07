@@ -74,7 +74,7 @@ export default function EventPage() {
     position: "relative",
     ".descWrapper": {
       height: "100vh",
-      overflowY: "scroll",
+      overflowY: "hidden",
       scrollSnapType: "y mandatory",
       scrollSnapPointsY: "repeat(100vh)",
     },
@@ -149,7 +149,14 @@ export default function EventPage() {
   }, []);
 
   return (
-    <Box className="center1" style={{ marginTop: "50px" }}>
+    <Box
+      className="center1"
+      style={{
+        paddingTop: "50px",
+        overflowY: "hidden",
+        backgroundColor: "black",
+      }}
+    >
       {/* {currIdx} */}
       <Box sx={styles}>
         <EventList setCurrIdx={setCurrIdx} currIdx={currIdx} />

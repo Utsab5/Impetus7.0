@@ -1,13 +1,11 @@
-import { Button, IconButton, Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
-import Image from "next/image";
-import Contact from "../../components/Contact";
-import ContactCard from "../../components/ContactCard";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { IconButton, Typography, useTheme } from "@mui/material";
+import { Box } from "@mui/system";
 import { useRouter } from "next/router";
+import Contact from "../../components/Contact";
 import EventMag from "../../components/EventManagement";
-
 const imageStyles = {
   width: "80vw",
   height: "40vh",
@@ -23,7 +21,6 @@ const imageStyles = {
 };
 
 const dataStyles = {
-  margin: "50px",
   textAlign: "justify",
   maxWidth: "800px",
   ".data": {
@@ -59,7 +56,7 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/quizzical");
+    router.push("/events/iQIgnition");
   };
   const goBack = () => {
     router.push("/events/heatovation");
@@ -94,11 +91,11 @@ export default function CadathonPage() {
     },
     person2: {
       name: "Wali Ahad Mallick ",
-      phone: "7480984908",
+      phone: "+91 7480984908",
     },
   };
   return (
-    <Box sx={{ width: "100vw" }} className="center1">
+    <Box sx={{ width: "100vw" }} className="mt-10 center1">
       <Box sx={headerStyles} className="center2">
         <IconButton onClick={goBack} className="left">
           <ArrowBackIcon fontSize="large" color="white" />
@@ -108,287 +105,292 @@ export default function CadathonPage() {
           <ArrowForwardIcon fontSize="large" color="white" />
         </IconButton>
       </Box>
-      <Box sx={dataStyles} className="data">
-        <Box>
-          <Typography variant="h2">BRIEF INTRODUCTION OF THE EVENT:</Typography>
-          <Typography sx={{}} variant="p">
-            Welcome to SCRAPYARD—an event designed to ignite your creativity and
-            reasoning. Assemble with your team to tackle a given problem
-            statement, showcasing innovative ideas that push the boundaries of
-            conventional solutions. It's a celebration of intellect,
-            imagination, and collaborative prowess. Join us for a journey into
-            uncharted territories of innovation.
-          </Typography>
-
-          <ul className="nestedList" style={{ fontSize: "21px" }}>
-            Dates:
-            <li>
-              <ul className="BulletNone">
-                <li>Round 1: 10th February, 2024 10:00am-11:00am</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Round 2: 10th February, 2024 1:00pm-3:00pm</li>
-              </ul>
-            </li>
-          </ul>
-          <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
-            <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
-              <Button
-                variant="contained"
-                size="large"
-                onClick={(event) =>
-                  (window.location.href = "https://forms.gle/dasQGHp3orck9jLp7")
-                }
-              >
-                Register Now
-              </Button>
-            </Box>
-          </Box>
-        </Box>
-        <Box className="data">
-          <Typography variant="h2">Objective</Typography>
-          <Typography sx={{}} variant="p">
+      <section className="py-10 max-w-screen-lg md:px-10 px-4">
+        <div className="py-2  ">
+          <p className="text-lg font-normal text-gray-200  ">
+            SCRAPYARD, an event that enables your untouched creativity and
+            reasoning abilities to explode. Show case your innovative ideas as a
+            team to create the assembly that fits the given problem statement.
+          </p>
+          <div className="py-2 flex items-center flex-col justify-center ">
+            <div className="py-3 flex flex-col items-center justify-center gap-y-2">
+              <p className="text-lg">
+                <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
+                  <CalendarMonthIcon className="h-5" />
+                  Round 1
+                </span>
+                10th February, 2024 10:00 AM-11:00 AM
+              </p>
+              <p className="text-lg">
+                <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
+                  <CalendarMonthIcon className="h-5" />
+                  Round 2
+                </span>
+                10th February, 2024 1:00 PM-3:00 PM
+              </p>
+            </div>
+            <button
+              type="button"
+              className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+              onClick={(event) =>
+                (window.location.href = "https://forms.gle/NRdSf7w4pvX5E96y7")
+              }
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+        <div className="py-2  ">
+          <h1 className="text-3xl py-1 font-bold ">Objective</h1>
+          <p className="text-lg font-normal text-gray-200  ">
             This is an event of 2 rounds. In the 1st round, Teams will be given
             a test of 30 questions. In the succeeding round the selected few
             teams will be given a problem statement on which they have to use
             their creative skills to make a structure out of scrap that fits the
             problem statement.
-          </Typography>
-          <Typography variant="h2">Basic Information</Typography>
-          <ul className="bulletArrow">
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  Registration: Through G-forms, till 1 hour before commencement
-                  of Round 1
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Participation: A team of 2-3 members</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>No. of Rounds: 2</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Venue:- Round 1-Gallery 6 Round2-Amenities</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Duration of each round: Round 1-1hr, Round 2-2hr</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  Prizes worth <b>Rs.10000/-</b>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{}} variant="p">
+          </p>
+        </div>
+        <div className="py-6 bg-gray-900 mb-2 shadow-md sm:rounded-lg px-0 rounded-md">
+          <table className="min-w-full divide-y">
+            <tbody className="bg-gray-900 md:text-lg text-gray-300 divide-y divide-gray-800">
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Registration:- Through G-forms, till 1 hour before
+                    commencement of Round 1
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Till 1 hour before the commencement of round1
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    Participation:- A team of 2-3 members
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2  md:px-4  ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Venue:- Round 1- Gallery 6 , Round 2- Amenities
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    No. of rounds
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">2</div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Duration of rounds:-Round 1- 1hr, Round 2- 2hr
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Prizes worth:Rs 10000/-
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    {" "}
+                    <span className="font-bold ">Rs.10000</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="py-3 mt-2 ">
+          <h1 className="text-3xl font-bold ">Flow of the events</h1>
+          <Box className="data mt-2" sx={dataStyles}>
             <ul className="bulletArrow">
-              <li>
+              <ul className="BulletNone">
+                <li>
+                  <b>Scrapyard </b> is going to be held in 2 rounds. Candidates
+                  qualified from the first round can only participate in second
+                  round (No lateral entry allowed)
+                </li>
+              </ul>{" "}
+              <ul className="BulletNone">
+                <li>
+                  Registration will be done through google forms. And the
+                  registered teams will be provided with WhatsApp group link.
+                  Through which all the details about the event will be
+                  notified.
+                </li>
+              </ul>{" "}
+              <ul className="nestedList">
+                <span className="font-bold text-xl text-blue-500  ">
+                  Round 1 :
+                </span>
                 <ul className="BulletNone">
                   <li>
-                    Scrapyard is going to be held in 2 rounds. Candidates
-                    qualified from the first round can only participate in
-                    second round (No lateral entry allowed)
+                    {" "}
+                    Round 1 is a test. It consists of 30 questions which should
+                    be completed within the given time limit of 1hr.
                   </li>
                 </ul>
-              </li>
-              <li>
                 <ul className="BulletNone">
                   <li>
-                    Registration will be done through google forms. And the
-                    registered teams will be provided with WhatsApp group link.
-                    Through which all the details about the event will be
-                    notified.
+                    The Event team will provide the teams with OMR sheet along
+                    with the question paper.{" "}
                   </li>
                 </ul>
-              </li>
-              <li>
-                <ul className="nestedList">
-                  Round 1:
+                <ul className="BulletNone">
                   <li>
-                    <ul className="BulletNone">
-                      <li>
-                        Round 1 is a test. It consists of 30 questions which
-                        should be completed within the given time limit of 1hr.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul className="BulletNone">
-                      <li>
-                        The Event team will provide the teams with OMR sheet
-                        along with the question paper.{" "}
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul className="BulletNone">
-                      <li>
-                        After the completion of the test, the results will be
-                        notified through WhatsApp group.
-                      </li>
-                    </ul>
+                    After the completion of the test, the results will be
+                    notified through WhatsApp group.
                   </li>
                 </ul>
-              </li>
-              <li>
-                <ul className="nestedList">
-                  Round: 2
+              </ul>
+              <ul className="nestedList">
+                <span className="font-bold text-xl text-blue-500  ">
+                  Round 2 :
+                </span>
+                <ul className="BulletNone">
                   <li>
-                    <ul className="BulletNone">
-                      <li>
-                        The selected teams which are qualified through round-1
-                        will be given a problem statement.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul className="BulletNone">
-                      <li>
-                        They should make a structure out of scrap that fits the
-                        problem statement with in 2hr time limit.
-                      </li>
-                    </ul>
+                    {" "}
+                    The selected teams which are qualified through round-1 will
+                    be given a problem statement.
                   </li>
                 </ul>
-              </li>
+                <ul className="BulletNone">
+                  <li>
+                    {" "}
+                    They should make a structure out of scrap that fits the
+                    problem statement with in 2hr time limit.
+                  </li>
+                </ul>
+              </ul>
             </ul>
-          </Typography>
-          <Typography variant="h2">Rules and Regulations</Typography>
+          </Box>
+        </div>
+        <div className="py-3  ">
+          <h1 className="md:text-3xl text-2xl font-bold ">
+            Rules and Regulations
+          </h1>
+          <p className="text-lg font-normal text-gray-200  "></p>
+        </div>
+        <Box className="data" sx={dataStyles}>
           <ul className="bulletArrow">
+            <ul className="BulletNone">
+              <li>
+                Registered candidates are to be present in the amenities before
+                the commencement of the event.
+              </li>
+            </ul>{" "}
+            <ul className="BulletNone">
+              <li>One participant cannot be a part of more than one team. </li>
+            </ul>{" "}
+            <ul className="BulletNone">
+              <li>
+                No change in team structure is permitted after the team is
+                registered.
+              </li>
+            </ul>{" "}
+            <ul className="BulletNone">
+              <li>
+                {" "}
+                Usage of digital devices is strictly prohibited. Violation leads
+                to immediate disqualification.
+              </li>
+            </ul>{" "}
             <li>
-              <ul className="BulletNone">
-                <li>
-                  Registered candidates are to be present in the venue before
-                  the commencement of the event.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  One participant cannot be a part of more than one team.{" "}
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  No change in team structure is permitted after the team is
-                  registered.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  Usage of digital devices is strictly prohibited. Violation
-                  leads to immediate disqualification.
-                </li>
+              <ul className="nestedList">
+                <span className="font-bold text-xl text-blue-500  ">
+                  Round 1 :
+                </span>
+                <ul className="BulletNone">
+                  <li>
+                    Participants are required to bring ball point pen along with
+                    them to fill the OMR sheet.
+                  </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                    {" "}
+                    Any type of malpractice will not be entertained during the
+                    test.
+                  </li>
+                </ul>
               </ul>
             </li>
             <li>
               <ul className="nestedList">
-                Round-1:
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      Participants are required to bring ball point pen along
-                      with them to fill the OMR sheet.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      Any type of malpractice will not be entertained during the
-                      test.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="nestedList">
-                Round-2:
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      All the requirements for this round will be provided.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>Plagiarism is prohibited.</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  EVENT CO-ORDINATER HAVE THE FINAL SAY IN ALL ASPECTS IN THIS
-                  EVENT.
-                </li>
+                <span className="font-bold text-xl text-blue-500  ">
+                  Round 2 :
+                </span>
+                <ul className="BulletNone">
+                  <li>All the requirements for this round will be provided.</li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>Plagiarism is prohibited.</li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                    EVENT CO-ORDINATER HAVE THE FINAL SAY IN ALL ASPECTS IN THIS
+                    EVENT.
+                  </li>
+                </ul>
               </ul>
             </li>
           </ul>
         </Box>
+        <div className="">
+          <p className="text-lg font-semibold  text-gray-200  ">
+            NOTE:- EVENT COORDINATORS HAVE THE FINAL SAY IN ALL ASPECTS IN THIS
+            EVENT.<br></br>
+          </p>
+          <h1 className="text-xl  font-bold mt-2 md:text-3xl py-2">
+            Registration fee
+          </h1>
+          <li className="py-1">Free (For IIEST students)</li>
+          <li>
+            <span className="font-bold text-xl">Rs.120</span> (For non-IIEST
+            students)
+          </li>
+        </div>
         <Box>
           <Box className="fee">
-            <Typography variant="h3"> Registration fee: </Typography>
-            <ul className="nestedList" style={{ fontSize: "21px" }}>
-              <li>
-                <ul className="BulletNone">
-                  <li>Free (for IIEST Students)</li>
-                </ul>
-              </li>
-              <li>
-                <ul className="BulletNone">
-                  <li>Rs.120 (for non-IIEST Students)</li>
-                </ul>
-              </li>
-            </ul>
-            <Box sx={{ width: "100%" }} className="center1">
-              <Button
-                variant="contained"
-                size="large"
+            <Box sx={{ width: "100%" }} className="py-4 center1">
+              h
+              <button
+                type="button"
+                className=" font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
                 onClick={(event) =>
-                  (window.location.href = "https://forms.gle/dasQGHp3orck9jLp7")
+                  (window.location.href = "https://forms.gle/NRdSf7w4pvX5E96y7")
                 }
               >
                 Register Now
-              </Button>
+              </button>
             </Box>
           </Box>
           <Typography
-            variant="h2"
+            variant="h3"
             sx={{ textAlign: "center", marginTop: "20px" }}
+            className="text-xl  font-bold mt-2 md:text-3xl py-2"
           >
             Event Coordinators
           </Typography>
-          <Box className="contact">
+          <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
             <EventMag person={person.person1} />
             <EventMag person={person.person2} />
-            {/* <EventMag person={person.person3} /> */}
           </Box>
         </Box>
-      </Box>
+      </section>
       <Contact />
     </Box>
   );
