@@ -89,12 +89,20 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Shreyash Manze",
-      phone: "+91 7700001193",
+      name: "Piyal Bhowmick",
+      phone: "+91 8910276639",
     },
     person2: {
-      name: "Sayantan Paul",
-      phone: "+91 9830664404",
+      name: "Md Wali Ahad Malik",
+      phone: "+91 7480984908",
+    },
+    person3: {
+      name: "Akash Yadav",
+      phone: "+91 7237080517",
+    },
+    person4: {
+      name: "Ankush Ghosh",
+      phone: "+91 8145326311",
     },
   };
   return (
@@ -118,7 +126,7 @@ export default function CadathonPage() {
           </Typography>
 
           <ul style={{ fontSize: "22px" }}>
-            Dates: 18th February, 2023 2:30pm
+            Dates: 9th February, 2024 4:30pm-7:00pm
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -148,8 +156,10 @@ export default function CadathonPage() {
               registrations will be available only if slots are available)
             </li>
             <li>Pre-requirements – WhatsApp, moderate internet connection</li>
-            <li>Participation – team of 2-3 members</li>
+            <li>Participation – team of 3 members,</li>
+            <li>Platform – Gallery 5, Department of Mechanical Engineering</li>
             <li>No. of Rounds – 1</li>
+            <li>Duration of event – 2 hours approximately.</li>
             <li>
               Prizes worth <b>Rs.10000/-</b>
             </li>
@@ -191,13 +201,13 @@ export default function CadathonPage() {
               event starts.
             </li>
             <li>
-              Attempt to bribe the volunteer to get clues or answer will lead to
-              disqualification.
+              Attempting to bribe the volunteer to get clues or answer will lead
+              to disqualification.
             </li>
             <li>Do not Ask for help from anyone or misguide anyone.</li>
             <li>
-              Maintain co-ordination amongst team mates, more than one person
-              sending solution & picture to volunteer will lead to penalty.
+              Maintain coordination amongst team mates, more than one person
+              sending a solution & picture to volunteer will lead to penalty.
             </li>
             <li>
               <b>Tip</b>: This event aims to get your body moving around the
@@ -241,6 +251,8 @@ export default function CadathonPage() {
           <Box className="contact">
             <EventMag person={person.person1} />
             <EventMag person={person.person2} />
+            <EventMag person={person.person3} />
+            <EventMag person={person.person4} />
           </Box>
         </Box>
       </Box>

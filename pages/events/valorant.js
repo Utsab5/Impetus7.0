@@ -89,12 +89,8 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Anuvab Ghosh",
-      phone: "+91 6291884285",
-    },
-    person2: {
-      name: "Shreyash Manze",
-      phone: "+91 7700001193",
+      name: "Alex Horo ",
+      phone: "+91 8249199487",
     },
   };
   return (
@@ -112,7 +108,7 @@ export default function CadathonPage() {
         <Box>
           <Typography sx={{}} variant="p">
             Valorant has found an exponentially rising popularity amid the
-            youngsters today. So for the grand gaming event of Impetus 6, we
+            youngsters today. So for the grand gaming event of Impetus 7.0, we
             bring to you a Valorant tournament, where teams of 5 each, lock
             horns to be the best of the best. It will be conducted in 3 rounds,
             a knockout round, the eliminations, and the semi final and the final
@@ -121,7 +117,7 @@ export default function CadathonPage() {
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
-            Dates: 17th February, 2023 8:00pm
+            Dates: 10th February, 2024 11:00 AM onwards
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -140,9 +136,15 @@ export default function CadathonPage() {
           <ul className="bulletArrow">
             <li>
               <ul className="BulletNone">
+                <li>The event will be held at the campus of IIEST, Shibpur.</li>
+              </ul>
+            </li>
+
+            <li>
+              <ul className="BulletNone">
                 <li>
-                  Registration Fees: ₹250 per team, one time re-entry ₹100 per
-                  team.
+                  Registration Fees: ₹250 per team for IIEST Students and ₹300
+                  for others.
                 </li>
               </ul>
             </li>
@@ -150,12 +152,16 @@ export default function CadathonPage() {
             <li>
               <ul className="BulletNone">
                 <li>
-                  Pre-requirements: Laptop with valorant and discord installed,
-                  stable internet connection.
+                  Pre-requirements: Laptop with Valorant and discord installed.
+                  Stable internet connection will be provided.
                 </li>
               </ul>
             </li>
-
+            <li>
+              <ul className="BulletNone">
+                <li>Venue:Amenities</li>
+              </ul>
+            </li>
             <li>
               <ul className="BulletNone">
                 <li>
@@ -196,10 +202,7 @@ export default function CadathonPage() {
             <ul className="bulletArrow">
               <li>
                 <ul className="BulletNone">
-                  <li>
-                    Registration will be done through google form. Participants
-                    will be required to join the discord server of Impetus 6.0.
-                  </li>
+                  <li>Registration will be done through google form.</li>
                 </ul>
               </li>
               <li>
@@ -245,8 +248,8 @@ export default function CadathonPage() {
                     <ul className="BulletNone">
                       <li>
                         {" "}
-                        Finals will be best of 3. Overtime rules same as ROUND
-                        2.
+                        Finals and bronze match will be best of 3. Overtime
+                        rules same as ROUND 2.
                       </li>
                     </ul>
                   </li>
@@ -272,20 +275,7 @@ export default function CadathonPage() {
 
             <li>
               <ul className="BulletNone">
-                <li>
-                  All the players must sit in the respective voice channel
-                  through mobile/PC.
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <ul className="BulletNone">
-                <li>
-                  By Patch notes 6.0, since Breeze and Bind are temporarily
-                  removed from the game officially, hence; Ascent, Split, Haven,
-                  Icebox, Fracture, Pearl, Lotus map will be played.
-                </li>
+                <li>All maps will be considered for map selection.</li>
               </ul>
             </li>
             <li>
@@ -332,6 +322,11 @@ export default function CadathonPage() {
                 </li>
               </ul>
             </li>
+            <li>
+              <ul className="BulletNone">
+                <li>In case of dispute, verdict of admins will be final.</li>
+              </ul>
+            </li>
           </ul>
         </Box>
         <Box>
@@ -342,11 +337,6 @@ export default function CadathonPage() {
               <li>
                 <ul className="BulletNone">
                   <li> Rs.250 </li>
-                </ul>
-              </li>
-              <li>
-                <ul className="BulletNone">
-                  <li> Rs.100 (for Rentry)</li>
                 </ul>
               </li>
             </ul>
@@ -370,7 +360,7 @@ export default function CadathonPage() {
           </Typography>
           <Box className="contact">
             <EventMag person={person.person1} />
-            <EventMag person={person.person2} />
+            {/* <EventMag person={person.person2} /> */}
           </Box>
         </Box>
       </Box>

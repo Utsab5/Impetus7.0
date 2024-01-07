@@ -89,12 +89,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Mahesh Bandlamudi",
-      phone: "+91 8639555844",
+      name: "Ajay Khandelwal ",
+      phone: "+91 7792062842",
     },
     person2: {
-      name: "Sayantan Paul",
-      phone: "+91 9830664404",
+      name: "Shreya Jaiswal ",
+      phone: "+91 6394615691",
     },
   };
   return (
@@ -111,9 +111,9 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{}} variant="p">
-            To instil the essence of quizzing, IMechE IIEST, Shibpur brings to
-            you a Grand General Technical Quiz: &quot;Quizzical Suspects&quot;
-            under the banner of Impetus 6.0.
+            To instil the essence of quizzing, IMechE IIEST Shibpur brings to
+            you a Grand General Technical Quiz: "IQ Ignition" under the banner
+            of "Impetus 7.0".
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
@@ -186,7 +186,7 @@ export default function CadathonPage() {
             <li>
               <ul className="BulletNone">
                 <li>
-                  Prizes worth <b>Rs.10000/-</b>
+                  Prizes worth <b>Rs.8000/-</b>
                 </li>
               </ul>
             </li>

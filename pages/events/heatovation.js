@@ -88,12 +88,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Upendra Kikkari",
-      phone: "+91 9704810737",
+      name: "Souvik Tewari",
+      phone: "+91 8250994202",
     },
     person2: {
-      name: "Mahesh Bandlamudi",
-      phone: "+91 8639555844",
+      name: "Soham Banerjee",
+      phone: "+91 8101264621",
     },
   };
   return (
@@ -110,7 +110,7 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{}} variant="p">
-            HEATOVATION is an event organized by the Impetus 6.0 which invites
+            HEATOVATION is an event organized by Impetus 7.0 which invites
             participation from students with entrepreneurial/ problem-solving
             mindsets in the field of HVAC pan India. It would require its
             participants to present their solutions to the panel of judges and
@@ -118,13 +118,13 @@ export default function CadathonPage() {
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "22px" }}>
-            Dates: 17th February, 2023 2:30pm
+            Dates: 9th February, 2024 2:00pm-4:00pm
           </ul>
         </Box>
         <Box className="data">
-          <Typography variant="h2">Problem Statement</Typography>
+          {/* <Typography variant="h2">Problem Statement</Typography> */}
           <Typography sx={{}} style={{}} variant="p">
-            <ul className="bulletArrow">
+            {/* <ul className="bulletArrow">
               <li>
                 <ul className="BulletNone">
                   <li>Effective desalination using solar power systems.</li>
@@ -150,7 +150,7 @@ export default function CadathonPage() {
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
             <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
               <Button
                 variant="contained"
@@ -170,7 +170,7 @@ export default function CadathonPage() {
                 <ul className="BulletNone">
                   <li>
                     You have to upload the presentation along with an abstract
-                    of your idea (in less than 350 words) on the given link and
+                    of your idea (in less than 300 words) on the given link and
                     the top 5 performers will be selected for the second round.
                   </li>
                 </ul>
@@ -178,9 +178,9 @@ export default function CadathonPage() {
               <li>
                 <ul className="BulletNone">
                   <li>
-                    In the second round, the participants will be given an
-                    opportunity to present the idea in front of the judges after
-                    which top performers will be announced.
+                    In the second round, the participants will be allowed to
+                    present the idea in front of the judges after which top
+                    performers will be announced.
                   </li>
                 </ul>
               </li>
@@ -266,7 +266,8 @@ export default function CadathonPage() {
                 <li>
                   <ul className="BulletNone">
                     <li>
-                      Start-up idea presentation is a must for this competition.
+                      Presentation of innovative ideas is a must for this
+                      competition.
                     </li>
                   </ul>
                 </li>
@@ -323,7 +324,7 @@ export default function CadathonPage() {
                 <li>
                   <ul className="BulletNone">
                     <li>
-                      The word limit of abstract should be strictly within 350
+                      The word limit of abstract should be strictly within 300
                       words (in .docx format).
                     </li>
                   </ul>
@@ -366,8 +367,8 @@ export default function CadathonPage() {
                 <li>
                   <ul className="BulletNone">
                     <li>
-                      The participants will be given an opportunity to present
-                      their idea in-front of the judges
+                      The participants will be allowed to present their ideas in
+                      front of the judges.
                     </li>
                   </ul>
                 </li>

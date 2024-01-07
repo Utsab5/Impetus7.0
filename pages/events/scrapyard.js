@@ -89,16 +89,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Bhawani Prasad Uddanti",
-      phone: "+91 8374757468",
+      name: "Piyush Pathak",
+      phone: "+91 7282809390",
     },
     person2: {
-      name: "Siddhi Suman",
-      phone: "+91 7667709642",
-    },
-    person3: {
-      name: "Anuvab Ghosh",
-      phone: "+91 6291884285",
+      name: "Wali Ahad Mallick ",
+      phone: "7480984908",
     },
   };
   return (
@@ -114,22 +110,26 @@ export default function CadathonPage() {
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>
+          <Typography variant="h2">BRIEF INTRODUCTION OF THE EVENT:</Typography>
           <Typography sx={{}} variant="p">
-            SCRAPYARD, an event that enables your untouched creativity and
-            reasoning abilities to explode. Show case your innovative ideas as a
-            team to create the assembly that fits the given problem statement.
+            Welcome to SCRAPYARD—an event designed to ignite your creativity and
+            reasoning. Assemble with your team to tackle a given problem
+            statement, showcasing innovative ideas that push the boundaries of
+            conventional solutions. It's a celebration of intellect,
+            imagination, and collaborative prowess. Join us for a journey into
+            uncharted territories of innovation.
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates:
             <li>
               <ul className="BulletNone">
-                <li>Round 1: 18th February, 2023 9:30am</li>
+                <li>Round 1: 10th February, 2024 10:00am-11:00am</li>
               </ul>
             </li>
             <li>
               <ul className="BulletNone">
-                <li>Round 2: 19th February, 2023 6:30pm</li>
+                <li>Round 2: 10th February, 2024 1:00pm-3:00pm</li>
               </ul>
             </li>
           </ul>
@@ -176,7 +176,11 @@ export default function CadathonPage() {
                 <li>No. of Rounds: 2</li>
               </ul>
             </li>
-
+            <li>
+              <ul className="BulletNone">
+                <li>Venue:- Round 1-Gallery 6 Round2-Amenities</li>
+              </ul>
+            </li>
             <li>
               <ul className="BulletNone">
                 <li>Duration of each round: Round 1-1hr, Round 2-2hr</li>
@@ -298,15 +302,6 @@ export default function CadathonPage() {
               </ul>
             </li>
             <li>
-              <ul className="BulletNone">
-                <li>
-                  Usage of digital devices is strictly prohibited. Violation
-                  leads to immediate disqualification.
-                </li>
-              </ul>
-            </li>
-
-            <li>
               <ul className="nestedList">
                 Round-1:
                 <li>
@@ -390,7 +385,7 @@ export default function CadathonPage() {
           <Box className="contact">
             <EventMag person={person.person1} />
             <EventMag person={person.person2} />
-            <EventMag person={person.person3} />
+            {/* <EventMag person={person.person3} /> */}
           </Box>
         </Box>
       </Box>

@@ -126,12 +126,12 @@ export default function CadathonPage() {
             Dates:
             <li>
               <ul className="BulletNone">
-                <li>Round 1: 17th February, 2023 1:30pm</li>
+                <li>Round 1: 9th February, 2024 2:00pm-3:00pm</li>
               </ul>
             </li>
             <li>
               <ul className="BulletNone">
-                <li>Round 2: 17th February, 2023 4:00pm</li>
+                <li>Round 2: 9th February, 2024 3:15pm-4:15pm</li>
               </ul>
             </li>
           </ul>
@@ -160,11 +160,6 @@ export default function CadathonPage() {
                 <li>
                   Registration – Till 1 hour before commencement of Round 1
                 </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Participation – Team</li>
               </ul>
             </li>
             <li>
@@ -232,7 +227,7 @@ export default function CadathonPage() {
                     <li>
                       One restart is allowed per team in the first round.
                       However, in the next round, the team will start with same
-                      penalty points
+                      penalty points.
                     </li>
                   </ul>
                 </li>
@@ -263,7 +258,7 @@ export default function CadathonPage() {
         </Box>
         <Box>
           <Typography variant="h6">
-            If any team faces any problem, they are supposed to report to the
+            ** If any team faces any problem, they are supposed to report to the
             Event Co-Ordinator or Pool Volunteer without much delay.<br></br>
             <br></br>
           </Typography>

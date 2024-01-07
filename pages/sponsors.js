@@ -15,6 +15,28 @@ const Food = [
   { image: "/images/mars-wrigley.png", name: "image11" },
   { image: "/images/mogu mogu drink.png", name: "image12" },
 ];
+const Edtech = [
+  { image: "/images/itc.png", name: "image1" },
+  { image: "/images/intel.jpeg", name: "image2" },
+  { image: "/images/Aakash byjus.png", name: "image" },
+  { image: "/images/Edufoster.jpeg", name: "image" },
+  { image: "/images/erudite.png", name: "image" },
+  { image: "/images/time.png", name: "image" },
+  { image: "/images/IMS.jpeg", name: "image" },
+  { image: "/images/doubtnut.jpeg", name: "image" },
+  { image: "/images/rice coaching.png", name: "image" },
+  { image: "/images/adda247.jpeg", name: "image" },
+  { image: "/images/educrat.png", name: "image" },
+  { image: "/images/Vani institute.png", name: "image" },
+  { image: "/images/Duolingo.png", name: "image" },
+  { image: "/images/physicswallah.jpeg", name: "" },
+  { image: "/images/Scaler.png", name: "image" },
+];
+const medical = [
+  { image: "/images/Whisper.jpeg", name: "image1" },
+  { image: "/images/Narayana images.jpeg", name: "image2" },
+  { image: "/images/emami.jpeg", name: "image3" },
+];
 export default function SponsorsPage() {
   const styles = {
     h1: {
@@ -31,7 +53,7 @@ export default function SponsorsPage() {
         <Typography variant="h1">Sponsors</Typography>
       </Box>
 
-      <Box sx={styles} className="center1">
+      <Box className="center1">
         <Typography variant="h3">Hardware</Typography>
         <div className="image-container">
           <img src="/images/Thyssenkrupp.png" alt="Image 1" className="image" />
@@ -65,23 +87,23 @@ export default function SponsorsPage() {
         </div>
       </Box>
       <Box sx={styles} className="center1">
-        <Typography variant="h3">Fintech</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Banking</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
         <Typography variant="h3">Tech</Typography>
       </Box>
       <Box sx={styles} className="center1">
         <Typography variant="h3">Automotive</Typography>
       </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Edtech</Typography>
-      </Box>
-      <Box sx={styles} className="center1">
-        <Typography variant="h3">Medical</Typography>
-      </Box>
+      <h3 className="Sponsors_heading">Edtech</h3>
+      <div className="image-container">
+        {Edtech.map((s) => (
+          <img key={s.name} src={s.image} alt={s.name} className="image" />
+        ))}
+      </div>
+      <h3 className="Sponsors_heading">Medical</h3>
+      <div className="image-container">
+        {medical.map((s) => (
+          <img key={s.name} src={s.image} alt={s.name} className="image" />
+        ))}
+      </div>
       <Box sx={styles} className="center1">
         <Typography variant="h3">Entertainment</Typography>
       </Box>
@@ -103,4 +125,3 @@ export default function SponsorsPage() {
     </>
   );
 }
-
