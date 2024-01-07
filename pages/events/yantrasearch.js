@@ -84,12 +84,20 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Shreyash Manze",
-      phone: "+91 7700001193",
+      name: "Piyal Bhowmick",
+      phone: "+91 8910276639",
     },
     person2: {
-      name: "Sayantan Paul",
-      phone: "+91 9830664404",
+      name: "Md Wali Ahad Malik",
+      phone: "+91 7480984908",
+    },
+    person3: {
+      name: "Akash Yadav",
+      phone: "+91 7237080517",
+    },
+    person4: {
+      name: "Ankush Ghosh",
+      phone: "+91 8145326311",
     },
   };
   return (
@@ -341,6 +349,8 @@ export default function CadathonPage() {
           <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
             <EventMag person={person.person1} />
             <EventMag person={person.person2} />
+            <EventMag person={person.person3} />
+            <EventMag person={person.person4} />
           </Box>
         </Box>
       </section>

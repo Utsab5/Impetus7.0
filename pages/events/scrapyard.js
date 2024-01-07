@@ -86,16 +86,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Bhawani Prasad Uddanti",
-      phone: "+91 8374757468",
+      name: "Piyush Pathak",
+      phone: "+91 7282809390",
     },
     person2: {
-      name: "Siddhi Suman",
-      phone: "+91 7667709642",
-    },
-    person3: {
-      name: "Anuvab Ghosh",
-      phone: "+91 6291884285",
+      name: "Wali Ahad Mallick ",
+      phone: "+91 7480984908",
     },
   };
   return (
@@ -123,14 +119,14 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                18th February, 2024 9:30am
+                10th February, 2024 10:00 AM-11:00 AM
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                19th February, 2024 6:30pm
+                10th February, 2024 1:00 PM-3:00 PM
               </p>
             </div>
             <button
@@ -160,7 +156,8 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
-                    Registration
+                    Registration:- Through G-forms, till 1 hour before
+                    commencement of Round 1
                   </div>
                 </td>
                 <td className="pl-2 py-1">
@@ -172,22 +169,14 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
-                    Participation
-                  </div>
-                </td>
-                <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    Team of 2-3 members
+                    Participation:- A team of 2-3 members
                   </div>
                 </td>
               </tr>
               <tr>
                 <td className="pl-2 py-2  md:px-4  ">
-                  <div className="text-sm font-medium  md:text-lg ">Venue</div>
-                </td>
-                <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Netaji Bhavan
+                    Venue:- Round 1- Gallery 6 , Round 2- Amenities
                   </div>
                 </td>
               </tr>
@@ -204,19 +193,14 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Duration of rounds
-                  </div>
-                </td>
-                <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    Round1 - 1hr, Round2 - 2hr
+                    Duration of rounds:-Round 1- 1hr, Round 2- 2hr
                   </div>
                 </td>
               </tr>
               <tr>
                 <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Prizes worth
+                    Prizes worth:Rs 10000/-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -367,8 +351,8 @@ export default function CadathonPage() {
         </Box>
         <div className="">
           <p className="text-lg font-semibold  text-gray-200  ">
-            If any team faces any problem, they are supposed to report to the
-            Event Co-Ordinator or Pool Volunteer without much delay.<br></br>
+            NOTE:- EVENT COORDINATORS HAVE THE FINAL SAY IN ALL ASPECTS IN THIS
+            EVENT.<br></br>
           </p>
           <h1 className="text-xl  font-bold mt-2 md:text-3xl py-2">
             Registration fee
@@ -382,6 +366,7 @@ export default function CadathonPage() {
         <Box>
           <Box className="fee">
             <Box sx={{ width: "100%" }} className="py-4 center1">
+              h
               <button
                 type="button"
                 className=" font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"

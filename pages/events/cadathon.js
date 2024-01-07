@@ -83,12 +83,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Avi Ambast",
-      phone: "+91 7277876396",
+      name: "Ankush Ghosh",
+      phone: "+91 8145326311",
     },
     person2: {
-      name: "Shobhit Das",
-      phone: "+91 7602274162",
+      name: "Ketan Mohan Masurkar",
+      phone: "+91 8788330638",
     },
   };
 
@@ -115,16 +115,14 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                9th February,2024
-                <span className="pl-3"> 12:30pm - 2:00pm</span>
+                9th February,2024 12:30 PM- 2:00 PM
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                10th February,2024{" "}
-                <span className="pl-3"> 3:00pm - 4:30pm</span>
+                10th February,2024 3:00pm-4:30pm
               </p>
             </div>
             <button
@@ -157,14 +155,14 @@ export default function CadathonPage() {
                 </td>
                 <td className="pl-2 py-1">
                   <div className="text-sm md:text-lg font-medium ">
-                    Till 1 hour before the commencement of round1
+                    Till 1 hour before the commencement of Round1
                   </div>
                 </td>
               </tr>
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
-                    Participation
+                    Participation:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -175,7 +173,9 @@ export default function CadathonPage() {
               </tr>
               <tr>
                 <td className="pl-2 py-2  md:px-4  ">
-                  <div className="text-sm font-medium  md:text-lg ">Venue</div>
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Venue:-
+                  </div>
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
@@ -186,7 +186,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    No. of rounds
+                    No. of rounds:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -196,22 +196,24 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 md:px-4  py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Duration of round1
+                    Duration of round1:-
                   </div>
                 </td>
                 <td className="pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">2hrs</div>
+                  <div className="text-sm font-medium  md:text-lg ">
+                    90 minutes
+                  </div>
                 </td>
               </tr>
               <tr>
                 <td className="pl-2  md:px-4 py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Duration of round2
+                    Duration of round2:-
                   </div>
                 </td>
                 <td className="pl-2 py-1">
                   <div className="text-sm font-medium md:text-lg  ">
-                    1hr 30 mins{" "}
+                    90 minutes
                   </div>
                 </td>
               </tr>
@@ -235,10 +237,10 @@ export default function CadathonPage() {
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <p className="text-lg font-normal text-gray-200  ">
             <b>CADathon</b> is going to be held in 2 rounds. In the first round
-            of competition participants are expected to replicate the given
-            parts and submit them in an hour. Candidates qualified from the
-            first round can only participate in second round (No lateral entry
-            allowed).
+            of competition participants are expected to draw all 3 views of the
+            given figure in drawing sheet and submit it in 90 minutes. The top
+            10 candidates from the first round can only participate in second
+            round (No lateral entry allowed).
           </p>
         </div>
         <div className="py-3  ">
@@ -261,18 +263,19 @@ export default function CadathonPage() {
                   Round 1 :
                 </span>
                 <ul className="BulletNone">
-                  <li>Each participant will be provided with an objective</li>
+                  <li>Each participant will be provided with an objective.</li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    Participants are required to bring their own laptop with any
-                    CAD software installed in it.
+                    Participants are required to bring their own drawing
+                    instruments (drawing sheets will be provided) and laptop
+                    with any CAD software installed in it.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    Participants need to replicate a 2D drawing of some
-                    components into their 3D design.
+                    Participants need to draw all 3 views of the given figure in
+                    drawing sheet according to the problem statement.
                   </li>
                 </ul>
                 <ul className="BulletNone">
@@ -290,9 +293,8 @@ export default function CadathonPage() {
                 </span>
                 <ul className="BulletNone">
                   <li>
-                    The selected participants from 1st round will be provided
-                    with an objective to replicate a dynamic mechanical
-                    mechanism based on the problem statement.
+                    The selected participants from 1st round will have to model
+                    the figure on CAD software.
                   </li>
                 </ul>
                 <ul className="BulletNone">

@@ -87,12 +87,8 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Anuvab Ghosh",
-      phone: "+91 6291884285",
-    },
-    person2: {
-      name: "Shreyash Manze",
-      phone: "+91 7700001193",
+      name: "Alex Horo",
+      phone: "+91 8249199487",
     },
   };
   return (
@@ -109,12 +105,13 @@ export default function CadathonPage() {
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
         <div className="py-2  ">
           Valorant has found an exponentially rising popularity amid the
-          youngsters today. So for the grand gaming event of Impetus 6, we bring
-          to you a Valorant tournament, where teams of 5 each, lock horns to be
-          the best of the best. It will be conducted in 3 rounds, a knockout
-          round, the eliminations, and the semi final and the final clash will
-          be a best of 3 matches. The winners take home total prize money worth
-          Rs. 10000 <p className="text-lg font-normal text-gray-200  "></p>
+          youngsters today. So for the grand gaming event of Impetus 7.0, we
+          bring to you a Valorant tournament, where teams of 5 each, lock horns
+          to be the best of the best. It will be conducted in 3 rounds, a
+          knockout round, the eliminations, and the semi final and the final
+          clash will be a best of 3 matches. The winners take home total prize
+          money worth Rs. 10000{" "}
+          <p className="text-lg font-normal text-gray-200  "></p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
               <p className="text-lg">
@@ -122,7 +119,7 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Dates{" "}
                 </span>
-                18th February, 2024 8:00pm
+                10th February, 2024 11:00 AM onwards
               </p>
             </div>
             <button
@@ -142,12 +139,8 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
-                    Registration fees
-                  </div>
-                </td>
-                <td className="pl-2 py-1">
-                  <div className="text-sm md:text-lg font-medium ">
-                    ₹250 per team, one time re-entry ₹100 per team.
+                    Registration fees:₹250 per team for IIEST Students and ₹300
+                    for others.
                   </div>
                 </td>
               </tr>
@@ -159,8 +152,8 @@ export default function CadathonPage() {
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Laptop with valorant and discord installed, stable internet
-                    connection.
+                    Laptop with Valorant and discord installed. Stable internet
+                    connection will be provided.
                   </div>
                 </td>
               </tr>
@@ -173,7 +166,7 @@ export default function CadathonPage() {
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
                     Team of 5 players, coach (not compulsory) and one extra
-                    player tinformed before.
+                    player to be informed before.
                   </div>
                 </td>
               </tr>
@@ -339,6 +332,9 @@ export default function CadathonPage() {
                 show in that 10 minute, the opponent will get a forfeit win.
               </li>
             </ul>{" "}
+            <ul className="BulletNone">
+              <li>In case of dispute, verdict of admins will be final.</li>
+            </ul>{" "}
           </ul>
         </Box>
         <div className="">
@@ -379,7 +375,6 @@ export default function CadathonPage() {
           </Typography>
           <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
             <EventMag person={person.person1} />
-            <EventMag person={person.person2} />
           </Box>
         </Box>
       </section>

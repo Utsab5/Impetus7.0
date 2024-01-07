@@ -84,12 +84,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Mahesh Bandlamudi",
-      phone: "+91 8639555844",
+      name: "Ajay Khandelwal ",
+      phone: "+91 7792062842",
     },
     person2: {
-      name: "Sayantan Paul",
-      phone: "+91 9830664404",
+      name: "Shreya Jaiswal ",
+      phone: "+91 6394615691",
     },
   };
   return (
@@ -117,7 +117,8 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Dates
                 </span>
-                10th February, 2024 10:30am
+                Round-1:-10th February, 2024,11:00 AM-12:00 AM Round-2:-10th
+                February, 2024,12:00 AM-1:30 PM
               </p>
             </div>
             <button
@@ -172,6 +173,17 @@ export default function CadathonPage() {
               </tr>
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">Venue</div>
+                </td>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    Gallery 6, Department of Mechanical Engineering (IIEST
+                    Shibpur)
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
                     No. of rounds
                   </div>
@@ -188,7 +200,7 @@ export default function CadathonPage() {
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Round1- 1hr 30mins, Round2- 2hr 30mins
+                    Round1- 30mins, Round2- 30mins
                   </div>
                 </td>
               </tr>
@@ -201,7 +213,7 @@ export default function CadathonPage() {
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
                     {" "}
-                    <span className="font-bold ">Rs.10000</span>
+                    <span className="font-bold ">Rs.8000</span>
                   </div>
                 </td>
               </tr>

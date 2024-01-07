@@ -89,12 +89,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Upendra Kikkari",
-      phone: "+91 9704810737",
+      name: "Souvik Tewari",
+      phone: "+91 8250994202",
     },
     person2: {
-      name: "Mahesh Bandlamudi",
-      phone: "+91 8639555844",
+      name: "Soham Banerjee",
+      phone: "+91 8101264621",
     },
   };
   return (
@@ -186,7 +186,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
-                    Registration
+                    Deadline for round 1:-
                   </div>
                 </td>
                 <td className="pl-2 py-1">
@@ -198,36 +198,24 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
-                    Participation
+                    Participation:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Individual or team of max 2 members
+                    Team of Maximum 2 members.
                   </div>
                 </td>
               </tr>
               <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Expected number of teams
+                    Expected number of teams:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
                     15+ teams
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
-                  <div className="text-sm md:text-lg font-medium ">
-                    Event Duration
-                  </div>
-                </td>
-                <td className="pl-2 py-1">
-                  <div className="text-sm md:text-lg font-medium ">
-                    1 hour 15 minutes
                   </div>
                 </td>
               </tr>
@@ -290,14 +278,19 @@ export default function CadathonPage() {
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    Start-up idea presentation is a must for this competition.
+                    Presentation Of innovative ideas is a must for this
+                    competition.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
                     {" "}
-                    One participant cannot be a part of more than one team.
+                    Formation of Teams:-A maximum of 2 members is permitted per
+                    team.
                   </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li> A candidate can participate individually also.</li>
                 </ul>
                 <ul className="BulletNone">
                   <li>

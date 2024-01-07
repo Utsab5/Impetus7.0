@@ -124,14 +124,14 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                17th February, 2024 1:30pm
+                9th February, 2024 2:00 PM-3:00 PM
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                17th February, 2024 4:00pm
+                9th February, 2024 3:15 PM-4:15 PM
               </p>
             </div>
             <button
@@ -158,7 +158,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
-                    Registration
+                    Registration:-
                   </div>
                 </td>
                 <td className="pl-2 py-1">
@@ -170,7 +170,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
-                    Participation
+                    Participation:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -181,7 +181,9 @@ export default function CadathonPage() {
               </tr>
               <tr>
                 <td className="pl-2 py-2  md:px-4  ">
-                  <div className="text-sm font-medium  md:text-lg ">Venue</div>
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Venue:-
+                  </div>
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
@@ -192,7 +194,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    No. of rounds
+                    No. of rounds:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -202,7 +204,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Prizes worth
+                    Prizes worth:-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
@@ -218,11 +220,9 @@ export default function CadathonPage() {
         <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <p className="text-lg font-normal text-gray-200  ">
-            <b>CADathon</b> is going to be held in 2 rounds. In the first round
-            of competition participants are expected to replicate the given
-            parts and submit them in an hour. Candidates qualified from the
-            first round can only participate in second round (No lateral entry
-            allowed).
+            Death Race is going to be held in 2 rounds. Candidates qualified
+            from the first round can only participate in second round (No
+            lateral entry allowed).
           </p>
         </div>
         <div className="py-3  ">

@@ -17,18 +17,40 @@ const Food = [
   { image: "/images/mars-wrigley.png", name: "image11" },
   { image: "/images/mogu mogu drink.png", name: "image12" },
 ];
+const Edtech = [
+  { image: "/images/itc.png", name: "image1" },
+  { image: "/images/intel.jpeg", name: "image2" },
+  { image: "/images/Aakash byjus.png", name: "image" },
+  { image: "/images/Edufoster.jpeg", name: "image" },
+  { image: "/images/erudite.png", name: "image" },
+  { image: "/images/time.png", name: "image" },
+  { image: "/images/IMS.jpeg", name: "image" },
+  { image: "/images/doubtnut.jpeg", name: "image" },
+  { image: "/images/rice coaching.png", name: "image" },
+  { image: "/images/adda247.jpeg", name: "image" },
+  { image: "/images/educrat.png", name: "image" },
+  { image: "/images/Vani institute.png", name: "image" },
+  { image: "/images/Duolingo.png", name: "image" },
+  { image: "/images/physicswallah.jpeg", name: "" },
+  { image: "/images/Scaler.png", name: "image" },
+];
+const medical = [
+  { image: "/images/Whisper.jpeg", name: "image1" },
+  { image: "/images/Narayana images.jpeg", name: "image2" },
+  { image: "/images/emami.jpeg", name: "image3" },
+];
 export default function SponsorsPage() {
   const styles = {
-    overflowY:"hidden",
+    overflowY: "hidden",
     h1: {
       mt: "100px",
       mb: "50px",
       fontSize: {
-        lg:"54px",
-        sm:"50px",
-        xs:"40px",
+        lg: "54px",
+        sm: "50px",
+        xs: "40px",
       },
-      height:"10vh",
+      height: "10vh",
     },
     h3: { mt: "100px", mb: "50px", fontSize: "54px" },
   };
@@ -50,13 +72,13 @@ export default function SponsorsPage() {
 
   return (
     <>
-      <Box sx={styles} className="center1" style={{marginTop:"100px"}}>
+      <Box sx={styles} className="center1" style={{ marginTop: "100px" }}>
         <Typography variant="h1">Past Sponsors</Typography>
         <Box className="cards">
           {Object.values(sponsorData).map((sponsor, index) => (
             <SponsorCard key={index} sponsor={sponsor} />
           ))}
-      </Box>
+        </Box>
         {/* <Typography variant="h1">COMING SOON...</Typography> */}
       </Box>
 
@@ -96,9 +118,8 @@ export default function SponsorsPage() {
       <Box sx={styles} className="center1">
         <Typography variant="h3">Fintech</Typography>
       </Box> */}
-     
+
       <Contact />
     </>
   );
 }
-
