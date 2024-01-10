@@ -112,22 +112,12 @@ export default function CadathonPage() {
         <Box>
           <Typography sx={{}} variant="p">
             To instil the essence of quizzing, IMechE IIEST Shibpur brings to
-            you a Grand General Technical Quiz: "IQ Ignition" under the banner
-            of "Impetus 7.0".
+            you a Grand General Technical Quiz: IQ Ignition under the banner of
+            Impetus 7.0.
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates: 18th February, 2023 10:45am
-            {/* <li>
-              <ul className="BulletNone">
-                <li>Round 1: 18th February, 2023 11:00am</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Round 2: 17th February, 2023 6pm-8pm</li>
-              </ul>
-            </li> */}
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
