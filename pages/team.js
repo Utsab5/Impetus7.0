@@ -240,7 +240,7 @@ export default function TeamPage() {
       name: "Ivan Jacob Thomas",
       phone: "+91 7463884470",
       post: "Joint Coordinator",
-      imgname: "https://drive.google.com/open?id=1NWWRCoeClzQzKtI1ckQi47YwgomKSen5",
+      imgname: "WhatsApp Image 2023-08-20 at 11.18.55 PM - 2021MEB059 IVAN_JACOB THOMAS.jpeg",
       insta: "https://www.instagram.com/ivan_jax/",
       link: "https://www.linkedin.com/in/ivan-jacob-thomas-a62b9b239/",
     },
@@ -281,7 +281,41 @@ export default function TeamPage() {
       insta: "https://www.instagram.com/utsab_kundu5/",
       link: "https://www.linkedin.com/in/utsab-kundu-3a742421b/",
     },
+    person3: {
+      name: "DEENDAYAL UPADHYAY",
+      phone: "+91 6350619979",
+      post: "Technical Consultant",
+      imgname: "20240104_173816 - 2020MEB032 DEENDYAL_UPADHAYAY.jpg",
+      insta: "https://www.instagram.com/_dee_xv",
+      link: "https://www.linkedin.com/in/deendayal-upadhyay",
+    },
   };
+  const videoPhoto_person = {
+    person2: {
+      name: "Jay R Abhimanyu",
+      phone: "+91 6301028505",
+      post: "Videography Head",
+      imgname: "IMG-20231223-WA0024 - 2020MEB096 YANAMADALA_JAYA.jpg",
+      insta: "https://www.instagram.com/the_j.a.y_",
+      link: "https://www.linkedin.com/in/Jay R Abhimanyu",
+    },
+    person1: {
+      name: "DEENDAYAL UPADHYAY",
+      phone: "+91 6350619979",
+      post: "Photography and Videography Head",
+      imgname: "20240104_173816 - 2020MEB032 DEENDYAL_UPADHAYAY.jpg",
+      insta: "https://www.instagram.com/_dee_xv",
+      link: "https://www.linkedin.com/in/deendayal-upadhyay",
+    },
+    person3: {
+      name: "Parth Pravin Shende",
+      phone: "+91 8483973876",
+      post: "Photography Head",
+      imgname: "20230308094301_IMG_9935 - 2020MEB056 SHENDE_PARTH.JPG",
+      insta: "https://www.instagram.com/parth.shende_25",
+      link: "https://www.linkedin.com/in/parth-shende-0b023b224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+  }
   
 
   
@@ -302,6 +336,7 @@ export default function TeamPage() {
             <Tab className="tab" label="Finance Team" />
             <Tab className="tab" label="Food and Logistics Team" />
             <Tab className="tab" label="IAM" />
+            <Tab className="tab" label="Videography and Photography Team" />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0} className="contactCards">{/*Main Coordinators*/}
@@ -352,6 +387,7 @@ export default function TeamPage() {
           <Box style={{ width: "100%", marginBottom: "80px" }}>
 
             <ContactCard person={webD_person.person1} />
+            <ContactCard person={webD_person.person3} />
           </Box>
           <ContactCard person={webD_person.person2} />
         </TabPanel>
@@ -395,6 +431,12 @@ export default function TeamPage() {
 
         <TabPanel value={value} index={8} className="contactCards">{/*IAM*/}
           <ContactCard person={iam_person.person1} />
+        </TabPanel>
+
+        <TabPanel value={value} index={9} className="contactCards">{/*IAM*/}
+          <ContactCard person={videoPhoto_person.person1} />
+          <ContactCard person={videoPhoto_person.person2} />
+          <ContactCard person={videoPhoto_person.person3} />
         </TabPanel>
       </Box>
       <Contact />

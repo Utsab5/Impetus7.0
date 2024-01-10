@@ -8,7 +8,7 @@ export default function CarouselComp() {
   const carousel = useRef(null);
 
   const handleEnd = ({ index }) => {
-    if (index == 2) {
+    if (index == 6) {
       setTimeout(() => {
         carousel.current?.goTo(0);
       }, 1000);
@@ -16,9 +16,13 @@ export default function CarouselComp() {
   };
 
   const urls = [
-    "/images/image1.jpg",
+    "/images/image4.jpg",
     "/images/image2.jpg",
     "/images/image3.jpg",
+    "/images/image1.jpg",
+    "/images/image5.jpg",
+    "/images/image6.jpg",
+    "/images/image7.jpg",
   ];
 
   const styles = {
