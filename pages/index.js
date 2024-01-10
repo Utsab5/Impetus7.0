@@ -28,13 +28,13 @@ const containerStyles = {
 const aboutContent = [
   {
     name: "IMPETUS",
-    text: "IMPETUS is an annual event organized by the Society of Mechanical Engineers at IIEST Shibpur to bring industry and education closer together. The events aim to provide students with practical knowledge and opportunities to interact with industry professionals in mechanical engineering.",
+    text: "IMPETUS is an annual event organized by the Society of Mechanical Engineers at IIEST Shibpur to bring industry and education closer together. The event aims to provide students with practical knowledge and opportunities to interact with industry professionals in mechanical engineering.",
     link: "/about",
     img: "impetus_pic.png",
   },
   {
     name: "INDUSTRY ACADEMIA MEET",
-    text: "The industrial meet in IMPETUS is to foster a productive dialogue between industry and academia, provide exposure to students and academics about current and future industrial trends, and equip them with the skills to be future-proof and industry-ready. It seeks to establish interactive communication between industry leaders, academicians, and students, bridging the gap between the company and institute and offering a comprehensive understanding of their needs.",
+    text: "The industrial meet in IMPETUS fosters productive dialogue between industry and academia, provides exposure to students and academics about current and future industrial trends, and equips them with the skills to be future-proof and industry-ready. It seeks to establish interactive communication between industry leaders, academicians, and students, bridging the gap between the company and the institute and offering a comprehensive understanding of their needs.",
     link: "/industryacademiameet",
     img: "pic_1.png",
   },

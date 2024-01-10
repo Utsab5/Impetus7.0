@@ -139,9 +139,7 @@ export default function CadathonPage() {
         <div className="py-2  ">
           <h1 className="text-3xl py-1 font-bold ">Objective</h1>
           <p className="text-lg font-normal text-gray-200  ">
-            Initially, the organizing team will set up an objective and the
-            participants will have to designed it within the speculated time
-            while satisfying some given condition.
+          Initially, the organizing team will set up an objective and the participants will have to design it within the stipulated time while satisfying some given conditions.
           </p>
         </div>
         <div className="py-6 bg-gray-900 mb-2 shadow-md sm:rounded-lg px-0 rounded-md">
