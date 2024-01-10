@@ -94,7 +94,7 @@ export default function Contact() {
               color: "#ccc",
             }}
           >
-            Impetus, the annual departmental fest of Mechanical Engineering of
+            Impetus, the annual technical fest of Mechanical Engineering of
             IIEST Shibpur, is a boisterous festival brimming with sensational
             events and perpetual fun.
           </Typography>

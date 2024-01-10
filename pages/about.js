@@ -201,7 +201,7 @@ export default function AboutPage() {
       <Box className="aboutImpetus center1">
         <Image
           sx={{ mt: "50px" }}
-          src="/images/impetusLogo.png"
+          src="/images/impetusNewLogo.png"
           height="300"
           width="300"
           alt="SME"

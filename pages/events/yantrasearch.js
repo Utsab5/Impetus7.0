@@ -154,6 +154,7 @@ export default function CadathonPage() {
         <div className="py-6 bg-gray-900 mb-2 shadow-md sm:rounded-lg px-0 rounded-md">
           <table className="min-w-full divide-y">
             <tbody className="bg-gray-900 md:text-lg text-gray-300 divide-y divide-gray-800">
+
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
@@ -167,28 +168,7 @@ export default function CadathonPage() {
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
-                  <div className="text-sm  md:text-lg font-medium ">
-                    Participation
-                  </div>
-                </td>
-                <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    Team of 2-3 members
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
-                  <div className="text-sm  md:text-lg font-medium ">
-                    No. of rounds
-                  </div>
-                </td>
-                <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">1</div>
-                </td>
-              </tr>
+
               <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
@@ -201,6 +181,57 @@ export default function CadathonPage() {
                   </div>
                 </td>
               </tr>
+
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    Participation
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Team of 3 members
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Platform
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Gallery 5, Department of Mechanical Engineering.
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    No. of rounds
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">1</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Duration of event
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    2 hours approximately
+                  </div>
+                </td>
+              </tr>
+
               <tr>
                 <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
@@ -214,6 +245,7 @@ export default function CadathonPage() {
                   </div>
                 </td>
               </tr>
+
             </tbody>
           </table>
         </div>
@@ -346,7 +378,7 @@ export default function CadathonPage() {
           >
             Event Coordinators
           </Typography>
-          <Box className="sm:grid  sm:grid-cols-2  sm:gap-2 flex flex-col items-center justify-center gap-y-3 ">
+          <Box className="sm:grid  sm:grid-cols-2  sm:gap-2 flex flex-col items-center justify-center gap-y-3 md:gap-x-4 gap-y-4 mt-4">
             <EventMag className="mt-1" person={person.person1} />
             <EventMag person={person.person3} />
             <EventMag person={person.person4} />
