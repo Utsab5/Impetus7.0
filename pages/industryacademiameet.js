@@ -101,7 +101,10 @@ export default function IAMPage() {
     <section className="bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-.svg')]">
       <CarouselComp />
       <div className="pt-8 mt-4 px-4 mx-auto max-w-screen-xl text-center  z-10 relative">
-        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight leading-none text-gray-50 md:text-4xl lg:text-5xl" style={{fontFamily:"Rowdies",}}>
+        <h1
+          className="text-2xl md:text-3xl font-extrabold tracking-tight leading-none text-gray-50 md:text-4xl lg:text-5xl"
+          style={{ fontFamily: "Rowdies" }}
+        >
           INDUSTRY ACADEMIA MEET
         </h1>
         <p className=" text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 ">
@@ -222,7 +225,7 @@ export default function IAMPage() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 ">
           <div className="flex justify-center flex-col items-center gap-y-2">
             <h1 className="md:text-3xl text-white font-bold">
-              Benifits for the Institute
+              Benefits for the Institute
             </h1>
 
             <div>

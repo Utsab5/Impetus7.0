@@ -156,8 +156,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
-                    Registration:- Through G-forms, till 1 hour before
-                    commencement of Round 1
+                    Registration{" "}
                   </div>
                 </td>
                 <td className="pl-2 py-1">
@@ -169,14 +168,24 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm  md:text-lg font-medium ">
-                    Participation:- A team of 2-3 members
+                    Participation{" "}
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm md:text-lg font-medium ">
+                    A team of 2-3 members
                   </div>
                 </td>
               </tr>
               <tr>
                 <td className="pl-2 py-2  md:px-4  ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Venue:- Round 1- Gallery 6 , Round 2- Amenities
+                    Venue:-{" "}
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Round 1- Gallery 6 , Round 2- Amenities
                   </div>
                 </td>
               </tr>
@@ -193,7 +202,12 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Duration of rounds:-Round 1- 1hr, Round 2- 2hr
+                    Duration of rounds:-{" "}
+                  </div>
+                </td>
+                <td className="pl-2 py-1">
+                  <div className="text-sm md:text-lg font-medium ">
+                    Round 1- 1hr, Round 2- 2hr
                   </div>
                 </td>
               </tr>
@@ -366,7 +380,6 @@ export default function CadathonPage() {
         <Box>
           <Box className="fee">
             <Box sx={{ width: "100%" }} className="py-4 center1">
-              h
               <button
                 type="button"
                 className=" font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
