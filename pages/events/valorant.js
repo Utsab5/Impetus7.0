@@ -139,8 +139,12 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
                   <div className="text-sm md:text-lg font-medium ">
-                    Registration fees:₹250 per team for IIEST Students and ₹300
-                    for others.
+                    Registration fees:{" "}
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    ₹250 per team for IIEST Students and ₹300 for others.
                   </div>
                 </td>
               </tr>
