@@ -23,7 +23,7 @@ export default function AboutPage() {
       width: "100vw",
       ".overlay":{
         position:"absolute",
-        backgroundColor:"red",
+        backgroundColor:"steelblue",
         opacity:"0.5",
         zIndex:"1",
         width: "100vw",
@@ -177,7 +177,7 @@ export default function AboutPage() {
           autoPlay
           loop
         >
-          <source src="images/trailer.mp4" type="video/mp4" />
+          <source src="images/trailer2.mp4" type="video/mp4" />
         </video>
       <Divider2 />
       </Box>

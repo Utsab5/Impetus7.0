@@ -107,7 +107,7 @@ export default function CadathonPage() {
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
             To instil the essence of quizzing, IMechE IIEST, Shibpur brings to
-            you a Grand General Technical Quiz: &quot;IQIgnition Suspects&quot;
+            you a Grand General Technical Quiz: &quot;IQ Ignition Suspects&quot;
             under the banner of Impetus 7.0
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
