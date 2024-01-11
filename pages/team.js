@@ -208,7 +208,7 @@ export default function TeamPage() {
     person1: {
       name: "Snehal Kumar",
       phone: "+91 7093081024",
-      post: "Head-Industry Academia Meet",
+      post: "Head - Industry Academia Meet",
       imgname: "Snapchat-1473531011 - 2020MEB072 TIPPANA_SAI.jpg",
       insta: "https://www.instagram.com/_always.snehal_",
       link: "https://www.linkedin.com/in/Tippana Sai Snehal Kumar",
