@@ -97,7 +97,7 @@ export default function CadathonPage() {
     },
   };
   return (
-    <Box sx={{ width: "100vw" }} className="center1 mt-10">
+    <Box sx={{ width: "100vw" , background:"black"}} className="center1 mt-10">
       <Box sx={headerStyles} className="center2">
         <IconButton onClick={goBack} className="left">
           <ArrowBackIcon fontSize="large" color="white" />

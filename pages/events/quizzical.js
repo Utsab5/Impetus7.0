@@ -98,7 +98,7 @@ export default function CadathonPage() {
     },
   };
   return (
-    <Box sx={{ width: "100vw" }} className="center1">
+    <Box sx={{ width: "100vw" , background:"black"}} className="center1">
       <Box sx={headerStyles} className="center2">
         <IconButton onClick={goBack} className="left">
           <ArrowBackIcon fontSize="large" color="white" />
@@ -112,7 +112,7 @@ export default function CadathonPage() {
         <Box>
           <Typography sx={{}} variant="p">
             To instil the essence of quizzing, IMechE IIEST Shibpur brings to
-            you a Grand General Technical Quiz: IQ Ignition Suspects under the banner of
+            you a Grand General Technical Quiz: IQ Ignition under the banner of
             Impetus 7.0.
           </Typography>
 
