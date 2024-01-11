@@ -229,7 +229,7 @@ export default function TeamPage() {
       phone: "+91 7808814413",
       post: "Main Coordinator",
       imgname:
-        "IMG_20210702_191027_578_resized(1) - 2020MEB003 VASU_KRISHNA.jpg",
+        "WhatsApp Image 2024-01-10 at 16.57.17_3f25e7f3.jpg",
       insta: "Use from last time",
       link: "Use from last time",
     },
