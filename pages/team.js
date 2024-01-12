@@ -322,6 +322,14 @@ export default function TeamPage() {
       insta: "https://www.instagram.com/parth.shende_25",
       link: "https://www.linkedin.com/in/parth-shende-0b023b224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
+    person4: {
+      name: "Sai Venkat Rao",
+      phone: "+91 8367663100",
+      post: "Videography and Photography Executive",
+      imgname: "1000127139-01_2 (1).jpeg.jpg",
+      insta: "https://www.instagram.com/saivenkatrao.mpeg/",
+      link: "https://www.linkedin.com/in/nagireddy-neela-sai-venkat-rao-8bb27a229",
+    },
   };
 
   return (
@@ -437,10 +445,14 @@ export default function TeamPage() {
         </TabPanel>
 
         <TabPanel value={value} index={9} className="contactCards">
-          {/*IAM*/}
-          <ContactCard person={videoPhoto_person.person1} />
-          <ContactCard person={videoPhoto_person.person2} />
-          <ContactCard person={videoPhoto_person.person3} />
+          {/*Video & Photo*/}
+          <Box style={{ width: "100%", marginBottom: "80px" }}>
+            <ContactCard person={videoPhoto_person.person1} />
+            <ContactCard person={videoPhoto_person.person2} />
+            <ContactCard person={videoPhoto_person.person3} />
+          </Box>
+          <ContactCard person={videoPhoto_person.person4} />
+
         </TabPanel>
       </Box>
       <Contact />

@@ -208,7 +208,7 @@ export default function CadathonPage() {
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
                     {" "}
-                    <span className="font-bold ">Rs.10000</span>
+                    <span className="font-bold ">Rs.8000</span>
                   </div>
                 </td>
               </tr>
