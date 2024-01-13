@@ -51,7 +51,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     const handleResize = () => {
       if (window.innerWidth <= 900) {
         // setPropertyValue('relative');
-        setTopValue('20%');
+        setTopValue('43vh');
         // setHeightValue('40vw');
 
       } else {
