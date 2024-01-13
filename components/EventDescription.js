@@ -1,6 +1,6 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef , useState} from "react";
 import LearnMore from "./LearnMore";
 import { useInViewport } from "react-in-viewport";
 
@@ -8,6 +8,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const theme = useTheme();
   const ref = useRef(null);
   const headingRef = useRef(null);
+  const [TopValue, setTopValue] = useState('45vh');
   const { inViewport } = useInViewport(headingRef);
 
   const styles = {
@@ -34,8 +35,9 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     [theme.breakpoints.down("lg")]: {
       left: "5vw",
       div: {
-        top: "50vh",
-        marginBottom: "300px",
+        // top: "50vh",
+        top:TopValue,
+        // marginBottom: "300px",
       },
     },
     scrollSnapAlign: "center",
@@ -44,6 +46,26 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const handleScroll = () => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 900) {
+        // setPropertyValue('relative');
+        setTopValue('43vh');
+        // setHeightValue('40vw');
+
+      } else {
+        // setPropertyValue('absolute');
+        setTopValue('35vh');
+        // setHeightValue('50%');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call initially to set the initial value
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (index === currIdx) handleScroll();

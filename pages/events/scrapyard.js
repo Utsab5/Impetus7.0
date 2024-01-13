@@ -214,7 +214,7 @@ export default function CadathonPage() {
               <tr>
                 <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Prizes worth:Rs 10000/-
+                    Prizes worth: Rs 10000/-
                   </div>
                 </td>
                 <td className=" pl-2 py-1">
