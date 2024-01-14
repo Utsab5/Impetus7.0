@@ -19,7 +19,7 @@ export default function EventPage() {
     "scrapyard_.jpg",
     "quizzical.jpg",
     "linefollower1.png",
-    "LINEFOLLOWERS_F.png",
+    "drone.png",
     "Valorant.jpg",
     "fun_.jpg",
   ];
@@ -30,7 +30,7 @@ export default function EventPage() {
     "530px",
     "580px",
     "580px",
-    "580px",
+    "650px",
     "550px",
     "580px",
   ];

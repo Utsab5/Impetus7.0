@@ -28,6 +28,8 @@ const styles = {
   },
 };
 
+
+
 export default function AppbarComp() {
   const SideBarComp = dynamic(() => import("./SideBarComp"), { ssr: false });
   const NavbarComp = dynamic(() => import("./NavbarComp"), { ssr: false });
@@ -76,9 +78,21 @@ export default function AppbarComp() {
           background: "none",
           // backdropFilter: `${top ? "none" : "blur(10px)"}`,
           background: `${
-            top
-              ? "none"
-              : "linear-gradient(to right, black ,rgb(17 24 39 ),black)"
+            (typeof window !== 'undefined' &&
+              (window.location.pathname.includes('/events/yantrasearch')||
+              window.location.pathname.includes('/events/cadathon') ||
+              window.location.pathname.includes('/events/heatovation') ||
+              window.location.pathname.includes('/events/scrapyard') ||
+              window.location.pathname.includes('/events/iQIgnition') ||
+              window.location.pathname.includes('/events/deathrace') ||
+              window.location.pathname.includes('/events/dronePursuit') ||
+              window.location.pathname.includes('/events/valorant') ||
+              window.location.pathname.includes('/events/fun')
+              ))
+              ? 'black'
+              : top
+                ? "none"
+                : "linear-gradient(to right, black ,rgb(17 24 39 ),black)"
           }`,
           position: "fixed",
           left: "50%",
@@ -99,3 +113,5 @@ export default function AppbarComp() {
     </Box>
   );
 }
+
+            
