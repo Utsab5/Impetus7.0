@@ -28,7 +28,7 @@ export default function EventList({ setCurrIdx, currIdx }) {
     "Scrapyard",
     "IQ Ignition",
     "Death Race",
-    "Line Follower",
+    "Drone Pursuit",
     "Valorant",
     "Fun",
   ];

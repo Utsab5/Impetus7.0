@@ -60,7 +60,7 @@ export default function CadathonPage() {
     router.push("/events/fun");
   };
   const goBack = () => {
-    router.push("/events/deathrace");
+    router.push("/events/dronePursuit");
   };
 
   const headerStyles = {
@@ -158,6 +158,18 @@ export default function CadathonPage() {
                   <div className="text-sm font-medium  md:text-lg ">
                     Laptop with Valorant and discord installed. Stable internet
                     connection will be provided.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    Venue
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                    Amenities
                   </div>
                 </td>
               </tr>
@@ -350,7 +362,10 @@ export default function CadathonPage() {
             Registration fee
           </h1>
           <li className="py-1">
-            <span className="font-bold text-xl">Rs.250</span>
+            <span className="font-bold text-xl">Rs.250</span> (For IIEST students)
+          </li>
+          <li className="py-1">
+            <span className="font-bold text-xl">Rs.300</span> (For non-IIEST students)
           </li>
           <li>
             <span className="font-bold text-xl">Rs.100</span> (for re-entry)

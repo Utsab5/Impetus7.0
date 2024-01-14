@@ -77,7 +77,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "Scrapyard",
     "IQ Ignition",
     "Death Race",
-    "Line Follower",
+    "Drone Pursuit",
     "Valorant",
     "Fun Bunkers",
   ];
@@ -88,7 +88,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "scrapyard",
     "iQIgnition",
     "deathrace",
-    "lineFollower",
+    "dronePursuit",
     "valorant",
     "fun",
   ];
@@ -105,8 +105,8 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: ' Suspects' under the banner of Impetus 7.0 .The quiz tests and showcases students' technical knowledge and skills.";
   const deathrace =
     "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
-  const lineFollower =
-    "This competition aims to build a robot that can follow lines on a flat surface. The robot must detect and follow straight and curved lines, and navigate intersections and markings. The goal is to create a fast and reliable robot ";
+  const dronePursuit =
+    "Through Drone Pursuit, IMPETUS and ROBODARSHAN give you the chance to showcase your skills. In Drone Pursuit, participants fly drones through hurdles and gates to win the race. Bring your models to life and make this competition a great success.";
   const valorant =
     "The Valorant gaming event is a competition that brings together talented players to showcase their skills and compete for recognition. It is an exciting opportunity for Valorant fans to experience high-level gameplay and celebrate the top talent in the game.";
   const fun =
@@ -119,7 +119,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     scrapyard,
     quiz,
     deathrace,
-    lineFollower,
+    dronePursuit,
     valorant,
     fun,
   ];

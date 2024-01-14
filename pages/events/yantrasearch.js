@@ -91,10 +91,6 @@ export default function CadathonPage() {
       name: "Md Wali Ahad Malik",
       phone: "+91 7480984908",
     },
-    person3: {
-      name: "Akash Yadav",
-      phone: "+91 7237080517",
-    },
     person4: {
       name: "Ankush Ghosh",
       phone: "+91 8145326311",
@@ -115,10 +111,8 @@ export default function CadathonPage() {
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
             {" "}
-            This event organized by ASME IIEST, aims to give you all the
-            excitement of treasure hunt. You can look forward to having fun
-            while solving mysteries together and hunting down simple machines in
-            our college campus.
+            This event aims to give you all the excitement of a treasure hunt. You can look forward to having fun while
+solving mysteries together and hunting down simple machines on our college campus.
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
@@ -127,7 +121,7 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Dates
                 </span>
-                9th February, 2024 <span className="pl-3"> 4:30pm - 7pm</span>
+                9th February 2024 <span className="pl-3"> 4:30pm - 7pm</span>
               </p>
             </div>
             <button
@@ -195,7 +189,7 @@ export default function CadathonPage() {
                 </td>
               </tr>
 
-              <tr>
+              {/* <tr>
                 <td className="pl-2 py-2 md:px-4  whitespace-nowrap ">
                   <div className="text-sm font-medium  md:text-lg ">
                     Platform
@@ -206,7 +200,7 @@ export default function CadathonPage() {
                     Gallery 5, Department of Mechanical Engineering.
                   </div>
                 </td>
-              </tr>
+              </tr> */}
 
               <tr>
                 <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
@@ -353,7 +347,7 @@ export default function CadathonPage() {
           </h1>
           <li className="py-1">Free (For IIEST students)</li>
           <li>
-            <span className="font-bold text-xl">Rs.160</span> (For non-IIEST
+            <span className="font-bold text-xl">Rs.150</span> (For non-IIEST
             students)
           </li>
         </div>
@@ -378,11 +372,13 @@ export default function CadathonPage() {
           >
             Event Coordinators
           </Typography>
-          <Box className="sm:grid  sm:grid-cols-2  sm:gap-2 flex flex-col items-center justify-center gap-y-3 md:gap-x-4 gap-y-4 mt-4">
-            <EventMag className="mt-1" person={person.person1} />
-            <EventMag person={person.person3} />
+          <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
+            <EventMag person={person.person1} />
+            <EventMag person={person.person2} />
+          </Box>
+          <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
             <EventMag person={person.person4} />
-            <EventMag className="mt-2" person={person.person2} />
+            {/* <EventMag person={person.person2} /> */}
           </Box>
         </Box>
       </section>

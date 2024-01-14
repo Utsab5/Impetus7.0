@@ -84,12 +84,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Mahesh Bandlamudi",
-      phone: "+91 8639555844",
+      name: "Ajay Khandelwal",
+      phone: "+91 7792062842",
     },
     person2: {
-      name: "Sayantan Paul",
-      phone: "+91 9830664404",
+      name: "Shreya Jaiswal",
+      phone: "+91 6394615691",
     },
   };
   return (
@@ -107,8 +107,8 @@ export default function CadathonPage() {
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
             To instil the essence of quizzing, IMechE IIEST, Shibpur brings to
-            you a Grand General Technical Quiz: &quot;IQ Ignition Suspects&quot;
-            under the banner of Impetus 7.0
+            you a Grand General Technical Quiz: &quot; IQ Ignition &quot;
+            under the banner of <b>Impetus 7.0</b>.
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
@@ -117,14 +117,14 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                10th February, 2024 11:00 AM- 12:00 AM
+                10th February 2024 , 11:00am - 12:00pm
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                10th February, 2024 12:00 PM-1:30 PM
+                10th February 2024 , 12:00pm - 1:30pm
               </p>
             </div>
             <button
@@ -149,7 +149,7 @@ export default function CadathonPage() {
                 </td>
                 <td className="pl-2 py-1">
                   <div className="text-sm md:text-lg font-medium ">
-                    Till 2 hour before the commencement of event
+                    Till 2 hour before the commencement of round 1
                   </div>
                 </td>
               </tr>
@@ -174,6 +174,18 @@ export default function CadathonPage() {
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
                     Team of 1-3 members
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-2 py-2 whitespace-nowrap  md:px-4 ">
+                  <div className="text-sm  md:text-lg font-medium ">
+                    Venue
+                  </div>
+                </td>
+                <td className=" pl-2 py-1">
+                  <div className="text-sm font-medium  md:text-lg ">
+                  Gallery 6, Department of Mechanical Engineering (IIEST Shibpur)
                   </div>
                 </td>
               </tr>
@@ -212,17 +224,7 @@ export default function CadathonPage() {
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td className="pl-2 md:px-4 py-2 whitespace-nowrap ">
-                  <div className="text-sm font-medium  md:text-lg ">Venue</div>
-                </td>
-                <td className=" pl-2 py-1">
-                  <div className="text-sm font-medium  md:text-lg ">
-                    Gallery 6, Department of Mechanical Engineering (IIEST
-                    Shibpur)
-                  </div>
-                </td>
-              </tr>
+              
             </tbody>
           </table>
         </div>
@@ -287,7 +289,7 @@ export default function CadathonPage() {
           </h1>
           <li className="py-1">Free (For IIEST students)</li>
           <li>
-            <span className="font-bold text-xl">Rs.70</span> (For non-IIEST
+            <span className="font-bold text-xl">Rs.75</span> (For non-IIEST
             students)
           </li>
         </div>

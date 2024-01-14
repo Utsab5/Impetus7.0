@@ -57,7 +57,7 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/lineFollower");
+    router.push("/events/dronePursuit");
   };
   const goBack = () => {
     router.push("/events/iQIgnition");
@@ -87,17 +87,14 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Shobhit Das",
-      phone: "+91 7602274162",
+      name: "Harshvardhan",
+      phone: "+91 7702497870",
     },
     person2: {
-      name: "Abhishek Rajput",
-      phone: "+91 9355127436",
+      name: "Ishita",
+      phone: "+91 7798763221",
     },
-    person3: {
-      name: "Avi Ambast",
-      phone: "+91 7277876396",
-    },
+    
   };
   return (
     <Box sx={{ width: "100vw" , background:"black"}} className="center1 mt-10">
@@ -114,8 +111,8 @@ export default function CadathonPage() {
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
-            This competition aims to build a robot that can be manually
-            controlled to maneuver across a track with different obstacle.
+          This competition aims to build a robot that can be manually controlled to maneuver across a track
+with different obstacle.
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
@@ -124,14 +121,14 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                9th February, 2024 2:00 PM-3:00 PM
+                9th February 2024 , 2:00pm - 3:00pm
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                9th February, 2024 3:15 PM-4:15 PM
+                9th February 2024 , 3:15pm - 4:15pm
               </p>
             </div>
             <button
@@ -148,8 +145,7 @@ export default function CadathonPage() {
         <div className="py-2  ">
           <h1 className="text-3xl py-1 font-bold ">Objective</h1>
           <p className="text-lg font-normal text-gray-200  ">
-            Reach the limit line with minimum penalties in the least possible
-            time.
+          Reach the limit line with minimum penalties in the least possible time.
           </p>
         </div>
         <div className="py-6 bg-gray-900 mb-2 shadow-md sm:rounded-lg px-0 rounded-md">
@@ -163,7 +159,7 @@ export default function CadathonPage() {
                 </td>
                 <td className="pl-2 py-1">
                   <div className="text-sm md:text-lg font-medium ">
-                    Till 1 hour before the commencement of round1
+                    Till 1 hour before the commencement of Round 1
                   </div>
                 </td>
               </tr>
@@ -220,9 +216,8 @@ export default function CadathonPage() {
         <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <p className="text-lg font-normal text-gray-200  ">
-            Death Race is going to be held in 2 rounds. Candidates qualified
-            from the first round can only participate in second round (No
-            lateral entry allowed).
+          Death Race is going to be held in 2 rounds. Candidates qualified from the first round can only
+participate in second round (No lateral entry allowed).
           </p>
         </div>
         <div className="py-3  ">

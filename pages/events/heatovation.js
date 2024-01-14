@@ -88,12 +88,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Souvik Tewari",
-      phone: "+91 8250994202",
+      name: "Ankush Ghosh",
+      phone: "+91 8145326311",
     },
     person2: {
-      name: "Soham Banerjee",
-      phone: "+91 8101264621",
+      name: "Ketan Mohan Masurkar",
+      phone: "+91 8788330638",
     },
   };
   return (
@@ -117,7 +117,7 @@ export default function CadathonPage() {
             answer their queries based on the presentation.
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
-            <div className="py-3  ">
+            {/* <div className="py-3  ">
               <h1 className="md:text-3xl text-2xl font-bold ">
                 Problem Statement
               </h1>
@@ -144,7 +144,7 @@ export default function CadathonPage() {
                   </li>
                 </ul>{" "}
               </ul>
-            </Box>
+            </Box> */}
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
@@ -202,7 +202,7 @@ export default function CadathonPage() {
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Team of Maximum 2 members.
+                    Individual or team of maximum 2 members.
                   </div>
                 </td>
               </tr>
@@ -319,7 +319,7 @@ export default function CadathonPage() {
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    The word limit of abstract should be strictly within 350
+                    The word limit of abstract should be strictly within 300
                     words (in .docx format).
                   </li>
                 </ul>
@@ -380,12 +380,15 @@ export default function CadathonPage() {
             If any team faces any problem, they are supposed to report to the
             Event Co-Ordinator or Pool Volunteer without much delay.<br></br>
           </p>
+          <p className="text-lg font-semibold  text-gray-200  " style={{marginTop:"20px"}}>
+          Rules are subject to change and decisions of the impetus team are absolute and binding.<br></br>
+          </p>
           <h1 className="text-xl  font-bold mt-2 md:text-3xl py-2">
             Registration fee
           </h1>
           <li className="py-1">Free (For IIEST students)</li>
           <li>
-            <span className="font-bold text-xl">Rs.100</span> (For non-IIEST
+            <span className="font-bold text-xl">Rs.120</span> (For non-IIEST
             students)
           </li>
         </div>

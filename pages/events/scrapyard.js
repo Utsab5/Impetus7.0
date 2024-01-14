@@ -108,9 +108,11 @@ export default function CadathonPage() {
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
-            SCRAPYARD, an event that enables your untouched creativity and
-            reasoning abilities to explode. Show case your innovative ideas as a
-            team to create the assembly that fits the given problem statement.
+          Welcome to SCRAPYARD—an event designed to ignite your creativity and reasoning.
+Assemble with your team to tackle a given problem statement, showcasing innovative
+ideas that push the boundaries of conventional solutions. It's a celebration of intellect,
+imagination, and collaborative prowess. Join us for a journey into uncharted territories
+of innovation.
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
@@ -161,7 +163,7 @@ export default function CadathonPage() {
                 </td>
                 <td className="pl-2 py-1">
                   <div className="text-sm md:text-lg font-medium ">
-                    Till 1 hour before the commencement of round1
+                  Through G-forms, till 1 hour before the commencement of round 1
                   </div>
                 </td>
               </tr>

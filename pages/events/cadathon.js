@@ -83,8 +83,8 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Ankush Ghosh",
-      phone: "+91 8145326311",
+      name: "Soham Banerjee",
+      phone: "+91 8101264621",
     },
     person2: {
       name: "Ketan Mohan Masurkar",
@@ -103,10 +103,9 @@ export default function CadathonPage() {
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
-            This competition aims to develop the idea of assembly of 3D
-            structures on a CAD software. This event will be organized by the
-            Society of Automotive Engineers (SAE), IIEST Shibpur under the
-            banner of &quot;Impetus 7.0&quot;.
+          This competition aims to develop the idea of Engineering Drawing and modelling of 3D
+structures on a CAD software. This event will be organized by the Department of Mechanical
+Engineering, IIEST Shibpur under the banner of &quot;Impetus 7.0&quot;.
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
@@ -115,14 +114,14 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Round 1
                 </span>
-                9th February,2024 12:30 PM- 2:00 PM
+                9th February 2024 , 12:30pm - 2:00pm
               </p>
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                10th February,2024 3:00pm-4:30pm
+                10th February 2024 ,   3:00pm - 4:30pm
               </p>
             </div>
             <button
@@ -139,7 +138,10 @@ export default function CadathonPage() {
         <div className="py-2  ">
           <h1 className="text-3xl py-1 font-bold ">Objective</h1>
           <p className="text-lg font-normal text-gray-200  ">
-          Initially, the organizing team will set up an objective and the participants will have to get it designed within the stipulated time while satisfying some given conditions.
+          Initially, the organizing team will provide a problem statement with figures given and the
+participants will have to do according to the given instructions and then either the have to make 3D
+structure on CAD software or draw it on a Drawing paper as per their choice selected beforehand,
+within the speculated time.
           </p>
         </div>
         <div className="py-6 bg-gray-900 mb-2 shadow-md sm:rounded-lg px-0 rounded-md">
@@ -153,7 +155,7 @@ export default function CadathonPage() {
                 </td>
                 <td className="pl-2 py-1">
                   <div className="text-sm md:text-lg font-medium ">
-                    Till 1 hour before the commencement of Round1
+                    Till 1 hour before the commencement of Round 1
                   </div>
                 </td>
               </tr>
@@ -177,7 +179,7 @@ export default function CadathonPage() {
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Department Building(IIEST Shibpur)
+                  Department building (Department of Mechanical Engineering, IIEST Shibpur)
                   </div>
                 </td>
               </tr>
@@ -234,11 +236,10 @@ export default function CadathonPage() {
         <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <p className="text-lg font-normal text-gray-200  ">
-            <b>CADathon</b> is going to be held in 2 rounds. In the first round
-            of competition participants are expected to draw all 3 views of the
-            given figure in drawing sheet and submit it in 90 minutes. The top
-            10 candidates from the first round can only participate in second
-            round (No lateral entry allowed).
+            <b>CADathon</b> is going to be held in 2 rounds. In the first round of competition participants have
+to do according to problem statement (Engineering Drawing or CAD as per their choice submitted
+through Google form) and submit it in 90 minutes. The top 10 candidates from the first round can only
+participate in second round (No lateral entry allowed).
           </p>
         </div>
         <div className="py-3  ">
@@ -251,8 +252,8 @@ export default function CadathonPage() {
           <ul className="bulletArrow">
             <ul className="BulletNone">
               <li>
-                Registered candidates are to be present in the department
-                building before the commencement of the event.
+              Registered candidates are to be present in the department building before the commencement
+of the event.
               </li>
             </ul>{" "}
             <li>
@@ -261,25 +262,23 @@ export default function CadathonPage() {
                   Round 1 :
                 </span>
                 <ul className="BulletNone">
-                  <li>Each participant will be provided with an objective.</li>
+                  <li>Each participant will be provided with a problem statement.</li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    Participants are required to bring their own drawing
-                    instruments (drawing sheets will be provided) and laptop
-                    with any CAD software installed in it.
+                  Participants are required to bring their own drawing instruments (drawing sheets
+will be provided) and laptop with any CAD software installed in it.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    Participants need to draw all 3 views of the given figure in
-                    drawing sheet according to the problem statement.
+                  Participants need to do according to the instructions in problem statement.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    The top performers of 1st round will continue to Round 2.
-                    Evaluation will be done based on accuracy and time consumed.
+                  The top 10 participants from round 1 will continue to round 2. Evaluation will
+be done based on accuracy and time consumed.
                   </li>
                 </ul>
               </ul>
@@ -291,13 +290,14 @@ export default function CadathonPage() {
                 </span>
                 <ul className="BulletNone">
                   <li>
-                    The selected participants from 1st round will have to model
-                    the figure on CAD software.
+                  The selected participants from 1st round will have to model the assembly on
+CAD software or draw it on the provided Graphic (Drawing) sheet as per the
+choice chosen by the participants through Google form.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    Participants will be evaluated based on time and accuracy.
+                  Participants will be evaluated based on accuracy and time.
                   </li>
                 </ul>
               </ul>
