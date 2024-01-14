@@ -135,7 +135,7 @@ with different obstacle.
               type="button"
               className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
               onClick={(event) =>
-                (window.location.href = "https://forms.gle/NRdSf7w4pvX5E96y7")
+                (window.location.href = "https://forms.gle/j8gTXK1SUV9KVva78")
               }
             >
               Register Now
@@ -304,7 +304,7 @@ participate in second round (No lateral entry allowed).
                 type="button"
                 className=" font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
                 onClick={(event) =>
-                  (window.location.href = "https://forms.gle/NRdSf7w4pvX5E96y7")
+                  (window.location.href = "https://forms.gle/j8gTXK1SUV9KVva78")
                 }
               >
                 Register Now
