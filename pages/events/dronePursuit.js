@@ -92,6 +92,10 @@ export default function CadathonPage() {
       name: "Suyash Tiwari",
       phone: "+91 8957958260",
     },
+    person2: {
+      name: "Ayan Paul",
+      phone: "+91 8910867945",
+    },
   };
   return (
     <Box sx={{ width: "100vw", background:"black" }} className="mt-10 center1">
@@ -407,6 +411,7 @@ export default function CadathonPage() {
           </Typography>
           <Box className=" flex items-center md:flex-row flex-col justify-center md:gap-x-4 gap-y-4 mt-4">
             <EventMag person={person.person1} />
+            <EventMag person={person.person2} />
           </Box>
         </Box>
       </section>
