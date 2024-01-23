@@ -102,7 +102,15 @@ export default function TeamPage() {
       imgname: "Formal Portrait(png) - 2021MEB046 SOUMYADEEP_DEY.png",
       insta: "deepsoumyadey",
       link: "Soumyadeep Dey",
-      },
+    }, 
+    person5: {
+      name: "Janhvi Singh",
+      phone: "+91 8318035176",
+      post: "Industry Academia Meet Executive",
+      imgname: "IMG_20230331_024142 - 2021MEB062 JANHVI_SINGH.jpg",
+      insta: "raghuvanshi_janhvi",
+      link: "www.linkedin.com/in/janhvi-singh-858600239",
+      },   
   };
   const event_person = {
     person1: {
@@ -298,6 +306,15 @@ export default function TeamPage() {
       insta: "https://www.instagram.com/shivangagrahari02/",
       link: "https://www.linkedin.com/in/shivangagrahari02",
     },
+    person6: {
+      name: "Ajay kumar khandelwal",
+      phone: "+91 7792062842",
+      post: "Event Management Executive",
+      imgname:
+        "20231025_103237 - 2021MEB048 AJAY_KUMAR KHANDELWAL.jpg",
+      insta: "https://www.instagram.com/ajaykhandelwal_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      link: "https://www.linkedin.com/in/ajay-kumar-khandelwal-1978aa231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
   };
   const finance_person = {
     person1: {
@@ -421,7 +438,7 @@ export default function TeamPage() {
     person4: {
       name: "Krishnendu Saha",
       phone: "+91 9564727611",
-      post: "Web Development",
+      post: "Technical Executive",
       imgname: "20230422_194554 - 2022MEB023 2022MEB023_KRISHNENDU.jpg",
       insta: "krishnendu.saha123",
       link: "https://www.linkedin.com/in/krishnendu-saha-2394aa26a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -496,6 +513,7 @@ export default function TeamPage() {
             <ContactCard person={sponsorship_person.person1} />
             <ContactCard person={sponsorship_person.person2} />
           </Box>
+            <ContactCard person={sponsorship_person.person5} />
             <ContactCard person={sponsorship_person.person3} />
             <ContactCard person={sponsorship_person.person4} />
           <br style={{ width: "100%" }}></br>
@@ -505,8 +523,8 @@ export default function TeamPage() {
         <TabPanel value={value} index={2} className="contactCards">
           {/*Event Team*/}
           <Box style={{ width: "100%", marginBottom: "80px" }}>
-            <ContactCard person={event_person.person1} />
             <ContactCard person={event_person.person2} />
+            <ContactCard person={event_person.person1} />
             <ContactCard person={event_person.person3} />
             <ContactCard person={event_person.person4} />
             <ContactCard person={event_person.person5} />
@@ -541,10 +559,6 @@ export default function TeamPage() {
           </Box>
             <ContactCard person={design_person.person4} />
             <ContactCard person={design_person.person5} />
-
-          {/* <ContactCard person={design_person.person4} />
-          <ContactCard person={design_person.person5} />
-          <ContactCard person={person.person10} /> */}
         </TabPanel>
 
         <TabPanel value={value} index={5} className="contactCards">
@@ -554,6 +568,7 @@ export default function TeamPage() {
             <ContactCard person={publicity_person.person2} />
             <ContactCard person={publicity_person.person3} />
           </Box>
+          <ContactCard person={publicity_person.person6} />
           <ContactCard person={publicity_person.person4} />
           <ContactCard person={publicity_person.person5} />          
           
