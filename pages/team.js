@@ -92,7 +92,7 @@ export default function TeamPage() {
       phone: "+91 7815812686",
       post: "Sponsorship Executive",
       imgname: "Screenshot_2024-01-11-00-23-46-84_92460851df6f172a4592fca41cc2d2e6 - 2021MEB074 SABAVATH_AKASH RAM NAIK.jpg",
-      insta: "akash_ram__",
+      insta: "https://www.instagram.com/akash_ram__",
       link: "https://www.linkedin.com/in/sabavath-akash-ram-naik-369980214",
     },
     person4: {
@@ -100,7 +100,7 @@ export default function TeamPage() {
       phone: "+91 9800054616",
       post: "Sponsorship Executive",
       imgname: "Formal Portrait(png) - 2021MEB046 SOUMYADEEP_DEY.png",
-      insta: "deepsoumyadey",
+      insta: "https://www.instagram.com/deepsoumyadey",
       link: "Soumyadeep Dey",
     }, 
     person5: {
@@ -108,7 +108,7 @@ export default function TeamPage() {
       phone: "+91 8318035176",
       post: "Industry Academia Meet Executive",
       imgname: "IMG_20230331_024142 - 2021MEB062 JANHVI_SINGH.jpg",
-      insta: "raghuvanshi_janhvi",
+      insta: "https://www.instagram.com/raghuvanshi_janhvi",
       link: "www.linkedin.com/in/janhvi-singh-858600239",
       },   
   };
@@ -169,7 +169,7 @@ export default function TeamPage() {
       phone: "+91 8145326311",
       post: "Event Management Executive",
       imgname: "IMG-20221001-WA0074 - 2021MEB010 ANKUSH_GHOSH.jpg",
-      insta: "ag0172003",
+      insta: "https://www.instagram.com/ag0172003",
       link: "https://www.linkedin.com/in/ankush-ghosh-43b02a255",
     },
     person8: {
@@ -177,7 +177,7 @@ export default function TeamPage() {
       phone: "+91 6394615691",
       post: "Event Management Executive",
       imgname: "IMG_20240110_232251 - 2021MEB057 SHREYA_JAISWAL.jpg",
-      insta: "shreyajais__173",
+      insta: "https://www.instagram.com/shreyajais__173",
       link: "https://www.linkedin.com/in/shreya-jaiswal-523927253",
     },
     person9: {
@@ -185,7 +185,7 @@ export default function TeamPage() {
       phone: "+91 7282809390",
       post: "Event Management Executive",
       imgname: "WhatsApp Image 2024-01-10 at 11.52.51 PM - 2021MEB050 PIYUSH_PATHAK.jpeg",
-      insta: "piyushpathak2k3",
+      insta: "https://www.instagram.com/piyushpathak2k3",
       link: "https://www.linkedin.com/in/piyush-pathak-882489241/",
     },
     person10: {
@@ -193,7 +193,7 @@ export default function TeamPage() {
       phone: "+91 7218111604",
       post: "Event Management Executive",
       imgname: "1704915527372 - 2021MEB086 ZODAPE_AYUSH PRADIP.jpg",
-      insta: "ayushzodape",
+      insta: "https://www.instagram.com/ayushzodape",
       link: "Ayush Zodape",
     },
     person11: {
@@ -201,7 +201,7 @@ export default function TeamPage() {
       phone: "+91 8101264621",
       post: "Event Management Executive",
       imgname: "Photo - 2021MEB069 SOHAM_BANERJEE.png",
-      insta: "banerjeesoham111",
+      insta: "https://www.instagram.com/banerjeesoham111",
       link: "soham-banerjee-867a82255",
     },
     person12: {
@@ -209,7 +209,7 @@ export default function TeamPage() {
       phone: "+91 6387392302",
       post: "Event Management Executive",
       imgname: "IMG_20240112_232721 - 2021MEB096 SHUBHAM_JAISWAL.jpg",
-      insta: "shubham__1213",
+      insta: "https://www.instagram.com/shubham__1213",
       link: "https://www.linkedin.com/in/shubham-jaiswal-a6a30b171/",
     },
     person13: {
@@ -253,7 +253,7 @@ export default function TeamPage() {
       phone: "+91 8910276639",
       post: "Design & Content Executive",
       imgname: "IMG-20240110-WA0021 - 2021MEB022 PIYAL_BHOWMICK.jpg",
-      insta: "piyalb_13",
+      insta: "https://www.instagram.com/piyalb_13",
       link: "https://www.linkedin.com/in/piyal-bhowmick-555563199?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     person5: {
@@ -349,7 +349,7 @@ export default function TeamPage() {
       phone: "+91 8318035176",
       post: "Industry Academia Meet Executive",
       imgname: "IMG_20230331_024142 - 2021MEB062 JANHVI_SINGH.jpg",
-      insta: "raghuvanshi_janhvi",
+      insta: "https://www.instagram.com/raghuvanshi_janhvi",
       link: "www.linkedin.com/in/janhvi-singh-858600239",
       },
   };
@@ -440,7 +440,7 @@ export default function TeamPage() {
       phone: "+91 9564727611",
       post: "Technical Executive",
       imgname: "20230422_194554 - 2022MEB023 2022MEB023_KRISHNENDU.jpg",
-      insta: "krishnendu.saha123",
+      insta: "https://www.instagram.com/krishnendu.saha123",
       link: "https://www.linkedin.com/in/krishnendu-saha-2394aa26a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
   };
