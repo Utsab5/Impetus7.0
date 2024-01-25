@@ -101,7 +101,7 @@ export default function TeamPage() {
       post: "Sponsorship Executive",
       imgname: "Formal Portrait(png) - 2021MEB046 SOUMYADEEP_DEY.png",
       insta: "https://www.instagram.com/deepsoumyadey",
-      link: "Soumyadeep Dey",
+      link: "https://www.linkedin.com/in/Soumyadeep Dey",
     }, 
     person5: {
       name: "Janhvi Singh",
@@ -109,7 +109,7 @@ export default function TeamPage() {
       post: "Industry Academia Meet Executive",
       imgname: "IMG_20230331_024142 - 2021MEB062 JANHVI_SINGH.jpg",
       insta: "https://www.instagram.com/raghuvanshi_janhvi",
-      link: "www.linkedin.com/in/janhvi-singh-858600239",
+      link: "https://www.linkedin.com/in/janhvi-singh-858600239",
       },   
   };
   const event_person = {
@@ -194,7 +194,7 @@ export default function TeamPage() {
       post: "Event Management Executive",
       imgname: "1704915527372 - 2021MEB086 ZODAPE_AYUSH PRADIP.jpg",
       insta: "https://www.instagram.com/ayushzodape",
-      link: "Ayush Zodape",
+      link: "https://www.linkedin.com/in/Ayush Zodape",
     },
     person11: {
       name: "Soham Banerjee",
@@ -202,7 +202,7 @@ export default function TeamPage() {
       post: "Event Management Executive",
       imgname: "Photo - 2021MEB069 SOHAM_BANERJEE.png",
       insta: "https://www.instagram.com/banerjeesoham111",
-      link: "soham-banerjee-867a82255",
+      link: "https://www.linkedin.com/in/soham-banerjee-867a82255",
     },
     person12: {
       name: "Shubham Jaiswal",
@@ -219,6 +219,14 @@ export default function TeamPage() {
       imgname: "IMG_20240118_005230 - 2021MEB040 MD_WALI AHAD MALLICK.jpg",
       insta: "https://www.instagram.com/wali_malik578?igsh=MXg4NjlxYXVjZTgzeg==",
       link: "https://www.linkedin.com/in/wali-ahad-mallick-027632222",
+    },
+    person14: {
+      name: "Siddamalla Harshavardhan",
+      phone: "+91 7702497870",
+      post: "Event Management Executive",
+      imgname: "WhatsApp Image 2024-01-25 at 13.20.42_a03655cf.jpg",
+      insta: "https://www.instagram.com/harshavardhansiddhamalla?igsh=NGZjcnJxNmprOTV2",
+      link: "https://www.linkedin.com/in/harshavardhan-siddamalla-118995229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
     },
 
   };
@@ -350,7 +358,7 @@ export default function TeamPage() {
       post: "Industry Academia Meet Executive",
       imgname: "IMG_20230331_024142 - 2021MEB062 JANHVI_SINGH.jpg",
       insta: "https://www.instagram.com/raghuvanshi_janhvi",
-      link: "www.linkedin.com/in/janhvi-singh-858600239",
+      link: "https://www.linkedin.com/in/janhvi-singh-858600239",
       },
   };
   const coordinator_person = {
@@ -537,6 +545,7 @@ export default function TeamPage() {
           <ContactCard person={event_person.person11} />
           <ContactCard person={event_person.person12} />
           <ContactCard person={event_person.person13} />
+          <ContactCard person={event_person.person14} />
         </TabPanel>
 
         <TabPanel value={value} index={3} className="contactCards">

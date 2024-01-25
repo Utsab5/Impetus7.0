@@ -87,7 +87,7 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Harshvardhan",
+      name: "Harshavardhan",
       phone: "+91 7702497870",
     },
     person2: {
