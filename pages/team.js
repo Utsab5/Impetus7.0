@@ -365,7 +365,7 @@ export default function TeamPage() {
     person1: {
       name: "Divyansh Bajpai",
       phone: "+91 9369462864",
-      post: "Main Coordinator",
+      post: "Coordinator",
       imgname:
         "WhatsApp Image 2023-12-28 at 4.19.43 AM - 2020MEB064 DIVYANSH_BAJPAI.jpeg",
       insta: "https://www.instagram.com/divyanshh.b",
@@ -374,7 +374,7 @@ export default function TeamPage() {
     person2: {
       name: "Vasu Krishna Khemka",
       phone: "+91 7808814413",
-      post: "Main Coordinator",
+      post: "Coordinator",
       imgname:
         "WhatsApp Image 2024-01-10 at 16.57.17_3f25e7f3.jpg",
       insta: "Use from last time",
@@ -494,7 +494,7 @@ export default function TeamPage() {
         <br></br>
         <Box className="tabs  ">
           <Tabs value={value} onChange={handleChange}>
-            <Tab className="tab" label="Main Coordinators" />
+            <Tab className="tab" label="Coordinators" />
             <Tab className="tab" label="Sponsorship Team" />
             <Tab className="tab" label="Event Management Team" />
             <Tab className="tab" label="Technical Team" />
