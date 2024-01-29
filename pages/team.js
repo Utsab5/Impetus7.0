@@ -106,7 +106,7 @@ export default function TeamPage() {
     person5: {
       name: "Janhvi Singh",
       phone: "+91 8318035176",
-      post: "Industry Academia Meet Executive",
+      post: "Sponsorship Executive",
       imgname: "IMG_20230331_024142 - 2021MEB062 JANHVI_SINGH.jpg",
       insta: "https://www.instagram.com/raghuvanshi_janhvi",
       link: "https://www.linkedin.com/in/janhvi-singh-858600239",
@@ -495,12 +495,12 @@ export default function TeamPage() {
         <Box className="tabs  ">
           <Tabs value={value} onChange={handleChange}>
             <Tab className="tab" label="Coordinators" />
-            <Tab className="tab" label="Sponsorship Team" />
+            <Tab className="tab" label="Finance Team" />
             <Tab className="tab" label="Event Management Team" />
             <Tab className="tab" label="Technical Team" />
             <Tab className="tab" label="Content and Design Team" />
             <Tab className="tab" label="Publicity Team" />
-            <Tab className="tab" label="Finance Team" />
+            <Tab className="tab" label="Sponsorship Team" />
             <Tab className="tab" label="Food and Logistics Team" />
             <Tab className="tab" label="Industry Academia Meet" />
             <Tab className="tab" label="Videography and Photography Team" />
@@ -515,7 +515,7 @@ export default function TeamPage() {
           <ContactCard person={coordinator_person.person3} />
           <ContactCard person={coordinator_person.person4} />
         </TabPanel>
-        <TabPanel value={value} index={1} className="contactCards">
+        <TabPanel value={value} index={6} className="contactCards">
           {/*Sponsorship Team*/}
           <Box style={{ width: "100%", marginBottom: "80px" }}>
             <ContactCard person={sponsorship_person.person1} />
@@ -583,7 +583,7 @@ export default function TeamPage() {
           
         </TabPanel>
 
-        <TabPanel value={value} index={6} className="contactCards">
+        <TabPanel value={value} index={1} className="contactCards">
           {/*Finance*/}
           <ContactCard person={finance_person.person1} />
           <ContactCard person={finance_person.person2} />
