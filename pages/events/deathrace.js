@@ -87,12 +87,12 @@ export default function CadathonPage() {
   };
   const person = {
     person1: {
-      name: "Harshavardhan",
+      name: "Siddamalla Harshavardhan",
       phone: "+91 7702497870",
     },
     person2: {
-      name: "Ishita",
-      phone: "+91 7798763221",
+      name: "Soham Banerjee",
+      phone: "+91 8101264621",
     },
     
   };
@@ -111,8 +111,7 @@ export default function CadathonPage() {
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
-          This competition aims to build a robot that can be manually controlled to maneuver across a track
-with different obstacle.
+          Think your robot can overcome any obstacle-big or minor in the least time? Get it on the track and let the game begin. Design a manually controlled ROBOT that can conquer hurdles and cover maximum distance amongst the best competitors in minimum time. Show off how you enter, your speed, and your path to overcoming challenges here at the enthralling event of “Obsta-Course”. “It is the event where you get to test the efficiency, skills, and power of your droid/robot.”
           </p>
           <div className="py-2 flex items-center flex-col justify-center ">
             <div className="py-3 flex flex-col items-center justify-center gap-y-2">
@@ -143,11 +142,13 @@ with different obstacle.
           </div>
         </div>
         <div className="py-2  ">
-          <h1 className="text-3xl py-1 font-bold ">Objective</h1>
+          <h1 className="text-3xl py-1 font-bold ">Problem Statement</h1>
           <p className="text-lg font-normal text-gray-200  ">
-          Reach the limit line with minimum penalties in the least possible time.
+          Design a manually controlled ROBOT that can cover maximum distance in the shortest possible time, challenging the hurdles and being one of the best opponents. Think your robot can overcome any obstacle-big or minor in the least time. If so, get it on the track and let the game begin. And bear in mind that maximizing RPM does. The way you enter, the way you proceed, and the way you reveal your speed to others beings here at the enthralling event of “Robo-Race”. It is the event where you get to test the efficiency, power, and skills of your droid/robot. Race your bots to the finish line and earn accolades.
           </p>
         </div>
+        <br></br>
+        <br></br>
         <div className="py-6 bg-gray-900 mb-2 shadow-md sm:rounded-lg px-0 rounded-md">
           <table className="min-w-full divide-y">
             <tbody className="bg-gray-900 md:text-lg text-gray-300 divide-y divide-gray-800">
@@ -213,6 +214,65 @@ with different obstacle.
             </tbody>
           </table>
         </div>
+        <br></br>
+        <br></br>
+        <div className="py-2  ">
+          <h1 className="text-3xl py-1 font-bold ">Bot Specification</h1>
+          <Box className="data" sx={dataStyles}>
+          <ul className="bulletArrow">
+            <ul className="BulletNone">
+              <li>
+              Maximum bot length allowed: 30cm
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              Maximum bot width allowed: 25cm
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              No restrictions on the height of the bot.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              Maximum bot weight allowed: 1.5kg
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              The bot should be wireless or wired but manually controlled.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              A place for the box carrying sand should be kept vacant on the upper side of the bot. The box provided will be with dimensions exactly equal to 10 cm x 10cm x 5cm (LxBxH).
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              The box and the sand (200 gms) will be provided on the spot.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              Only electrical motors are allowed.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              Maximum allowed potential difference of battery: 24V
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              A tolerance of 5% will be considered.
+              </li>
+            </ul>            
+          </ul>
+        </Box>
+        </div>
         <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <p className="text-lg font-normal text-gray-200  ">
@@ -230,34 +290,67 @@ participate in second round (No lateral entry allowed).
           <ul className="bulletArrow">
             <ul className="BulletNone">
               <li>
-                Registered candidates are to be present in the amenities before
-                the commencement of the event.
+              This is a racing event, so the fastest and most balanced robot will win.
               </li>
-            </ul>{" "}
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              Each team can have a maximum of 5 members.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              The robot should follow the specifications provided.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              Any deviation from the mentioned specification will lead to disqualification.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              If the Robot crosses a checkpoint and moves off track, then the robot should be placed on the previous checkpoint.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              No Test practice will be inside Arenas.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              You will have to submit your bot at the start of the event. No modification will be allowed during the event. However, you can change the battery.
+              </li>
+            </ul>
+            <ul className="BulletNone">
+              <li>
+              In case of any dispute, the decision of the judge and Organizer will be final.
+              </li>
+            </ul>
             <li>
               <ul className="nestedList">
                 <span className="font-bold text-xl text-blue-500  ">
-                  Round 1 :
+                  Round 1 (Sand Round):
                 </span>
                 <ul className="BulletNone">
                   <li>
-                    The first round is the HEATS; all the foams win take a run
-                    in the arena one at a time. The time taken to complete the
-                    arena will be noted. There is a maximum time limit of 10
-                    minutes beyond which the bot cannot continue to run.
+                  In the first round, two teams will face off against each other with both of them carrying sand.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    Participants Completing the arena is a must in order to be
-                    considered for Qualification to the next round.
+                  The winner and loser of the faceoff will be awarded 500 and 300 points respectively (the bot has to cross the finish line within 15mins of starting the faceoff otherwise 0 points will be awarded).
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                    One restart is allowed per team in the first round. However,
-                    in the next round, the team will start with same penalty
-                    points
+                  Extra points will be added with respect to the amount of sand left after reaching the finish line.
+                  </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                  Maximum points for sand will be 400. Points will be awarded with respect to the fraction of sand present after crossing the finish line.
                   </li>
                 </ul>
               </ul>
@@ -265,19 +358,39 @@ participate in second round (No lateral entry allowed).
             <li>
               <ul className="nestedList">
                 <span className="font-bold text-xl text-blue-500  ">
-                  Round 2 :
+                  Round 2 (Final Showdown):
                 </span>
                 <ul className="BulletNone">
                   <li>
-                    Second round will be a knockout round, where two teams win
-                    face off against each other. Loser will be eliminated and
-                    the winner moves on to the next round, subsequent similar
-                    rounds will carry on until only two teams are left for the
-                    final showdown
+                  Points from the first round will be carried forward in this round.
                   </li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>Restarts from checkpoint are allowed.</li>
+                  <li>Second round will also be a faceoff round (without sand). The winner and loser of this faceoff will be awarded 1000 and 700 points respectively (similar 15mins time limit as first-round otherwise 0 points awarded).</li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>If one team requires a timeout, they are allowed to take it. The other bot, however, continues it&apos;s run.</li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <ul className="nestedList">
+                <span className="font-bold text-xl text-blue-500  ">
+                General Rules:
+                </span>
+                <ul className="BulletNone">
+                  <li>
+                  Penalties will be awarded if there is a track change by any bot (-25 points) or if the bot falls out of the trace and need human intevention (-50 ponts).
+                  </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>A leaderboard will be created with all the points from the first round and the second round.</li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>Any damage to arena will lead to automatic disqualification.</li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>Team must not disassemble their bots before final results are announced.</li>
                 </ul>
               </ul>
             </li>

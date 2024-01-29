@@ -113,13 +113,13 @@ export default function Contact() {
         >
           <Box>
             <Typography variant="p" sx={CStyle}>
-              Vasu Krishna Khemka (Main Coordiantor)
+              Vasu Krishna Khemka (Coordiantor)
             </Typography>
             <Typography variant="p" sx={CStyle}>
               +91 7808814413
             </Typography>
             <Typography variant="p" sx={CStyle}>
-              Divyansh Bajpai (Main Coordiantor)
+              Divyansh Bajpai (Coordiantor)
             </Typography>
             <Typography variant="p" sx={CStyle}>
               +91 9369462864
