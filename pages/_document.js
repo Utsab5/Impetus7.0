@@ -53,8 +53,7 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Nunito:wght@300;400&display=swap" rel="stylesheet"
           />
 
-          <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-          <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+          
         </Head>
         <body>
           <Main />

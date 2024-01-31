@@ -44,6 +44,7 @@ const style = {
   width: "70vw",
   gap: "35px",
   margin: "20px",
+  marginBottom: "50px",
   flexDirection: {
     xs: "column-reverse",
     sm: "column-reverse",
@@ -89,6 +90,7 @@ const style = {
 };
 
 export default function MerchandiseComp() {
+  
   return (
     <Box sx={containerStyles}>
       <Typography className="flux" variant="h1">
@@ -113,11 +115,12 @@ export default function MerchandiseComp() {
             official merchandise T-shirt!
           </Typography>
           <Box className="ButtonBox">
-            <Button className="Btn">Buy Now</Button>
+            {/* <Button className="Btn" onClick={handleClick}>Buy Now</Button> */}
+            <Button className="Btn" href="https://forms.gle/C2H9EZJeNkJ5PATD6">Buy Now</Button>
           </Box>
         </Box>
         <Box className="tShirt" style={{}}>
-          <img src="/images/tshirt.webp/" alt="tshirt" />
+          <img src="/images/FrontTshirtNoBg.png" alt="tshirt" />
         </Box>
       </Box>
     </Box>
