@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import BubbleComponent from "../components/BubbleComponent";
 import Contact from "../components/Contact";
 import HomePageAbout1 from "../components/HomePageAbout1";
-import IframeComp from "../components/IframeComp";
 import LoadingComp from "../components/LoadingComp";
 import { useLoading } from "../components/LoadingContext";
 import MerchandiseComp from "../components/MerchandiseComp";
@@ -75,7 +74,6 @@ export default function HomePage() {
     <Box>
       {loading && <LoadingComp />}
       <VideoText hideIt={hideIt} />
-      {/* <IframeComp /> */}
       <MerchandiseComp />
       {aboutContent.map((el) => (
         <HomePageAbout1 key={el.name} {...el} />

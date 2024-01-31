@@ -10,22 +10,22 @@ import Divider2 from "../components/Divider2";
 export default function AboutPage() {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
-  const [propertyValue, setPropertyValue] = useState('absolute');
+  const [propertyValue, setPropertyValue] = useState("absolute");
   // const [TopValue, setTopValue] = useState('400px');
-  const [TopValue, setTopValue] = useState('45vh');
-  const [HeightValue, setHeightValue] = useState('50%');
+  const [TopValue, setTopValue] = useState("45vh");
+  const [HeightValue, setHeightValue] = useState("50%");
   const theme = useTheme();
-  const videoId= "Y9VOzNnr8aY";
+  const videoId = "Y9VOzNnr8aY";
 
   const styles = {
     width: "100vw",
     ".videos": {
       width: "100vw",
-      ".overlay":{
-        position:"absolute",
-        backgroundColor:"steelblue",
-        opacity:"0.5",
-        zIndex:"1",
+      ".overlay": {
+        position: "absolute",
+        backgroundColor: "steelblue",
+        opacity: "0.5",
+        zIndex: "1",
         width: "100vw",
         height: "100vh",
       },
@@ -75,19 +75,18 @@ export default function AboutPage() {
     },
     ".aboutImpetus, .aboutDept": {
       margin: "50px 0",
-      marginTop:"170px",
+      marginTop: "170px",
     },
   };
 
-  const YTvideoStyle={
-    position:propertyValue,    
-    zIndex:"1",
-    top:TopValue,
-    width:"100%",
-    height:HeightValue,
-    marginTop:"100px"
-
-  }
+  const YTvideoStyle = {
+    position: propertyValue,
+    zIndex: "1",
+    top: TopValue,
+    width: "100%",
+    height: HeightValue,
+    marginTop: "100px",
+  };
 
   // const muteVideo = () => {
   //   const scrollPosition = window.scrollY;
@@ -109,11 +108,10 @@ export default function AboutPage() {
   };
 
   useEffect(() => {
-    if (window.innerWidth > 900){
+    if (window.innerWidth > 900) {
       videoRef.current?.play().catch((e) => console.log(e));
-    }
-    else{
-       videoRef.current?.pause();
+    } else {
+      videoRef.current?.pause();
     }
     // window.addEventListener("scroll", muteVideo);
     window.addEventListener("resize", handleSize);
@@ -125,25 +123,23 @@ export default function AboutPage() {
     };
   }, []);
 
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 900) {
-        setPropertyValue('relative');
-        setTopValue('0');
-        setHeightValue('40vw');
-
+        setPropertyValue("relative");
+        setTopValue("0");
+        setHeightValue("40vw");
       } else {
-        setPropertyValue('absolute');
-        setTopValue('45vh');
-        setHeightValue('50%');
+        setPropertyValue("absolute");
+        setTopValue("45vh");
+        setHeightValue("50%");
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize(); // Call initially to set the initial value
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const person = {
@@ -179,18 +175,18 @@ export default function AboutPage() {
         >
           <source src="images/trailer2.mp4" type="video/mp4" />
         </video>
-      <Divider2 />
+        <Divider2 />
       </Box>
-      <Box style={YTvideoStyle} >
+      <Box style={YTvideoStyle}>
         <iframe
           src={`https://www.youtube.com/embed/${videoId}`}
           style={{
-            aspectRatio:"16/9",
-            height:"100%",
-            width:"auto",
-            margin:"0 auto",
+            aspectRatio: "16/9",
+            height: "100%",
+            width: "auto",
+            margin: "0 auto",
             // border:"solid 2px #00A7E7",
-            borderRadius:"10px",
+            borderRadius: "10px",
           }}
           frameBorder="0"
           allowFullScreen
@@ -206,7 +202,7 @@ export default function AboutPage() {
           width="300"
           alt="SME"
         />
-        <Box className="content" style={{textAlign:"justify"}}>
+        <Box className="content" style={{ textAlign: "justify" }}>
           <Typography variant="p">
             Theoretical knowledge will serve no purpose until combined with
             skills and real-world knowledge. IMPETUS is an attempt to bring the
@@ -223,14 +219,11 @@ export default function AboutPage() {
             So, no matter where you come from, we will make sure you add a
             feather to your cap on the way back.
           </Typography>
-          
-          
         </Box>
       </Box>
-      
       <Box className="aboutDept center1">
         <Image src="/images/SMEwhite.png" height="300" width="300" alt="SME" />
-        <Box className="content" style={{textAlign:"justify"}}>
+        <Box className="content" style={{ textAlign: "justify" }}>
           <Typography variant="p">
             It was on 4th March, 1921, a diploma course on mechanical
             engineering was started and this was the beginning of the golden
@@ -255,11 +248,20 @@ export default function AboutPage() {
             Industrial visits are also organised by the department for making
             the students aware about the modern developments in the industries.
           </Typography>
-          
         </Box>
       </Box>
       <Box>
-        <Typography variant="h2" style={{fontFamily:"Rowdies",margin:"0 30px",textAlign:"center"}}>SOME MOMENTS OF PREVIOUS EDITIONS</Typography><br></br>
+        <Typography
+          variant="h2"
+          style={{
+            fontFamily: "Rowdies",
+            margin: "0 30px",
+            textAlign: "center",
+          }}
+        >
+          SOME MOMENTS OF PREVIOUS EDITIONS
+        </Typography>
+        <br></br>
         <ImageListComp />
       </Box>
       <Contact />

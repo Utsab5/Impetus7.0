@@ -1,5 +1,7 @@
 import { CacheProvider } from "@emotion/react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Head from "next/head";
 import { Router } from "next/router";
 import PropTypes from "prop-types";
@@ -10,8 +12,6 @@ import { LoadingStateProvider } from "../components/LoadingContext";
 import "../styles/globals.css";
 import darkTheme from "../styles/theme/darkTheme";
 import createEmotionCache from "../utility/createEmotionCache";
-import AOS from "aos";
-import "aos/dist/aos.css";
 const clientSideEmotionCache = createEmotionCache();
 const MyApp = (props) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;

@@ -107,7 +107,7 @@ export default function IAMPage() {
         >
           INDUSTRY ACADEMIA MEET
         </h1>
-        <p className=" text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 ">
+        <p className=" text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48 ">
           11th February, 2024 - 9AM to 6PM
         </p>
       </div>
@@ -133,6 +133,7 @@ export default function IAMPage() {
               employability, and talent identification in campus recruitment.
             </p>
           </div>
+          <div></div>
           <div className="grid md:grid-cols-2 gap-8">
             <div
               data-aos="zoom-in-right"
