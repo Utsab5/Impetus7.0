@@ -1,7 +1,6 @@
 import { Box } from "@mui/system";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ContactCard from "./ContactCard";
 
 const styles = {
   width: "100%",
@@ -25,8 +24,6 @@ const styles = {
       justifyContent: "center",
       cursor: "default",
       transition: "all 300ms cubic-bezier(0.075, 0.82, 0.165, 1)",
-      textShadow: "0 0 15px #8e54e9",
-
       ".bor": {
         width: "70%",
         textAlign: "center",
@@ -68,7 +65,6 @@ export default function NavbarComp() {
     >
       <Box sx={styles} className="center1">
         <Box className="nav">
-          {/* <Link href="/home"><span>Home</span></Link> */}
           <Link
             href="/about"
             className={router.pathname === "/about" ? "active" : ""}

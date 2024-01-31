@@ -308,7 +308,7 @@ export default function IAMPage() {
         </div>
         <div className="grid md:grid-cols-2 md:gap-8 gap-1">
           <div className=" flex flex-col justify-center  lg:items-end items-center text-lg font-normal text-gray-300 mb-4 md:order-1 order-2">
-            <h2 className="text-blue-400 md:text-3xl text-2xl md:text-left self-center md:mr-20  text-center md-font-extrabold mb-2">
+            <h2 className="text-blue-400 md:text-3xl text-2xl md:text-left self-center  text-center md-font-extrabold mb-2">
               Strategy Planning
             </h2>
             <p className="text-left px-3 md:w-2/3  md:px-0 ">

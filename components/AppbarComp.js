@@ -1,9 +1,9 @@
 import { AppBar } from "@mui/material";
 import { Box } from "@mui/system";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
 const styles = {
   position: "absolute",
   width: "100vw",
@@ -27,8 +27,6 @@ const styles = {
     },
   },
 };
-
-
 
 export default function AppbarComp() {
   const SideBarComp = dynamic(() => import("./SideBarComp"), { ssr: false });
@@ -76,20 +74,18 @@ export default function AppbarComp() {
         style={{
           mt: "30px",
           background: "none",
-          // backdropFilter: `${top ? "none" : "blur(10px)"}`,
           background: `${
-            (typeof window !== 'undefined' &&
-              (window.location.pathname.includes('/events/yantrasearch')||
-              window.location.pathname.includes('/events/cadathon') ||
-              window.location.pathname.includes('/events/heatovation') ||
-              window.location.pathname.includes('/events/scrapyard') ||
-              window.location.pathname.includes('/events/iQIgnition') ||
-              window.location.pathname.includes('/events/deathrace') ||
-              window.location.pathname.includes('/events/dronePursuit') ||
-              window.location.pathname.includes('/events/valorant') ||
-              window.location.pathname.includes('/events/fun')
-              ))
-              ? 'black'
+            typeof window !== "undefined" &&
+            (window.location.pathname.includes("/events/yantrasearch") ||
+              window.location.pathname.includes("/events/cadathon") ||
+              window.location.pathname.includes("/events/heatovation") ||
+              window.location.pathname.includes("/events/scrapyard") ||
+              window.location.pathname.includes("/events/iQIgnition") ||
+              window.location.pathname.includes("/events/deathrace") ||
+              window.location.pathname.includes("/events/dronePursuit") ||
+              window.location.pathname.includes("/events/valorant") ||
+              window.location.pathname.includes("/events/fun"))
+              ? "black"
               : top
                 ? "none"
                 : "linear-gradient(to right, black ,rgb(17 24 39 ),black)"
@@ -114,4 +110,3 @@ export default function AppbarComp() {
   );
 }
 
-            
