@@ -272,6 +272,14 @@ export default function TeamPage() {
       insta: "https://www.instagram.com/s.o.l.o.n.i.s.t/",
       link: "https://www.linkedin.com/in/sayan-mondal-5016511a0/",
     },
+    person6: {
+      name: "Muskan Choudhary",
+      phone: "+91 8961572900",
+      post: "Design & Content Executive",
+      imgname: "WhatsApp Image 2024-01-31 at 19.37.44_c0cc8314.jpg",
+      insta: "https://www.instagram.com/_muskan0103_/",
+      link: "https://www.linkedin.com/in/muskan-choudhary-429559246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
   };
   const publicity_person = {
     person1: {
@@ -566,6 +574,7 @@ export default function TeamPage() {
             <ContactCard person={design_person.person2} />
             <ContactCard person={design_person.person3} />
           </Box>
+            <ContactCard person={design_person.person6} />
             <ContactCard person={design_person.person4} />
             <ContactCard person={design_person.person5} />
         </TabPanel>

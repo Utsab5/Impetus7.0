@@ -99,28 +99,45 @@ export default function CadathonPage() {
             event. If you can manage all these , some prizes are surely waiting
             for you.
           </Typography>
+          <br></br><br></br>
           <h1 className="md:text-3xl text-2xl font-bold ">
-            Rules and Regulations
+            Balloon Dart Game 
           </h1>
           <Typography variant="p">
-            Imagine being in utter darkness, smoke all around and you are
-            trapped in a maze made of Lazer Lights. Go through the maze with
-            upmost precision to push the buzzer that gets to amazing gifts. But
-            but but, One wrong step, one touch and you are gone. Seemed
-            enthralling, this is what we are bringing you all at our
-            mega-techfest, the name everyone knows.<br></br>
-            <br></br>A fun, exciting, full of adrenaline rush maze filled with a
-            lot of twists and turns and amazing gifts. Be a part of this
-            over-the-top experience that you will find nowhere.<br></br>
-            <br></br>
-            And for the fans of TBBT, you know what this is, you know what this
-            is gonna be, so get ready to have a BUZZZZINGA!<br></br>
-            <br></br>
+          A popular and engaging funfair game that blends excitement and accuracy. Using a set of darts, participants must burst balloons attached to a backdrop.  The challenge lies in using the dart's sharp point to accurately hit and pop the balloons, each of which may conceal a reward.<br></br>
             <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg text-center  bg-gray-800 text-gray-300  ">
               {" "}
               Venue - Parade Ground, IIEST Shibpur.
             </span>
           </Typography>
+
+          <br></br><br></br>
+          <h1 className="md:text-3xl text-2xl font-bold ">
+          Buzz Wire Game
+          </h1>
+          <Typography variant="p">
+          A captivating and challenging activity that requires a steady hand and precise coordination. The game involves guiding a metal loop along an electrified wire, avoiding contact with the wire. If the loop gets in contact with the wire, it triggers a buzzing sound, and the player wins.<br></br>
+            <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg text-center  bg-gray-800 text-gray-300  ">
+              {" "}
+              Venue - Parade Ground, IIEST Shibpur.
+            </span>
+          </Typography>
+
+
+          <br></br><br></br>
+          <h1 className="md:text-3xl text-2xl font-bold ">
+          Robosoccer
+          </h1>
+          <Typography variant="p">
+          Participants engage in a thrilling one-on-one competition where each player is provided with robots. Two players compete in a game where they control robots on a field, aiming to skillfully navigate, strategically dribble the soccer ball, and score goals.<br></br>
+            <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg text-center  bg-gray-800 text-gray-300  ">
+              {" "}
+              Venue - Parade Ground, IIEST Shibpur.
+            </span>
+          </Typography>
+
+
+
         </Box>
       </Box>
       <Contact />
