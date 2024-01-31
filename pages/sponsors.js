@@ -64,9 +64,9 @@ export default function SponsorsPage() {
     sponsor7: {imgname: "ISHRAE.jpg"},
     sponsor8: {imgname: "Lalbaba.jpg"},
     sponsor9: {imgname: "IMechE.jpg"},
-    sponsor10: {imgname: "BLACKBIRDROBOTIX.png"},
-    sponsor11: {imgname: "BLACKBIRDROBOTIX.png"},
-    sponsor12: {imgname: "BLACKBIRDROBOTIX.png"},
+    sponsor10: {imgname: "BlackbirdRobotix_1.png"},
+    sponsor11: {imgname: "StockEdge.jpg"},
+    sponsor12: {imgname: "GEMS.jpg"},
     
   }
   const sponsorData = {
@@ -104,9 +104,9 @@ export default function SponsorsPage() {
         <Typography variant="h1">Event Partner</Typography>
         <Box className="cards">
           <SponsorCard sponsor={sponsor.sponsor5} />
-          <SponsorCard sponsor={sponsor.sponsor6} />
+          {/* <SponsorCard sponsor={sponsor.sponsor6} /> */}
           <SponsorCard sponsor={sponsor.sponsor7} />
-          <SponsorCard sponsor={sponsor.sponsor8} />
+          {/* <SponsorCard sponsor={sponsor.sponsor8} /> */}
           <SponsorCard sponsor={sponsor.sponsor9} />
         </Box>        
         <Typography variant="h1">Technology Partner</Typography>
