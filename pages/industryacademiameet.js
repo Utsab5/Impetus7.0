@@ -6,6 +6,29 @@ import Contact from "../components/Contact";
 import Image from "next/image";
 import BackgroundParticles from "../components/BgParticles2";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+const speakers = [
+  {
+    name: "Debajyoti Dhar",
+    description: "Deputy Director, Space Application Center, Ahmedabad (ISRO)",
+    img: "debojyothidhar.jpg",
+  },
+  {
+    name: "Sarojkant Singh",
+    description:
+      "Associate Vice President,Business Strategy, Power Plant Engineers Ltd.",
+    img: "Twoo.jpeg",
+  },
+  {
+    name: "Kousik Maiti",
+    description: "Director, PWC",
+    img: "Threee.jpeg",
+  },
+  {
+    name: "Dr.Sudeb Datta",
+    description: "Technical Director water and gas utilities, M.N. Dastur",
+    img: "fourrrr.jpeg",
+  },
+];
 export default function IAMPage() {
   const theme = useTheme();
 
@@ -117,7 +140,7 @@ export default function IAMPage() {
             data-aos="zoom-in-up"
             className="   rounded-lg md:p-8 md:p-12 mb-8"
           >
-            <p className="text-lg font-normal text-gray-200  ">
+            <p className="text-lg font-normal text-gray-300  ">
               The industrial meet in IMPETUS is to foster a productive dialogue
               between industry and academia, provide exposure to students and
               academics about current and future industrial trends, and equip
@@ -133,7 +156,42 @@ export default function IAMPage() {
               employability, and talent identification in campus recruitment.
             </p>
           </div>
-          <div></div>
+          <div className="text-center">
+            <h1
+              className="md:text-4xl text-white font-bold"
+              style={{ fontFamily: "Rowdies" }}
+            >
+              Speakers
+            </h1>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
+              {speakers.map((x) => {
+                return (
+                  <div
+                    key={x.name}
+                    className="w-full max-w-sm  rounded-lg shadow "
+                  >
+                    <div className="flex justify-end px-4 pt-4"></div>
+                    <div className="flex flex-col items-center ">
+                      <Image
+                        className="rounded-full "
+                        src={"/images/" + x.img}
+                        alt="speaker1"
+                        width="250"
+                        height="250"
+                      />
+                      <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                        {x.name}
+                      </h5>
+                      <span className="text-md  text-center text-gray-400">
+                        {x.description}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div
               data-aos="zoom-in-right"
@@ -225,7 +283,10 @@ export default function IAMPage() {
 
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 ">
           <div className="flex justify-center flex-col items-center gap-y-2">
-            <h1 className="md:text-3xl text-white font-bold">
+            <h1
+              className="md:text-3xl text-white font-bold"
+              style={{ fontFamily: "Rowdies" }}
+            >
               Benefits for the Institute
             </h1>
 

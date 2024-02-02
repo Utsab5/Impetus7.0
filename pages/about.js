@@ -177,22 +177,22 @@ export default function AboutPage() {
         </video>
         <Divider2 />
       </Box>
-      <Box style={YTvideoStyle}>
-        <iframe
-          src={`https://www.youtube.com/embed/${videoId}`}
-          style={{
-            aspectRatio: "16/9",
-            height: "100%",
-            width: "auto",
-            margin: "0 auto",
-            // border:"solid 2px #00A7E7",
-            borderRadius: "10px",
-          }}
-          frameBorder="0"
-          allowFullScreen
-          title="My YouTube Video"
-        />
-      </Box>
+      {/* <Box style={YTvideoStyle}> */}
+      {/*   <iframe */}
+      {/*     src={`https://www.youtube.com/embed/${videoId}`} */}
+      {/*     style={{ */}
+      {/*       aspectRatio: "16/9", */}
+      {/*       height: "100%", */}
+      {/*       width: "auto", */}
+      {/*       margin: "0 auto", */}
+      {/*       // border:"solid 2px #00A7E7", */}
+      {/*       borderRadius: "10px", */}
+      {/*     }} */}
+      {/*     frameBorder="0" */}
+      {/*     allowFullScreen */}
+      {/*     title="My YouTube Video" */}
+      {/*   /> */}
+      {/* </Box> */}
 
       <Box className="aboutImpetus center1">
         <Image

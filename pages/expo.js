@@ -198,34 +198,35 @@ export default function ExpoPage() {
         <div className="flex items-center justify-center">
           <img
             className="md:w-[400px] w-[350px] h-[400px] "
-            src="/images/humanoidRobot.png"
+            src="/images/blackbird.jpg"
             alt="Robo"
           />
         </div>
         <div className=" flex flex-col justify-center  lg:items-start items-center text-lg font-normal text-gray-300 mb-4 ">
           <h2 className="text-blue-400 md:text-3xl  leading-6 md:leading-7 text-2xl font-bold md:text-left text-center md-font-extrabold mb-2">
-            Robotics and Drones Exhibition
+            Blackbird Robotics
           </h2>
 
           <p className="text-left px-3 md:w-5/6 md:px-0 ">
-            From imagination to daydreams. From dreams to sci-fi movies. From
-            movies to possible future. And now, we bring the FUTURE here.
+            Embark on a journey into the future with Blackbird Robotics, our
+            esteemed Technology Partner. Experience cutting-edge innovations and
+            witness the marvels of robotics.
             <br></br>
             <br className="hidden md:block"></br>
-            Come to IIEST Shibpur to meet our ROBO FRIEND, &apos;ENZO&apos;. A
-            robot that has helped thousands of patients when even nurses cant
-            keep close to them. A robot that the served has humanity when it was
-            needed the most.<br></br>
+            Explore a captivating exhibition by Blackbird Robotics, featuring
+            the mesmerizing &quot;KiCoo&quot; – a first-gen uno robot that
+            showcases the pinnacle of robotic engineering. Immerse yourself in a
+            hands-on experience with these miniature high-tech wonders.
             <br className="hidden md:block"></br>
             At the expo, get to see our humanoid robot, Enzo. Get a chance to
             physically meet it, meet the industrial experts who made it and
             learn from the best.<br></br>
-            <br className="hidden md:block"></br>
+            <br></br>
             <span className=" md:text-lg text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-200">
-              Venue
+              Dates:
             </span>
             <span className=" md:text-xl font-semibold ">
-              Parade Ground,IIEST Shibpur Campus
+              9-11th February, 2024
             </span>
           </p>
         </div>

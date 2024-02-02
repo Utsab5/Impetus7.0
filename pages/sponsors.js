@@ -19,13 +19,22 @@ export default function SponsorsPage() {
     h3: { mt: "100px", mb: "50px", fontSize: "54px" },
   };
   const sponsor = {
-    sponsor1: { imgname: "Gainwell.png" },
-    sponsor2: { imgname: "Mahr.jpg" },
-    sponsor3: { imgname: "Purahsara.png" },
-    sponsor4: { imgname: "Edugraph.jpg" },
-    sponsor5: { imgname: "IOCL.jpg" },
-    sponsor6: { imgname: "ISHRAE.jpg" },
-    sponsor7: { imgname: "ISHRAE.jpg" },
+    sponsor1: {
+      imgname: "Gainwell.png",
+      link: "https://www.gainwellengineering.com/",
+    },
+    sponsor2: { imgname: "Mahr.jpg", link: "https://www.mahr.com/en-us/" },
+    sponsor3: {
+      imgname: "Purahsara.png",
+      link: "https://www.linkedin.com/company/purahsara/about/",
+    },
+    sponsor4: {
+      imgname: "Edugraph.jpg",
+      link: "https://www.telegraphindia.com/edugraph",
+    },
+    sponsor5: { imgname: "IOCL.jpg", link: "https://iocl.com/" },
+    sponsor6: { imgname: "ISHRAE.jpg", link: "https://ishrae.in/" },
+    sponsor7: { imgname: "ISHRAE.jpg", link: "https://www.imeche.org/" },
     sponsor8: { imgname: "Lalbaba.jpg" },
     sponsor9: { imgname: "IMechE.jpg" },
     sponsor10: { imgname: "BlackbirdRobotix_1.png" },
