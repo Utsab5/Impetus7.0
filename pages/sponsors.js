@@ -40,6 +40,7 @@ export default function SponsorsPage() {
     sponsor10: { imgname: "BlackbirdRobotix_1.png" },
     sponsor11: { imgname: "StockEdge.jpg" },
     sponsor12: { imgname: "GEMS.jpg" },
+    sponsor13: { imgname: "lal.jpeg", link: "https://lalbabagroup.com/" },
   };
   const sponsorData = {
     sponsor1: { imgname: "Logiczap.png" },
@@ -83,6 +84,7 @@ export default function SponsorsPage() {
           <SponsorCard sponsor={sponsor.sponsor7} />
           {/* <SponsorCard sponsor={sponsor.sponsor8} /> */}
           <SponsorCard sponsor={sponsor.sponsor9} />
+          <SponsorCard sponsor={sponsor.sponsor13} />
         </Box>
         <Typography variant="h1">Technology Partner</Typography>
         <Box className="cards">
