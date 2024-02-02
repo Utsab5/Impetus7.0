@@ -88,7 +88,7 @@ export default function Countdown() {
         </Box>
       </Box>
       <Typography
-       onClick={()=>{window.scrollTo({ top: 900, behavior: 'smooth' })}}
+       onClick={()=>{window.scrollTo({ top: window.innerHeight + 200, behavior: 'smooth' })}}
         sx={{ margin: "20px 0", fontSize: "22px !important", zIndex: "2" }}
         variant="h2"
         className="animate-bounce cursor-pointer"
