@@ -237,7 +237,7 @@ export default function CadathonPage() {
             </ul>
             <ul className="BulletNone">
               <li>
-              Maximum bot weight allowed: 1.5kg
+              Maximum bot weight allowed: 2kg
               </li>
             </ul>
             <ul className="BulletNone">
@@ -245,11 +245,7 @@ export default function CadathonPage() {
               The bot should be wireless or wired but manually controlled.
               </li>
             </ul>
-            <ul className="BulletNone">
-              <li>
-              A place for the box carrying sand should be kept vacant on the upper side of the bot. The box provided will be with dimensions exactly equal to 10 cm x 10cm x 5cm (LxBxH).
-              </li>
-            </ul>
+            
             <ul className="BulletNone">
               <li>
               The box and the sand (200 gms) will be provided on the spot.
@@ -331,26 +327,31 @@ participate in second round (No lateral entry allowed).
             <li>
               <ul className="nestedList">
                 <span className="font-bold text-xl text-blue-500  ">
-                  Round 1 (Sand Round):
+                  Round 1:
                 </span>
                 <ul className="BulletNone">
                   <li>
-                  In the first round, two teams will face off against each other with both of them carrying sand.
+                  In the first round, is a time-based elimination round, and the points were awarded completely based on time.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                  The winner and loser of the faceoff will be awarded 500 and 300 points respectively (the bot has to cross the finish line within 15mins of starting the faceoff otherwise 0 points will be awarded).
+                  No hurdle skipping.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                  Extra points will be added with respect to the amount of sand left after reaching the finish line.
+                  Maximum time of run is 10 min.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>
-                  Maximum points for sand will be 400. Points will be awarded with respect to the fraction of sand present after crossing the finish line.
+                  Penalties will be awarded if there is a track change by any bot.
+                  </li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>
+                  A leaderboard will be created and a qualified team will compete in the second round.
                   </li>
                 </ul>
               </ul>
@@ -362,14 +363,14 @@ participate in second round (No lateral entry allowed).
                 </span>
                 <ul className="BulletNone">
                   <li>
-                  Points from the first round will be carried forward in this round.
+                  It is completely 1 vs 1 round.
                   </li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>Second round will also be a faceoff round (without sand). The winner and loser of this faceoff will be awarded 1000 and 700 points respectively (similar 15mins time limit as first-round otherwise 0 points awarded).</li>
+                  <li>No time-out criterion, it&apos;s a race between two teams who were qualified for the second round.</li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>If one team requires a timeout, they are allowed to take it. The other bot, however, continues it&apos;s run.</li>
+                  <li>The competitor will be decided by the Team Impetus. Track would be decided by Toss.</li>
                 </ul>
               </ul>
             </li>
@@ -380,17 +381,20 @@ participate in second round (No lateral entry allowed).
                 </span>
                 <ul className="BulletNone">
                   <li>
-                  Penalties will be awarded if there is a track change by any bot (-25 points) or if the bot falls out of the trace and need human intevention (-50 ponts).
+                  No Interventions of the Team Members. Allowance In the case it&apos;s an issue regarding the power supply or any hardware.
                   </li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>A leaderboard will be created with all the points from the first round and the second round.</li>
+                  <li>If the bot is stuck in the arena, only the organizing team can intervene.</li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>Any damage to arena will lead to automatic disqualification.</li>
+                  <li>It&apos;s completely the decision of the organizing team for the intervention.</li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>Team must not disassemble their bots before final results are announced.</li>
+                  <li>The team must not disassemble their bots before the final results are announced.</li>
+                </ul>
+                <ul className="BulletNone">
+                  <li>No Power supply stations would be provided for DC [Participants can bring]. 220V AC Plug Point would be provided.</li>
                 </ul>
               </ul>
             </li>

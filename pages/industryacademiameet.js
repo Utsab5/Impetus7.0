@@ -28,6 +28,16 @@ const speakers = [
     description: "Technical Director water and gas utilities, M.N. Dastur",
     img: "fourrrr.jpeg",
   },
+  {
+    name: "Mr. Tatababu Botsa",
+    description: "Deputy General Manager, Garden Reach Shipbuilders & Engineers Ltd.",
+    img: "MrTatababu.jpg",
+  },
+  {
+    name: "Mr. Abhijit Paliya",
+    description: "Vice President (Operations)and Plant Head, Lalbaba Engineering Group",
+    img: "MrAbhijit.jpg",
+  },
 ];
 export default function IAMPage() {
   const theme = useTheme();
@@ -156,7 +166,7 @@ export default function IAMPage() {
               employability, and talent identification in campus recruitment.
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center" style={{ marginBottom:"64px" }}>
             <h1
               className="md:text-4xl text-white font-bold"
               style={{ fontFamily: "Rowdies" }}
@@ -164,7 +174,7 @@ export default function IAMPage() {
               Speakers
             </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center" style={{ maxWidth:"850px",margin:"0 auto",gap:"50px" }}>
               {speakers.map((x) => {
                 return (
                   <div
@@ -180,10 +190,10 @@ export default function IAMPage() {
                         width="250"
                         height="250"
                       />
-                      <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                      <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white" style={{ marginTop:"16px"}}>
                         {x.name}
                       </h5>
-                      <span className="text-md  text-center text-gray-400">
+                      <span className="text-md  text-center text-gray-400" style={{ width:"80%"}}>
                         {x.description}
                       </span>
                     </div>
