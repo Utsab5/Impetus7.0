@@ -367,7 +367,7 @@ participate in second round (No lateral entry allowed).
                   </li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>No time-out criterion, it's a race between two teams who were qualified for the second round.</li>
+                  <li>No time-out criterion, it&apos;s a race between two teams who were qualified for the second round.</li>
                 </ul>
                 <ul className="BulletNone">
                   <li>The competitor will be decided by the Team Impetus. Track would be decided by Toss.</li>
@@ -381,14 +381,14 @@ participate in second round (No lateral entry allowed).
                 </span>
                 <ul className="BulletNone">
                   <li>
-                  No Interventions of the Team Members. Allowance In the case it's an issue regarding the power supply or any hardware.
+                  No Interventions of the Team Members. Allowance In the case it&apos;s an issue regarding the power supply or any hardware.
                   </li>
                 </ul>
                 <ul className="BulletNone">
                   <li>If the bot is stuck in the arena, only the organizing team can intervene.</li>
                 </ul>
                 <ul className="BulletNone">
-                  <li>It's completely the decision of the organizing team for the intervention.</li>
+                  <li>It&apos;s completely the decision of the organizing team for the intervention.</li>
                 </ul>
                 <ul className="BulletNone">
                   <li>The team must not disassemble their bots before the final results are announced.</li>

@@ -38,6 +38,7 @@ export default function SponsorsPage() {
     sponsor10: { imgname: "BlackbirdRobotix_1.png" ,link: "https://blackbirdrobotix.in/"},
     sponsor11: { imgname: "StockEdge.jpg",link: "https://stockedge.com/" },
     sponsor12: { imgname: "GEMS.jpg" ,link: "https://www.linkedin.com/company/genex-engineering-management-solutions/about/"},
+    sponsor13: { imgname: "Virel.jpg" ,link: "https://www.facebook.com/VIREL.Kolkata/about"},
   };
   const sponsorData = {
     sponsor1: { imgname: "Logiczap.png" },
@@ -85,6 +86,10 @@ export default function SponsorsPage() {
         <Typography variant="h1">Technology Partner</Typography>
         <Box className="cards">
           <SponsorCard sponsor={sponsor.sponsor10} />
+        </Box>
+        <Typography variant="h1">Gaming Partner</Typography>
+        <Box className="cards">
+          <SponsorCard sponsor={sponsor.sponsor13} />
         </Box>
         <Typography variant="h1">Learning Partner</Typography>
         <Box className="cards">
