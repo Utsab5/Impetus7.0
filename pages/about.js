@@ -23,7 +23,7 @@ export default function AboutPage() {
       width: "100vw",
       ".overlay": {
         position: "absolute",
-        backgroundColor: "steelblue",
+        // backgroundColor: "steelblue",
         opacity: "0.5",
         zIndex: "1",
         width: "100vw",
@@ -175,7 +175,7 @@ export default function AboutPage() {
         >
           <source src="images/trailer2.mp4" type="video/mp4" />
         </video>
-        <Divider2 />
+        {/* <Divider2 /> */}
       </Box>
       {/* <Box style={YTvideoStyle}> */}
       {/*   <iframe */}

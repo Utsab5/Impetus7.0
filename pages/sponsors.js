@@ -25,22 +25,19 @@ export default function SponsorsPage() {
     },
     sponsor2: { imgname: "Mahr.jpg", link: "https://www.mahr.com/en-us/" },
     sponsor3: {
-      imgname: "Purahsara.png",
-      link: "https://www.linkedin.com/company/purahsara/about/",
+      imgname: "Purahsara.png", link: "https://www.linkedin.com/company/purahsara/about/",
     },
     sponsor4: {
-      imgname: "Edugraph.jpg",
-      link: "https://www.telegraphindia.com/edugraph",
+      imgname: "Edugraph.jpg", link: "https://www.telegraphindia.com/edugraph",
     },
     sponsor5: { imgname: "IOCL.jpg", link: "https://iocl.com/" },
     sponsor6: { imgname: "ISHRAE.jpg", link: "https://ishrae.in/" },
-    sponsor7: { imgname: "ISHRAE.jpg", link: "https://www.imeche.org/" },
-    sponsor8: { imgname: "Lalbaba.jpg" },
-    sponsor9: { imgname: "IMechE.jpg" },
-    sponsor10: { imgname: "BlackbirdRobotix_1.png" },
-    sponsor11: { imgname: "StockEdge.jpg" },
-    sponsor12: { imgname: "GEMS.jpg" },
-    sponsor13: { imgname: "lal.jpeg", link: "https://lalbabagroup.com/" },
+    sponsor7: { imgname: "Cognitive.jpg", link: "#" },
+    sponsor8: { imgname: "lal.jpeg" , link: "https://lalbabagroup.com/" },
+    sponsor9: { imgname: "IMechE.jpg",link: "https://www.imeche.org/" },
+    sponsor10: { imgname: "BlackbirdRobotix_1.png" ,link: "https://blackbirdrobotix.in/"},
+    sponsor11: { imgname: "StockEdge.jpg",link: "https://stockedge.com/" },
+    sponsor12: { imgname: "GEMS.jpg" ,link: "https://www.linkedin.com/company/genex-engineering-management-solutions/about/"},
   };
   const sponsorData = {
     sponsor1: { imgname: "Logiczap.png" },
@@ -80,11 +77,10 @@ export default function SponsorsPage() {
         <Typography variant="h1">Event Partner</Typography>
         <Box className="cards">
           <SponsorCard sponsor={sponsor.sponsor5} />
-          {/* <SponsorCard sponsor={sponsor.sponsor6} /> */}
+          <SponsorCard sponsor={sponsor.sponsor6} />
           <SponsorCard sponsor={sponsor.sponsor7} />
-          {/* <SponsorCard sponsor={sponsor.sponsor8} /> */}
+          <SponsorCard sponsor={sponsor.sponsor8} />
           <SponsorCard sponsor={sponsor.sponsor9} />
-          <SponsorCard sponsor={sponsor.sponsor13} />
         </Box>
         <Typography variant="h1">Technology Partner</Typography>
         <Box className="cards">
