@@ -4,7 +4,7 @@ import CarouselComp from "../components/CarouselComp";
 import ContactCard from "../components/ContactCard";
 import Contact from "../components/Contact";
 import Image from "next/image";
-import BackgroundParticles from "../components/BgParticles2";
+import SponsorCard from "../components/SponsorCard";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 const speakers = [
   {
@@ -37,6 +37,21 @@ const speakers = [
     name: "Mr. Abhijit Paliya",
     description: "Vice President (Operations)and Plant Head, Lalbaba Engineering Group",
     img: "MrAbhijit.jpg",
+  },
+  {
+    name: "Mr. Sambhu Prasad Adak",
+    description: "Partner, Purahsara Strategist LLP",
+    img: "MrSambhu.jpeg",
+  },
+  {
+    name: "Mr. Deepayan Das",
+    description: "Managing Director, Mahr Metrology Pvt Ltd",
+    img: "MrDeepayan.jpeg",
+  },
+  {
+    name: "Mr. Avelo Roy,",
+    description: "Managing Director, Kolkata Ventures",
+    img: "MrAvelo.jpg",
   },
 ];
 export default function IAMPage() {
@@ -130,6 +145,10 @@ export default function IAMPage() {
     person1: {},
     person2: {},
   };
+  const sponsor = {
+    sponsor1: { imgname: "IOCL.jpg", link: "https://iocl.com/" },
+    sponsor2: { imgname: "lal.jpeg" , link: "https://lalbabagroup.com/" },
+  }
   return (
     <section className="bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-.svg')]">
       <CarouselComp />
@@ -145,7 +164,16 @@ export default function IAMPage() {
         </p>
       </div>
       <section className="bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-.svg')]">
+
+      
+
         <div className="py-6 px-4 mx-auto max-w-screen-xl">
+
+        <h1 className="md:text-4xl py-1 font-bold " style={{textAlign:"center",marginTop:"30px",fontFamily: "Rowdies" }}>Event Sponsor</h1>
+        <Box className="cards" style={{width:"100%"}}>
+          <SponsorCard sponsor={sponsor.sponsor1} />
+          <SponsorCard sponsor={sponsor.sponsor2} />
+        </Box>
           <div
             data-aos="zoom-in-up"
             className="   rounded-lg md:p-8 md:p-12 mb-8"

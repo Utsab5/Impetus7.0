@@ -121,7 +121,7 @@ Engineering, IIEST Shibpur under the banner of &quot;Impetus 7.0&quot;.
                   <CalendarMonthIcon className="h-5" />
                   Round 2
                 </span>
-                10th February 2024 ,   3:00pm - 4:30pm
+                9th February 2024 ,   3:00pm - 4:30pm
               </p>
             </div>
             <button
@@ -233,7 +233,24 @@ within the speculated time.
             </tbody>
           </table>
         </div>
-        <div className="py-3 mt-2 ">
+        <div className="py-3 mt-2 " style={{marginBottom:"30px"}}>
+          <h1 className="text-3xl font-bold ">Rule Book</h1>
+          <div style={{display:"flex", justifyContent:"center"}}>
+          <button
+              type="button"
+              className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+              
+              onClick={(event) =>
+                (window.location.href = "https://drive.google.com/file/d/1QzV8FEb8m9VgaLFFZeFRusFtWQbeQUhd/view?usp=sharing")
+              }
+            >
+              Click Here
+            </button>
+          </div>
+          
+        </div>
+        
+        {/* <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <p className="text-lg font-normal text-gray-200  ">
             <b>CADathon</b> is going to be held in 2 rounds. In the first round of competition participants have
@@ -303,7 +320,7 @@ choice chosen by the participants through Google form.
               </ul>
             </li>
           </ul>
-        </Box>
+        </Box> */}
         <div className="">
           <p className="text-lg font-semibold  text-gray-200  ">
             If any team faces any problem, they are supposed to report to the

@@ -120,7 +120,7 @@ export default function MerchandiseComp() {
           </Box>
         </Box>
         <Box className="tShirt" style={{}}>
-          <img src="/images/FrontTshirtNoBg.png" alt="tshirt" />
+          <img src="/images/T_Shirt_WE_MOVETHE_WORLD-removebg-preview.png" alt="tshirt" />
         </Box>
       </Box>
     </Box>
