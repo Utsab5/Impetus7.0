@@ -118,17 +118,11 @@ export default function CadathonPage() {
               <p className="text-lg">
                 <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
                   <CalendarMonthIcon className="h-5" />
-                  Round 1
+                  Date
                 </span>
-                9th February 2024 , 2:00pm - 3:00pm
+                10th February 2024 , 3:00pm - 4:30pm
               </p>
-              <p className="text-lg">
-                <span className="py-3 px-2.5 me-2  md:text-lg text-md font-medium rounded-lg   bg-gray-800 text-gray-400  ">
-                  <CalendarMonthIcon className="h-5" />
-                  Round 2
-                </span>
-                9th February 2024 , 3:15pm - 4:15pm
-              </p>
+              
             </div>
             <button
               type="button"
@@ -216,7 +210,24 @@ export default function CadathonPage() {
         </div>
         <br></br>
         <br></br>
-        <div className="py-2  ">
+
+        <div className="py-3 mt-2 " style={{marginBottom:"30px"}}>
+          <h1 className="text-3xl font-bold ">Rule Book</h1>
+          <div style={{display:"flex", justifyContent:"center"}}>
+          <button
+              type="button"
+              className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+              
+              onClick={(event) =>
+                (window.location.href = "https://drive.google.com/file/d/19esxn9cMLk584w6_Ji2HuVPT0RayN9tY/view?usp=sharing")
+              }
+            >
+              Click Here
+            </button>
+          </div>
+          
+        </div>
+        {/* <div className="py-2  ">
           <h1 className="text-3xl py-1 font-bold ">Bot Specification</h1>
           <Box className="data" sx={dataStyles}>
           <ul className="bulletArrow">
@@ -399,7 +410,7 @@ participate in second round (No lateral entry allowed).
               </ul>
             </li>
           </ul>
-        </Box>
+        </Box> */}
         <div className="">
           <p className="text-lg font-semibold  text-gray-200  ">
             If any team faces any problem, they are supposed to report to the

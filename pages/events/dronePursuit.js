@@ -197,14 +197,31 @@ export default function CadathonPage() {
                 </td>
                 <td className=" pl-2 py-1">
                   <div className="text-sm font-medium  md:text-lg ">
-                    Aminities
+                    Amenities
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div className="py-3 mt-2 ">
+
+        <div className="py-3 mt-2 " style={{marginBottom:"30px"}}>
+          <h1 className="text-3xl font-bold ">Rule Book</h1>
+          <div style={{display:"flex", justifyContent:"center"}}>
+          <button
+              type="button"
+              className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+              
+              onClick={(event) =>
+                (window.location.href = "https://drive.google.com/file/d/1qlAAE3qJrvrNqPjUlFVuBwdr_WO2b1Ks/view?usp=sharing")
+              }
+            >
+              Click Here
+            </button>
+          </div>
+          
+        </div>
+        {/* <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Event Structure</h1>
           <Box className="data mt-2" sx={dataStyles}>
             <p className="text-lg font-normal text-gray-200  ">
@@ -339,7 +356,7 @@ export default function CadathonPage() {
               </ul>
             </li>
             <li>
-              {/* <ul className="nestedList">
+              <ul className="nestedList">
                 <span className="font-bold text-xl text-blue-500  ">
                   Round 2 :
                 </span>
@@ -366,10 +383,10 @@ export default function CadathonPage() {
                 <ul className="BulletNone">
                   <li>No restarts are allowed</li>
                 </ul>
-              </ul> */}
+              </ul>
             </li>
           </ul>
-        </Box>
+        </Box> */}
         <div className="">
           <p className="text-lg font-semibold  text-gray-200  ">
             If any team faces any problem, they are supposed to report to the

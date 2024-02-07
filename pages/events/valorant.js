@@ -238,7 +238,23 @@ export default function CadathonPage() {
             </tbody>
           </table>
         </div>
-        <div className="py-3 mt-2 ">
+        <div className="py-3 mt-2 " style={{marginBottom:"30px"}}>
+          <h1 className="text-3xl font-bold ">Rule Book</h1>
+          <div style={{display:"flex", justifyContent:"center"}}>
+          <button
+              type="button"
+              className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+              
+              onClick={(event) =>
+                (window.location.href = "https://drive.google.com/file/d/1tD6_BuxOV-BTgj7I9jhP2ALgNzXiRfCI/view?usp=sharing")
+              }
+            >
+              Click Here
+            </button>
+          </div>
+          
+        </div>
+        {/* <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <Box className="data mt-2" sx={dataStyles}>
             <ul className="bulletArrow">
@@ -352,7 +368,7 @@ export default function CadathonPage() {
               <li>In case of dispute, verdict of admins will be final.</li>
             </ul>{" "}
           </ul>
-        </Box>
+        </Box> */}
         <div className="">
           <p className="text-lg font-semibold  text-gray-200  ">
             If any team faces any problem, they are supposed to report to the

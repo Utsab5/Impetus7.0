@@ -6,6 +6,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useRouter } from "next/router";
 import EventMag from "../../components/EventManagement";
+import SponsorCard from "../../components/SponsorCard";
 const imageStyles = {
   width: "80vw",
   height: "40vh",
@@ -96,6 +97,11 @@ export default function CadathonPage() {
       phone: "+91 8788330638",
     },
   };
+  const sponsor = {
+    sponsor1: {
+      imgname: "ISHRAE.jpg", link: "https://ishrae.in/" 
+    },
+  }
   return (
     <Box sx={{ width: "100vw" , background:"black"}} className="center1 mt-10">
       <Box sx={headerStyles} className="center2">
@@ -108,6 +114,10 @@ export default function CadathonPage() {
         </IconButton>
       </Box>
       <section className="py-10 max-w-screen-lg md:px-10 px-4">
+      <h1 className="text-3xl py-1 font-bold ">Event Sponsor</h1>
+        <Box className="cards" style={{width:"100%"}}>
+          <SponsorCard sponsor={sponsor.sponsor1} />
+        </Box>
         <div className="py-2  ">
           <p className="text-lg font-normal text-gray-200  ">
             HEATOVATION is an event organized by the Impetus 7.0 which invites
@@ -151,7 +161,7 @@ export default function CadathonPage() {
                   <CalendarMonthIcon className="h-5" />
                   Date
                 </span>
-                9th February,
+                9th February 2024,
                 <span className="pl-3"> 2:00pm - 4:00pm</span>
               </p>
             </div>
@@ -244,7 +254,24 @@ export default function CadathonPage() {
             </tbody>
           </table>
         </div>
-        <div className="py-3 mt-2 ">
+
+        <div className="py-3 mt-2 " style={{marginBottom:"30px"}}>
+          <h1 className="text-3xl font-bold ">Rule Book</h1>
+          <div style={{display:"flex", justifyContent:"center"}}>
+          <button
+              type="button"
+              className="mt-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+              
+              onClick={(event) =>
+                (window.location.href = "https://drive.google.com/file/d/1oMeiOvoQox9RTXw87p69wNUTAR5cP6AB/view?usp=sharing")
+              }
+            >
+              Click Here
+            </button>
+          </div>
+          
+        </div>
+        {/* <div className="py-3 mt-2 ">
           <h1 className="text-3xl font-bold ">Flow of the events</h1>
           <p className="text-lg font-normal text-gray-200  ">
             The following event occur in two rounds. The first round will be an
@@ -374,7 +401,7 @@ export default function CadathonPage() {
               </ul>
             </li>
           </ul>
-        </Box>
+        </Box> */}
         <div className="">
           <p className="text-lg font-semibold  text-gray-200  ">
             If any team faces any problem, they are supposed to report to the
